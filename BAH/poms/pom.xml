@@ -19,7 +19,6 @@
     <module>jobs/process/amc_0.1</module>
     <module>jobs/process/test_0.1</module>
     <module>jobs/joblets/testcase_0.1</module>
-    <module>../../BAHREFERENCE/poms</module>
   </modules>
   <properties>
     <talend.project.name>BAH</talend.project.name>
