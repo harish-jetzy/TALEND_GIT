@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_IG-GID6gEemXKpAD0sHC8w">
+    <contextParameter comment="" name="Cenveo_Hagen_Schema" prompt="Cenveo_Hagen_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_IG-GIT6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Port" prompt="Cenveo_Hagen_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_IG-GIj6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Database" prompt="Cenveo_Hagen_Database?" promptNeeded="false" type="id_String" value="Cenveo_testing" xmi:id="_IG-GIz6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Login" prompt="Cenveo_Hagen_Login?" promptNeeded="false" type="id_String" value="cenveo" xmi:id="_IG-GJD6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_AdditionalParams" prompt="Cenveo_Hagen_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_IG-GJT6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Server" prompt="Cenveo_Hagen_Server?" promptNeeded="false" type="id_String" value="192.168.1.151" xmi:id="_IG-GJj6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Password" prompt="Cenveo_Hagen_Password?" promptNeeded="false" type="id_Password" value="841WquPjulCrRQevx2UUKg==" xmi:id="_IG-GJz6gEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="EIM_DW" xmi:id="_IG-GKD6gEemXKpAD0sHC8w">
+    <contextParameter comment="" name="Cenveo_Hagen_Schema" prompt="Cenveo_Hagen_Schema?" promptNeeded="false" type="id_String" value="dbo" xmi:id="_IG-GKT6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Port" prompt="Cenveo_Hagen_Port?" promptNeeded="false" type="id_String" value="1533" xmi:id="_IG-GKj6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Database" prompt="Cenveo_Hagen_Database?" promptNeeded="false" type="id_String" value="EIM_DW" xmi:id="_IG-GKz6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Login" prompt="Cenveo_Hagen_Login?" promptNeeded="false" type="id_String" value="etluser1" xmi:id="_IG-GLD6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_AdditionalParams" prompt="Cenveo_Hagen_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_IG-GLT6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Server" prompt="Cenveo_Hagen_Server?" promptNeeded="false" type="id_String" value="VARIC1TLDVSQL01.cenveo.cvo.net" xmi:id="_IG-GLj6gEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="Cenveo_Hagen_Password" prompt="Cenveo_Hagen_Password?" promptNeeded="false" type="id_Password" value="YGcr4zZMVkXDNeFUYs5Lrw==" xmi:id="_IG-GLz6gEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_90a5016c-fca3-409f-a506-93c73aff96d7"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SNHbfCoMEsHGOs374SfUp8mUWEdFRIKDaJps9WCYYq6kC0QglRi8xbEqNs6ckd0gPmmNRJJt3Eg4
+Z5grGBt+4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c89698b7-9176-4ad0-85a8-29ebc4bfc0b4"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>mkooD6kNHfgpNO8NTqMq7Hhlav7/DIjdKjh+9bM+kKWxbAemBwfllcrj+ZbPxQU/qSTb2e92WE5g
+k1rpjV+QQw==</DigestValue></Reference></SignedInfo><SignatureValue>vx+3YFbkGVMXgJFWQTRTv9R3grhVO+5pEeGddN14EVu+UCZ51Cmt39sn+SSssMNrsFHV4W2MMR9R
+Z2222OEZWpPTLfckh10ziLsAMW0GeiU7xc9HFIWSKEg0sC35ZXHmnoea2HmO/qXR7ylIg6XMzy1X
+QxFNkUyWm05SmEZoBr6m4Hwas5+hmeGMhHg6TIGaf6FPqP9WpzmMLRX7k3no/CT2hrRXK5GLah9L
+o1DdVYHFR8N/HEepAd0LL1L2nvdT0yGLbT5djqgrA6SbEY0WSXyG+WVjgFTdDcurcf1ENt++b/i2
+eszPPxmRideEUE1Ke3UBbnFY33nHRWuVJz+rjA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c89698b7-9176-4ad0-85a8-29ebc4bfc0b4" Target="#_90a5016c-fca3-409f-a506-93c73aff96d7"><Timestamp>2019-03-04 17:08:27</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

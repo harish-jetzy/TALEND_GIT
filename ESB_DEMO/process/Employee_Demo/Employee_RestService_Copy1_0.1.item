@@ -1,0 +1,1916 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Mysql_AdditionalParams" prompt="Mysql_AdditionalParams?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="Mysql_Login" prompt="Mysql_Login?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_String" value="root"/>
+    <contextParameter comment="" name="Mysql_Password" prompt="Mysql_Password?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_Password" value="aJJSf25TI5E="/>
+    <contextParameter comment="" name="Mysql_Database" prompt="Mysql_Database?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_String" value="esb"/>
+    <contextParameter comment="" name="Mysql_Port" prompt="Mysql_Port?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_String" value="3306"/>
+    <contextParameter comment="" name="Mysql_Server" prompt="Mysql_Server?" promptNeeded="false" repositoryContextId="_ByXR0Dh8Eem_X_RxXt8dLw" type="id_String" value="localhost"/>
+    <contextParameter comment="" name="Sequence" prompt="Sequence?" promptNeeded="false" type="id_Integer" value=""/>
+    <contextParameter comment="" name="FirstName" prompt="FirstName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LastName" prompt="LastName?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="DateOfJoining" prompt="DateOfJoining?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="320"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="288"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_MrRuYDh3Eem_X_RxXt8dLw" name="DataOperation"/>
+    <routinesParameter id="_N2s_sDh3Eem_X_RxXt8dLw" name="Mathematical"/>
+    <routinesParameter id="_N3FaMDh3Eem_X_RxXt8dLw" name="Numeric"/>
+    <routinesParameter id="_N3UDsDh3Eem_X_RxXt8dLw" name="Relational"/>
+    <routinesParameter id="_N3hfEDh3Eem_X_RxXt8dLw" name="StringHandling"/>
+    <routinesParameter id="_N3yk0Dh3Eem_X_RxXt8dLw" name="TalendDataGenerator"/>
+    <routinesParameter id="_N4DqkDh3Eem_X_RxXt8dLw" name="TalendDate"/>
+    <routinesParameter id="_N4XMkDh3Eem_X_RxXt8dLw" name="TalendString"/>
+    <routinesParameter id="_N4qukDh3Eem_X_RxXt8dLw" name="TalendStringUtil"/>
+    <routinesParameter id="_N42UwDh3Eem_X_RxXt8dLw" name="DataMasking"/>
+    <routinesParameter id="_N5GMYDh3Eem_X_RxXt8dLw" name="DataQuality"/>
+    <routinesParameter id="_N5X5MDh3Eem_X_RxXt8dLw" name="DataQualityDependencies"/>
+    <routinesParameter id="_N5vsoDh3Eem_X_RxXt8dLw" name="DqStringHandling"/>
+    <routinesParameter id="_N56rwDh3Eem_X_RxXt8dLw" name="DQTechnical"/>
+    <routinesParameter id="_N6KjYDh3Eem_X_RxXt8dLw" name="MDM"/>
+    <routinesParameter id="_N6eFYDh3Eem_X_RxXt8dLw" name="SQLike"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="EXTERNAL" name="OAS_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="GET"/>
+      <elementValue elementRef="HTTP_VERB" value="GET"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/employees/{Id}&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="POST"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="FORM"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="PUT"/>
+      <elementValue elementRef="HTTP_VERB" value="PUT"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/employees/EmployeeId={EmployeeId}&amp;FirstName={FirstName}&amp;LastName={LastName}&amp;Age={Age}&amp;Salary={Salary}&amp;DateofJoining={DateofJoining}&amp;isActive={isActive}&quot;"/>
+      <elementValue elementRef="CONSUMES" value="FORM"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+      <elementValue elementRef="SCHEMA" value="DELETE"/>
+      <elementValue elementRef="HTTP_VERB" value="DELETE"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/employees/{Id}&quot;"/>
+      <elementValue elementRef="CONSUMES" value="NONE"/>
+      <elementValue elementRef="PRODUCES" value="JSON"/>
+      <elementValue elementRef="STREAMING" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" show="false" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" show="false" value="&quot;Employee_RestService&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" show="false" value="BASIC"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_JSON_VALUES_TO_STRING" value="false"/>
+    <elementParameter field="CHECK" name="EXPOSE_SWAGGER_SPEC" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDE_DOC_INTO_SWAGGER_SPEC" show="false" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="getEmp" name="GET">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="postEmpDtl" name="POST">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Age" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="putempdet" name="PUT">
+      <column comment="" key="false" length="50" name="EmployeeId" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" originalLength="255" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Age" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="Salary" nullable="true" originalLength="50" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" originalLength="10" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" originalLength="1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="DELETE" name="DELETE">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="GET_Response">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="GET">
+        <nodes lookupOutgoingConnections="//@node.1/@nodeData/@connections.6" name="Id" outgoingConnections="//@node.1/@nodeData/@connections.7" type="id_Integer" xpath="GET/Id"/>
+      </inputTrees>
+      <inputTrees activateCondensedTool="true" innerJoin="true" lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row2">
+        <nodes expression="GET.Id" lookupIncomingConnections="//@node.1/@nodeData/@connections.6" name="EmployeeId" nullable="false" type="id_Integer" xpath="row2/EmployeeId"/>
+        <nodes expression="" name="FirstName" outgoingConnections="//@node.1/@nodeData/@connections.0" type="id_String" xpath="row2/FirstName"/>
+        <nodes expression="" name="LastName" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_String" xpath="row2/LastName"/>
+        <nodes name="Age" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="row2/Age"/>
+        <nodes expression="" name="Salary" outgoingConnections="//@node.1/@nodeData/@connections.3" type="id_String" xpath="row2/Salary"/>
+        <nodes name="DateofJoining" outgoingConnections="//@node.1/@nodeData/@connections.4" type="id_Date" xpath="row2/DateofJoining"/>
+        <nodes name="isActive" outgoingConnections="//@node.1/@nodeData/@connections.5" type="id_Boolean" xpath="row2/isActive"/>
+        <nodes name="CreatedBy" type="id_String" xpath="row2/CreatedBy"/>
+        <nodes name="CreatedOn" type="id_Date" xpath="row2/CreatedOn"/>
+        <nodes name="UpdatedOn" type="id_Date" xpath="row2/UpdatedOn"/>
+        <nodes name="UpdatedBy" type="id_String" xpath="row2/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" allInOne="true" name="GET_Response">
+        <nodes expression="" name="body" type="id_Document" xpath="GET_Response/body">
+          <children expression="" main="true" name="employees" type="id_String" xpath="GET_Response.body:/employees" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="" loop="true" main="true" name="employee" type="id_String" xpath="GET_Response.body:/employees/employee" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="GET.Id" incomingConnections="//@node.1/@nodeData/@connections.7" name="EmployeeId" nodeType="ATTRIBUT" type="id_Integer" xpath="GET_Response.body:/employees/employee/@EmployeeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.FirstName" incomingConnections="//@node.1/@nodeData/@connections.0" name="FirstName" type="id_String" xpath="GET_Response.body:/employees/employee/FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.LastName" incomingConnections="//@node.1/@nodeData/@connections.1" name="LastName" type="id_String" xpath="GET_Response.body:/employees/employee/LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.Age" incomingConnections="//@node.1/@nodeData/@connections.2" name="Age" type="id_String" xpath="GET_Response.body:/employees/employee/Age" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.Salary" incomingConnections="//@node.1/@nodeData/@connections.3" name="Salary" type="id_String" xpath="GET_Response.body:/employees/employee/Salary" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.DateofJoining" incomingConnections="//@node.1/@nodeData/@connections.4" name="DateofJoining" type="id_Date" xpath="GET_Response.body:/employees/employee/DateofJoining" xsi:type="TalendXMLMap:OutputTreeNode"/>
+              <children expression="row2.isActive" incomingConnections="//@node.1/@nodeData/@connections.5" name="isActive" type="id_Boolean" xpath="GET_Response.body:/employees/employee/isActive" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.6" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_2"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="getResponse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_2">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="Employee">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="POST">
+        <nodes lookupOutgoingConnections="//@node.3/@nodeData/@connections.5" name="FirstName" outgoingConnections="//@node.3/@nodeData/@connections.0" type="id_String" xpath="POST/FirstName"/>
+        <nodes lookupOutgoingConnections="//@node.3/@nodeData/@connections.6" name="LastName" outgoingConnections="//@node.3/@nodeData/@connections.1" type="id_String" xpath="POST/LastName"/>
+        <nodes name="Age" outgoingConnections="//@node.3/@nodeData/@connections.2" type="id_String" xpath="POST/Age"/>
+        <nodes name="Salary" outgoingConnections="//@node.3/@nodeData/@connections.3" type="id_String" xpath="POST/Salary"/>
+        <nodes lookupOutgoingConnections="//@node.3/@nodeData/@connections.8" name="DateofJoining" outgoingConnections="//@node.3/@nodeData/@connections.7" type="id_Date" xpath="POST/DateofJoining"/>
+        <nodes name="isActive" outgoingConnections="//@node.3/@nodeData/@connections.4" type="id_Boolean" xpath="POST/isActive"/>
+      </inputTrees>
+      <inputTrees activateCondensedTool="true" activateGlobalMap="true" innerJoin="true" lookup="true" lookupMode="RELOAD" matchingMode="UNIQUE_MATCH" name="row9">
+        <nodes name="EmployeeId" nullable="false" type="id_Integer" xpath="row9/EmployeeId"/>
+        <nodes expression=" POST.FirstName" lookupIncomingConnections="//@node.3/@nodeData/@connections.5" name="FirstName" type="id_String" xpath="row9/FirstName"/>
+        <nodes expression="POST.LastName" lookupIncomingConnections="//@node.3/@nodeData/@connections.6" name="LastName" type="id_String" xpath="row9/LastName"/>
+        <nodes name="Age" type="id_String" xpath="row9/Age"/>
+        <nodes name="Salary" type="id_String" xpath="row9/Salary"/>
+        <nodes expression="POST.DateofJoining" lookupIncomingConnections="//@node.3/@nodeData/@connections.8" name="DateofJoining" type="id_Date" xpath="row9/DateofJoining"/>
+        <nodes name="isActive" type="id_Boolean" xpath="row9/isActive"/>
+        <nodes name="CreatedBy" type="id_String" xpath="row9/CreatedBy"/>
+        <nodes name="CreatedOn" type="id_Date" xpath="row9/CreatedOn"/>
+        <nodes name="UpdatedOn" type="id_Date" xpath="row9/UpdatedOn"/>
+        <nodes name="UpdatedBy" type="id_String" xpath="row9/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="Employee" rejectInnerJoin="true">
+        <nodes expression="StringHandling.TRIM(POST.FirstName) " incomingConnections="//@node.3/@nodeData/@connections.0" name="FirstName" type="id_String" xpath="Employee/FirstName"/>
+        <nodes expression="StringHandling.TRIM(POST.LastName) " incomingConnections="//@node.3/@nodeData/@connections.1" name="LastName" type="id_String" xpath="Employee/LastName"/>
+        <nodes expression=" POST.Age" incomingConnections="//@node.3/@nodeData/@connections.2" name="Age" type="id_String" xpath="Employee/Age"/>
+        <nodes expression=" POST.Salary" incomingConnections="//@node.3/@nodeData/@connections.3" name="Salary" type="id_String" xpath="Employee/Salary"/>
+        <nodes expression=" POST.DateofJoining" incomingConnections="//@node.3/@nodeData/@connections.7" name="DateofJoining" pattern="&quot;yyyy-MM-dd&quot;" type="id_Date" xpath="Employee/DateofJoining"/>
+        <nodes expression="POST.isActive" incomingConnections="//@node.3/@nodeData/@connections.4" name="isActive" type="id_Boolean" xpath="Employee/isActive"/>
+        <nodes expression="context.Mysql_Login" name="CreatedBy" type="id_String" xpath="Employee/CreatedBy"/>
+        <nodes expression="TalendDate.getCurrentDate()" name="CreatedOn" type="id_Date" xpath="Employee/CreatedOn"/>
+        <nodes expression="TalendDate.getCurrentDate()" name="UpdatedOn" type="id_Date" xpath="Employee/UpdatedOn"/>
+        <nodes expression="context.Mysql_Login" name="UpdatedBy" type="id_String" xpath="Employee/UpdatedBy"/>
+      </outputTrees>
+      <varTables name="Var"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.2" target="//@node.3/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.3" target="//@node.3/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.5" target="//@node.3/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@inputTrees.1/@nodes.1" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.1" target="//@node.3/@nodeData/@inputTrees.1/@nodes.2" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.3/@nodeData/@inputTrees.0/@nodes.4" target="//@node.3/@nodeData/@inputTrees.1/@nodes.5" xsi:type="TalendXMLMap:LookupConnection"/>
+    </nodeData>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="320" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_4"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="Emp_det">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="PUT">
+        <nodes lookupOutgoingConnections="//@node.4/@nodeData/@connections.7" name="EmployeeId" outgoingConnections="//@node.4/@nodeData/@connections.6" type="id_Integer" xpath="PUT/EmployeeId"/>
+        <nodes name="FirstName" outgoingConnections="//@node.4/@nodeData/@connections.2" type="id_String" xpath="PUT/FirstName"/>
+        <nodes name="LastName" outgoingConnections="//@node.4/@nodeData/@connections.3" type="id_String" xpath="PUT/LastName"/>
+        <nodes name="Age" outgoingConnections="//@node.4/@nodeData/@connections.4" type="id_String" xpath="PUT/Age"/>
+        <nodes name="Salary" outgoingConnections="//@node.4/@nodeData/@connections.5" type="id_String" xpath="PUT/Salary"/>
+        <nodes name="DateofJoining" outgoingConnections="//@node.4/@nodeData/@connections.8" type="id_Date" xpath="PUT/DateofJoining"/>
+        <nodes name="isActive" outgoingConnections="//@node.4/@nodeData/@connections.9" type="id_Boolean" xpath="PUT/isActive"/>
+      </inputTrees>
+      <inputTrees activateCondensedTool="true" innerJoin="true" lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row5">
+        <nodes expression=" PUT.EmployeeId" lookupIncomingConnections="//@node.4/@nodeData/@connections.7" name="EmployeeId" nullable="false" type="id_Integer" xpath="row5/EmployeeId"/>
+        <nodes expression="" name="FirstName" type="id_String" xpath="row5/FirstName"/>
+        <nodes expression="" name="LastName" type="id_String" xpath="row5/LastName"/>
+        <nodes expression="" name="Age" type="id_String" xpath="row5/Age"/>
+        <nodes expression="" name="Salary" type="id_String" xpath="row5/Salary"/>
+        <nodes expression="" name="DateofJoining" type="id_Date" xpath="row5/DateofJoining"/>
+        <nodes name="isActive" type="id_Boolean" xpath="row5/isActive"/>
+        <nodes name="CreatedBy" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="row5/CreatedBy"/>
+        <nodes name="CreatedOn" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_Date" xpath="row5/CreatedOn"/>
+        <nodes name="UpdatedOn" type="id_Date" xpath="row5/UpdatedOn"/>
+        <nodes name="UpdatedBy" type="id_String" xpath="row5/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="Emp_det">
+        <nodes expression=" PUT.EmployeeId" incomingConnections="//@node.4/@nodeData/@connections.6" name="EmployeeId" pattern="" type="id_Integer" xpath="Emp_det/EmployeeId"/>
+        <nodes expression=" PUT.FirstName" incomingConnections="//@node.4/@nodeData/@connections.2" name="FirstName" type="id_String" xpath="Emp_det/FirstName"/>
+        <nodes expression=" PUT.LastName" incomingConnections="//@node.4/@nodeData/@connections.3" name="LastName" type="id_String" xpath="Emp_det/LastName"/>
+        <nodes expression=" PUT.Age" incomingConnections="//@node.4/@nodeData/@connections.4" name="Age" type="id_String" xpath="Emp_det/Age"/>
+        <nodes expression=" PUT.Salary" incomingConnections="//@node.4/@nodeData/@connections.5" name="Salary" type="id_String" xpath="Emp_det/Salary"/>
+        <nodes expression=" PUT.DateofJoining" incomingConnections="//@node.4/@nodeData/@connections.8" name="DateofJoining" type="id_Date" xpath="Emp_det/DateofJoining"/>
+        <nodes expression=" PUT.isActive" incomingConnections="//@node.4/@nodeData/@connections.9" name="isActive" type="id_Boolean" xpath="Emp_det/isActive"/>
+        <nodes expression=" row5.CreatedBy" incomingConnections="//@node.4/@nodeData/@connections.1" name="CreatedBy" type="id_String" xpath="Emp_det/CreatedBy"/>
+        <nodes expression=" row5.CreatedOn" incomingConnections="//@node.4/@nodeData/@connections.0" name="CreatedOn" type="id_Date" xpath="Emp_det/CreatedOn"/>
+        <nodes expression="TalendDate.getCurrentDate()" name="UpdatedOn" type="id_Date" xpath="Emp_det/UpdatedOn"/>
+        <nodes expression="context.Mysql_Login" name="UpdatedBy" type="id_String" xpath="Emp_det/UpdatedBy"/>
+      </outputTrees>
+      <varTables name="Var"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.8" target="//@node.4/@nodeData/@outputTrees.0/@nodes.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.1/@nodes.7" target="//@node.4/@nodeData/@outputTrees.0/@nodes.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.2" target="//@node.4/@nodeData/@outputTrees.0/@nodes.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.4" target="//@node.4/@nodeData/@outputTrees.0/@nodes.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.6" target="//@node.4/@nodeData/@outputTrees.0/@nodes.6" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_6"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="del_emp" name="del_emp">
+      <column comment="" key="true" length="-1" name="EmployeeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="DELETE">
+        <nodes lookupOutgoingConnections="//@node.5/@nodeData/@connections.0" name="Id" outgoingConnections="//@node.5/@nodeData/@connections.1" type="id_Integer" xpath="DELETE/Id"/>
+      </inputTrees>
+      <inputTrees innerJoin="true" lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row7">
+        <nodes expression="DELETE.Id" lookupIncomingConnections="//@node.5/@nodeData/@connections.0" name="EmployeeId" nullable="false" type="id_Integer" xpath="row7/EmployeeId"/>
+        <nodes name="FirstName" type="id_String" xpath="row7/FirstName"/>
+        <nodes name="LastName" type="id_String" xpath="row7/LastName"/>
+        <nodes name="Age" type="id_String" xpath="row7/Age"/>
+        <nodes name="Salary" type="id_String" xpath="row7/Salary"/>
+        <nodes name="DateofJoining" type="id_Date" xpath="row7/DateofJoining"/>
+        <nodes name="isActive" type="id_Boolean" xpath="row7/isActive"/>
+        <nodes name="CreatedBy" type="id_String" xpath="row7/CreatedBy"/>
+        <nodes name="CreatedOn" type="id_Date" xpath="row7/CreatedOn"/>
+        <nodes name="UpdatedOn" type="id_Date" xpath="row7/UpdatedOn"/>
+        <nodes name="UpdatedBy" type="id_String" xpath="row7/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees name="del_emp">
+        <nodes expression=" DELETE.Id" incomingConnections="//@node.5/@nodeData/@connections.1" name="EmployeeId" pattern="" type="id_Integer" xpath="del_emp/EmployeeId"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.5/@nodeData/@inputTrees.0/@nodes.0" target="//@node.5/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_6"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;employee&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="DELETE"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw - employee"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Mysql_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="del_emp" name="tDBOutput_6">
+      <column comment="" key="true" length="-1" name="EmployeeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="del_emp" name="REJECT">
+      <column comment="" key="true" length="-1" name="EmployeeId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_7"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="response">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row6">
+        <nodes name="EmployeeId" outgoingConnections="//@node.7/@nodeData/@connections.0" type="id_Integer" xpath="row6/EmployeeId"/>
+      </inputTrees>
+      <outputTrees name="response">
+        <nodes expression="" name="body" type="id_Document" xpath="response/body">
+          <children expression="" main="true" name="employees" type="id_String" xpath="response.body:/employees" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="" loop="true" main="true" name="employee" type="id_String" xpath="response.body:/employees/employee" xsi:type="TalendXMLMap:OutputTreeNode">
+              <children expression="row6.EmployeeId" incomingConnections="//@node.7/@nodeData/@connections.0" name="EmployeeId" type="id_Integer" xpath="response.body:/employees/employee/EmployeeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            </children>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.7/@nodeData/@inputTrees.0/@nodes.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="928">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_4"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="DeleteResponse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_4">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_1">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_2"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_2">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_3"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_3">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tHashInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashInput_4"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" value="tHashOutput_1"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.hash&quot;"/>
+    <elementParameter field="CHECK" name="RELEASE_CACHE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tHashInput_4">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_2"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="USER" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;employee&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw - employee"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Mysql_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Salary"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isActive"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedOn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedOn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="employee"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tDBOutput_2">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="employee" name="REJECT">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tConvertType" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tConvertType_1"/>
+    <elementParameter field="CHECK" name="AUTOCAST" value="true"/>
+    <elementParameter field="TABLE" name="MANUALTABLE" show="false"/>
+    <elementParameter field="CHECK" name="EMPTYTONULL" value="false"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tConvertType_1">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="employee" name="REJECT">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.FirstName = input_row.FirstName;&#13;&#10;context.LastName = input_row.LastName;&#13;&#10;context.DateOfJoining = input_row.DateofJoining;&#13;&#10;System.out.println(&quot;SELECT  * FROM `employee` where FirstName=&quot;+&quot;\&quot;&quot;+context.FirstName+&quot;\&quot;&quot; + &quot; and LastName=&quot;+&quot;\&quot;&quot;+context.LastName+&quot;\&quot;&quot;+ &quot; and DateofJoining=&quot;+&quot;\&quot;&quot;+context.DateOfJoining);&#13;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tJavaRow_1">
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;employee&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE_OR_INSERT"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw - employee"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Mysql_AdditionalParams"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" show="false" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" show="false" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" show="false" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" show="false" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Salary"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isActive"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedOn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedOn"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedBy"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS" show="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="employee"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tDBOutput_1">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+    <metadata connector="REJECT" label="employee" name="REJECT">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" originalLength="-1" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_5"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="PUT_Response">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row4">
+        <nodes name="EmployeeId" outgoingConnections="//@node.17/@nodeData/@connections.8" type="id_Integer" xpath="row4/EmployeeId"/>
+        <nodes name="FirstName" outgoingConnections="//@node.17/@nodeData/@connections.0" type="id_String" xpath="row4/FirstName"/>
+        <nodes name="LastName" outgoingConnections="//@node.17/@nodeData/@connections.1" type="id_String" xpath="row4/LastName"/>
+        <nodes name="Age" outgoingConnections="//@node.17/@nodeData/@connections.2" type="id_String" xpath="row4/Age"/>
+        <nodes name="Salary" outgoingConnections="//@node.17/@nodeData/@connections.6" type="id_String" xpath="row4/Salary"/>
+        <nodes name="DateofJoining" outgoingConnections="//@node.17/@nodeData/@connections.9" type="id_Date" xpath="row4/DateofJoining"/>
+        <nodes name="isActive" outgoingConnections="//@node.17/@nodeData/@connections.10" type="id_Boolean" xpath="row4/isActive"/>
+        <nodes name="CreatedBy" outgoingConnections="//@node.17/@nodeData/@connections.3" type="id_String" xpath="row4/CreatedBy"/>
+        <nodes name="CreatedOn" outgoingConnections="//@node.17/@nodeData/@connections.4" type="id_Date" xpath="row4/CreatedOn"/>
+        <nodes name="UpdatedOn" outgoingConnections="//@node.17/@nodeData/@connections.7" type="id_Date" xpath="row4/UpdatedOn"/>
+        <nodes name="UpdatedBy" outgoingConnections="//@node.17/@nodeData/@connections.5" type="id_String" xpath="row4/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="PUT_Response">
+        <nodes expression="" name="body" type="id_Document" xpath="PUT_Response/body">
+          <children expression="" loop="true" main="true" name="employees" type="id_String" xpath="PUT_Response.body:/employees" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="row4.FirstName" incomingConnections="//@node.17/@nodeData/@connections.0" name="FirstName" type="id_String" xpath="PUT_Response.body:/employees/FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.LastName" incomingConnections="//@node.17/@nodeData/@connections.1" name="LastName" type="id_String" xpath="PUT_Response.body:/employees/LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.Age" incomingConnections="//@node.17/@nodeData/@connections.2" name="Age" type="id_String" xpath="PUT_Response.body:/employees/Age" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.Salary" incomingConnections="//@node.17/@nodeData/@connections.6" name="Salary" type="id_String" xpath="PUT_Response.body:/employees/Salary" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.CreatedBy" incomingConnections="//@node.17/@nodeData/@connections.3" name="CreatedBy" type="id_String" xpath="PUT_Response.body:/employees/CreatedBy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.CreatedOn" incomingConnections="//@node.17/@nodeData/@connections.4" name="CreatedOn" type="id_Date" xpath="PUT_Response.body:/employees/CreatedOn" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.UpdatedOn" incomingConnections="//@node.17/@nodeData/@connections.7" name="UpdatedOn" type="id_Date" xpath="PUT_Response.body:/employees/UpdatedOn" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.UpdatedBy" incomingConnections="//@node.17/@nodeData/@connections.5" name="UpdatedBy" type="id_String" xpath="PUT_Response.body:/employees/UpdatedBy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" row4.EmployeeId" incomingConnections="//@node.17/@nodeData/@connections.8" name="EmployeeId" type="id_String" xpath="PUT_Response.body:/employees/EmployeeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.DateofJoining" incomingConnections="//@node.17/@nodeData/@connections.9" name="DateofJoining" type="id_Date" xpath="PUT_Response.body:/employees/DateofJoining" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row4.isActive" incomingConnections="//@node.17/@nodeData/@connections.10" name="isActive" type="id_Boolean" xpath="PUT_Response.body:/employees/isActive" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.1" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.2" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.3" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.7" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.8" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.10" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.4" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.9" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.0" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.5" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.17/@nodeData/@inputTrees.0/@nodes.6" target="//@node.17/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_3"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="PutResponse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_3">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" show="false" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" show="false" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;employee&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `employee`.`EmployeeId`, &#10;  `employee`.`FirstName`, &#10;  `employee`.`LastName`, &#10;  `employee`.`Age`, &#10;  `employee`.`Salary`, &#10;  `employee`.`DateofJoining`, &#10;  `employee`.`isActive`, &#10;  `employee`.`CreatedBy`, &#10;  `employee`.`CreatedOn`, &#10;  `employee`.`UpdatedOn`, &#10;  `employee`.`UpdatedBy`&#10;FROM `employee`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="context.Mysql_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Salary"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isActive"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedOn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedOn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tDBInput_4">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tHashOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tHashOutput_1"/>
+    <elementParameter field="CHECK" name="LINK_WITH" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="LIST" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DATA_WRITE_MODEL" value="MEMORY"/>
+    <elementParameter field="FILE" name="BASE_FILE_PATH" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.hash&quot;"/>
+    <elementParameter field="TEXT" name="MEMORY_HEAP_MAX_SIZE" show="false" value="2"/>
+    <elementParameter field="CLOSED_LIST" name="KEYS_MANAGEMENT" value="KEEP_ALL"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="HASH_KEY_FROM_INPUT_CONNECTOR" show="false" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tHashOutput_1">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;MYSQLConnection&quot;"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tDBConnection_1_ERROR_MESSAGE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_1"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;Input&quot;"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tDBInput_4_ERROR_MESSAGE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_2"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_4"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;ErrorMessage&quot;"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tDBOutput_2_ERROR_MESSAGE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_4"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_5"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;ErrorMessage1&quot;"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tDBOutput_1_ERROR_MESSAGE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_5"/>
+  </node>
+  <node componentName="tSetGlobalVar" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="1056">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_6"/>
+    <elementParameter field="TABLE" name="VARIABLES">
+      <elementValue elementRef="KEY" value="&quot;ErrorMessage1&quot;"/>
+      <elementValue elementRef="VALUE" value="((String)globalMap.get(&quot;tDBOutput_6_ERROR_MESSAGE&quot;))"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSetGlobalVar_6"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" show="false" value="_1yF94Dh7Eem_X_RxXt8dLw"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="context.Mysql_Server"/>
+    <elementParameter field="TEXT" name="PORT" value="context.Mysql_Port"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.Mysql_Database"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.Mysql_Login"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kueg3K1Tft25wHUTj7PzqQrG"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;employee&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#13;&#10;  `employee`.`EmployeeId`, &#13;&#10;  `employee`.`FirstName`, &#13;&#10;  `employee`.`LastName`, &#13;&#10;  `employee`.`Age`, &#13;&#10;  `employee`.`Salary`, &#13;&#10;  `employee`.`DateofJoining`, &#13;&#10;  `employee`.`isActive`, &#13;&#10;  `employee`.`CreatedBy`, &#13;&#10;  `employee`.`CreatedOn`, &#13;&#10;  `employee`.`UpdatedOn`, &#13;&#10;  `employee`.`UpdatedBy`&#13;&#10;FROM `employee` where FirstName=\'&quot;+context.FirstName+ &quot;\' and LastName=\'&quot;+context.LastName+&quot;\' and  DateofJoining=\'&quot;+context.DateOfJoining+&quot;\'&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="context.Mysql_AdditionalParams"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Age"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Salary"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="isActive"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CreatedOn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedOn"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UpdatedBy"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="employee" name="tDBInput_1">
+      <column comment="" key="true" length="10" name="EmployeeId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="FirstName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="LastName" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Age" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="Salary" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="DateofJoining" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="isActive" nullable="true" pattern="" precision="0" sourceType="BIT" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="CreatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="CreatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="19" name="UpdatedOn" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="255" name="UpdatedBy" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <additionalProperties key="Comment" value=""/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tXMLMap_3"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="PostResponse">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row1">
+        <nodes name="EmployeeId" nullable="false" outgoingConnections="//@node.28/@nodeData/@connections.10" type="id_Integer" xpath="row1/EmployeeId"/>
+        <nodes name="FirstName" outgoingConnections="//@node.28/@nodeData/@connections.5" type="id_String" xpath="row1/FirstName"/>
+        <nodes name="LastName" outgoingConnections="//@node.28/@nodeData/@connections.4" type="id_String" xpath="row1/LastName"/>
+        <nodes name="Age" outgoingConnections="//@node.28/@nodeData/@connections.6" type="id_String" xpath="row1/Age"/>
+        <nodes name="Salary" outgoingConnections="//@node.28/@nodeData/@connections.3" type="id_String" xpath="row1/Salary"/>
+        <nodes name="DateofJoining" outgoingConnections="//@node.28/@nodeData/@connections.9" type="id_Date" xpath="row1/DateofJoining"/>
+        <nodes name="isActive" outgoingConnections="//@node.28/@nodeData/@connections.0" type="id_Boolean" xpath="row1/isActive"/>
+        <nodes name="CreatedBy" outgoingConnections="//@node.28/@nodeData/@connections.2" type="id_String" xpath="row1/CreatedBy"/>
+        <nodes name="CreatedOn" outgoingConnections="//@node.28/@nodeData/@connections.1" type="id_Date" xpath="row1/CreatedOn"/>
+        <nodes name="UpdatedOn" outgoingConnections="//@node.28/@nodeData/@connections.7" type="id_Date" xpath="row1/UpdatedOn"/>
+        <nodes name="UpdatedBy" outgoingConnections="//@node.28/@nodeData/@connections.8" type="id_String" xpath="row1/UpdatedBy"/>
+      </inputTrees>
+      <outputTrees activateCondensedTool="true" name="PostResponse">
+        <nodes expression="" name="body" type="id_Document" xpath="PostResponse/body">
+          <children expression="" loop="true" main="true" name="employees" type="id_String" xpath="PostResponse.body:/employees" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="row1.FirstName" incomingConnections="//@node.28/@nodeData/@connections.5" name="FirstName" type="id_String" xpath="PostResponse.body:/employees/FirstName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.LastName" incomingConnections="//@node.28/@nodeData/@connections.4" name="LastName" type="id_String" xpath="PostResponse.body:/employees/LastName" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.Age" incomingConnections="//@node.28/@nodeData/@connections.6" name="Age" type="id_String" xpath="PostResponse.body:/employees/Age" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.Salary" incomingConnections="//@node.28/@nodeData/@connections.3" name="Salary" type="id_String" xpath="PostResponse.body:/employees/Salary" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.CreatedBy" incomingConnections="//@node.28/@nodeData/@connections.2" name="CreatedBy" type="id_String" xpath="PostResponse.body:/employees/CreatedBy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.CreatedOn" incomingConnections="//@node.28/@nodeData/@connections.1" name="CreatedOn" type="id_Date" xpath="PostResponse.body:/employees/CreatedOn" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.UpdatedOn" incomingConnections="//@node.28/@nodeData/@connections.7" name="UpdatedOn" type="id_Date" xpath="PostResponse.body:/employees/UpdatedOn" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.UpdatedBy" incomingConnections="//@node.28/@nodeData/@connections.8" name="UpdatedBy" type="id_String" xpath="PostResponse.body:/employees/UpdatedBy" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" row1.EmployeeId" incomingConnections="//@node.28/@nodeData/@connections.10" name="EmployeeId" type="id_String" xpath="PostResponse.body:/employees/EmployeeId" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.DateofJoining" incomingConnections="//@node.28/@nodeData/@connections.9" name="DateofJoining" type="id_Date" xpath="PostResponse.body:/employees/DateofJoining" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="row1.isActive" incomingConnections="//@node.28/@nodeData/@connections.0" name="isActive" type="id_Boolean" xpath="PostResponse.body:/employees/isActive" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.6" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.10" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.8" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.7" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.4" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.2" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.1" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.3" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.9" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.10" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.5" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.28/@nodeData/@inputTrees.0/@nodes.0" target="//@node.28/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1408" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTResponse_1"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" show="false" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="PostResponse"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" originalLength="-1" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMysqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="800">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <metadata connector="FLOW" name="tDBCommit_1"/>
+  </node>
+  <node componentName="tMysqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="1056">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <metadata connector="FLOW" name="tDBCommit_2"/>
+  </node>
+  <node componentName="tMysqlCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_3"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="false"/>
+    <metadata connector="FLOW" name="tDBCommit_3"/>
+  </node>
+  <connection connectorName="FLOW" label="GET" lineStyle="0" metaname="GET" offsetLabelX="-6" offsetLabelY="-50" outputId="1" source="tRESTRequest_1" target="tXMLMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="GET"/>
+  </connection>
+  <connection connectorName="FLOW" label="POST" lineStyle="0" metaname="POST" offsetLabelX="1" offsetLabelY="-43" outputId="2" source="tRESTRequest_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="Salary"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isActive"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Age"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="POST"/>
+  </connection>
+  <connection connectorName="FLOW" label="PUT" lineStyle="0" metaname="PUT" offsetLabelX="46" offsetLabelY="0" outputId="3" source="tRESTRequest_1" target="tXMLMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Salary"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FirstName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isActive"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LastName"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Age"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateofJoining"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PUT"/>
+  </connection>
+  <connection connectorName="FLOW" label="DELETE" lineStyle="0" metaname="DELETE" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tRESTRequest_1" target="tXMLMap_6">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="DELETE"/>
+  </connection>
+  <connection connectorName="FLOW" label="GET_Response" lineStyle="0" metaname="GET_Response" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="GET_Response"/>
+  </connection>
+  <connection connectorName="FLOW" label="Employee" lineStyle="0" metaname="Employee" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tDBOutput_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EmployeeId"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="isActive"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Employee"/>
+  </connection>
+  <connection connectorName="FLOW" label="Emp_det" lineStyle="0" metaname="Emp_det" offsetLabelX="2" offsetLabelY="-16" source="tXMLMap_4" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Emp_det"/>
+  </connection>
+  <connection connectorName="FLOW" label="del_emp" lineStyle="0" metaname="del_emp" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_6" target="tDBOutput_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="del_emp"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tXMLMap_7">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tDBCommit_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_6" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_6" target="tSetGlobalVar_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError3"/>
+  </connection>
+  <connection connectorName="FLOW" label="response" lineStyle="0" metaname="response" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_7" target="tRESTResponse_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="response"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tHashInput_1" offsetLabelX="0" offsetLabelY="0" source="tHashInput_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tHashInput_2" offsetLabelX="0" offsetLabelY="0" source="tHashInput_2" target="tXMLMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tHashInput_3" offsetLabelX="0" offsetLabelY="0" source="tHashInput_3" target="tXMLMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tHashInput_4" offsetLabelX="0" offsetLabelY="0" source="tHashInput_4" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tConvertType_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tDBCommit_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_2" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_2" target="tSetGlobalVar_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tConvertType_1" offsetLabelX="0" offsetLabelY="0" source="tConvertType_1" target="tJavaRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tXMLMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tDBCommit_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBOutput_1" offsetLabelX="0" offsetLabelY="0" source="tDBOutput_1" target="tSetGlobalVar_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError4"/>
+  </connection>
+  <connection connectorName="FLOW" label="PUT_Response" lineStyle="0" metaname="PUT_Response" offsetLabelX="-1" offsetLabelY="2" source="tXMLMap_5" target="tRESTResponse_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PUT_Response"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tSetGlobalVar_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tHashOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tRESTRequest_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tSetGlobalVar_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tXMLMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="PostResponse" lineStyle="0" metaname="PostResponse" offsetLabelX="-2" offsetLabelY="1" source="tXMLMap_3" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="PostResponse"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRESTRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSetGlobalVar_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDBCommit_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_567b6622-7096-43e8-8dc1-c13eff6508c9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ihleF8Bro7zznlFzP3mznzDEaJ3tPLaLUbk5wpBy1xuM4C9aQtn4Zw827D0H5Hq4Q7S92ZnRrbYQ
+e9PIDzR6Lg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_baee7bfc-5c0f-4d59-919b-b1ffdfc7195b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>f5SYYniwwgDY1tKb0TaG2Sanc0xQdiv1gNxDv5gs/8SqS4KHp/xVdRXIYzvLvdohpaSuA0rLcXZY
+GSL1KGd2aQ==</DigestValue></Reference></SignedInfo><SignatureValue>FWeitcHGVp9Qir6AHVxjMBdXNn7TQn7UVjVWYE2uKXJ5GqZPMgaZJ+JZV/9RsG5+lmrESccYonAV
+d1dcNTWIupyqFHJCjus111Bqn3ZnDDbclrPMMrBEwqBkqblNWmIIIlWZG5wl3n9sLxuJHeiELoAB
+NAC6UPw2qJ1xFqEAVuYse2cUcU7V18flF5lcH2oOD/C4rTPHgS1ZozxK8wnsq+ctAXhsn6sTfqqT
+ycXxc7UyTn8cUtAsuN/4Y4aGmxs044bQmZy67XO8GqCbjOT+EIl5i8pNlrqESxB3mM2Xx/exN873
+1DelnrYhJDGJXOcTXugrtpBrDpblNwM2b84WNA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_baee7bfc-5c0f-4d59-919b-b1ffdfc7195b" Target="#_567b6622-7096-43e8-8dc1-c13eff6508c9"><Timestamp>2019-02-28 13:00:49</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

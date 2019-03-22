@@ -1,0 +1,20 @@
+package routines;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+
+public class DateConvertion {
+
+    
+    public static String  dateToString(Date date_PO) {
+    	if(date_PO !=null){
+    	DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+    	String strDate = dateFormat.format(date_PO);
+    	return strDate;
+    	}
+		return "";
+    	
+    }
+}

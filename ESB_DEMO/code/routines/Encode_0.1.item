@@ -1,0 +1,13 @@
+package routines;
+import java.io.UnsupportedEncodingException;
+import java.util.Base64;
+
+public class Encode {
+
+    public static String encode(String message) throws UnsupportedEncodingException {
+    	String Auth=message;
+    	String base64encodedString = Base64.getEncoder().encodeToString(Auth.getBytes("utf-8"));
+    	  return base64encodedString;
+    	 
+    }
+}

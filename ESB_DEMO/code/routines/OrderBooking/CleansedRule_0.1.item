@@ -1,0 +1,151 @@
+package routines;
+
+import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CleansedRule {
+
+    public static String getDecimalConvertedValue(String data) {
+        
+    	
+    	if(data == null || data.equalsIgnoreCase("")) {
+    		return "0.00";
+    	} else {
+    		Pattern p = Pattern.compile("[a-z]+", Pattern.CASE_INSENSITIVE);
+    		Matcher m = p.matcher(data);
+    		if(m.find())
+    			return "0.00";
+    		else {
+    			if(data.contains(","))
+    				data = data.replaceAll(",", "");
+    			return data;
+    		}
+    	}
+    }
+    
+    public static String cleanEmptyString(String str) {
+    	
+    	if(str == null || str.equalsIgnoreCase("") || str.length() <= 0) {
+    		return null;
+    	} else {
+    		return str;
+    	}
+    }
+    
+    public static String getPrevOpportunityKey(String currOpprKey, String currOpprGroup, String prevOpprGroup, String subscriptionKey, String orderVersion, String genOpportunityKey, String orderType) {
+    	
+    	String prevOpprKey = "";
+    	
+    	
+    	if(cleanEmptyString(currOpprKey) == null) {
+    		
+    		if(currOpprGroup.equalsIgnoreCase(prevOpprGroup)) {
+    			prevOpprKey = genOpportunityKey;
+    		} else {
+    			
+    			if(orderType.equalsIgnoreCase("UNKNOWN")) {
+					
+					if(orderVersion.equalsIgnoreCase("1")) {
+						prevOpprKey = subscriptionKey + "-" + String.format("%05d", Integer.parseInt(orderVersion)) + "-AUTO";
+					} else {
+						prevOpprKey = genOpportunityKey;
+					}
+					
+				} else {
+					prevOpprKey = subscriptionKey + "-" + String.format("%05d", Integer.parseInt(orderVersion)) + "-AUTO";
+				}
+    		}
+    		
+    	} else {
+    		
+    		prevOpprKey = currOpprKey;
+    	}
+    	
+    	return prevOpprKey;
+    }
+    
+    public static String getNewOpportunityKey(String currOpprKey, String currOpprGroup, String prevOpprGroup, String subscriptionKey, String orderVersion, String orderType, String prevOpprKey) {
+    	
+    	String newOpprKey = "";
+    	
+    	/*System.out.println("OrderVersion : " + orderVersion);
+    	System.out.println("curr Oppr Key : " + currOpprKey);
+    	System.out.println("gene Oppr Key : " + prevOpprKey);
+    	System.out.println("Current oppor Group : " + currOpprGroup);
+    	System.out.println("Prev Oppor Group : " + prevOpprGroup);*/
+    	    	
+    	if(orderType.equalsIgnoreCase("Renewal")) {
+    		
+    		newOpprKey = subscriptionKey + "-" + String.format("%05d", Integer.parseInt(orderVersion)) + "-AUTO";
+    		
+    	} else {
+    		
+    		if(cleanEmptyString(currOpprKey) != null) {
+    			
+    			newOpprKey = currOpprKey;
+    			
+    		} else {
+    			
+    			if(currOpprGroup.equalsIgnoreCase(prevOpprGroup)) {
+    				//System.out.println("Matching Success");
+    				newOpprKey = prevOpprKey;
+    			} else {
+    				//System.out.println("Not Matched");
+    				if(orderType.equalsIgnoreCase("UNKNOWN")) {
+    					
+    					if(orderVersion.equalsIgnoreCase("1")) {
+    						newOpprKey = subscriptionKey + "-" + String.format("%05d", Integer.parseInt(orderVersion)) + "-AUTO";
+    					} else {
+    						newOpprKey = prevOpprKey;
+    					}
+    					
+    				} else {
+    					newOpprKey = subscriptionKey + "-" + String.format("%05d", Integer.parseInt(orderVersion)) + "-AUTO";
+    				}
+    			}
+    		}
+    	}
+    	
+    	return newOpprKey; 
+    }
+    
+    public static String getNewOrderType(String currOrderType, String prevOrderType, String currOpportunityKey, String prevOpportunityKey) {
+    	
+    	String newOrderType = "";
+    	
+    	if (currOpportunityKey.equalsIgnoreCase(prevOpportunityKey)) {
+    		newOrderType = prevOrderType;
+    	} else {
+    		newOrderType = currOrderType;
+    	}
+    	
+    	return newOrderType;
+    }
+    
+    public static String getNewSubOrderType(String currSubOrderType, String prevSubOrderType, String currOpportunityKey, String prevOpportunityKey) {
+    	
+    	String newSubOrderType = "";
+    	
+    	if (currOpportunityKey.equalsIgnoreCase(prevOpportunityKey)) {
+    		newSubOrderType = prevSubOrderType;
+    	} else {
+    		newSubOrderType = currSubOrderType;
+    	}
+    	
+    	return newSubOrderType;
+    }
+    
+    public static Date getNewBookedDate(Date currBookedDate, Date prevBookedDate, String currOpportunityKey, String prevOpportunityKey) {
+    	
+    	Date newBookedDate = new Date();
+    	
+    	if (currOpportunityKey.equalsIgnoreCase(prevOpportunityKey)) {
+    		newBookedDate = prevBookedDate;
+    	} else {
+    		newBookedDate = currBookedDate;
+    	}
+    	
+    	return newBookedDate;
+    }
+}

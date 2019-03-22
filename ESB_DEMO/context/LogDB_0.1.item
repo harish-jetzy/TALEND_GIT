@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_G4hNQDmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_G4hNQTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" type="id_String" value="Eloqua2Redshift" xmi:id="_G4hNQjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" type="id_String" value="10.40.60.119" xmi:id="_G4hNQzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_G4hNRDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" type="id_String" value="talend-svc" xmi:id="_G4hNRTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ==" xmi:id="_G4hNRjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" type="id_String" value="Talend_DI_Metadata" xmi:id="_G4hNRzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema_implicit" prompt="LogDB_Schema_implicit?" promptNeeded="false" type="id_String" value="impcntx" xmi:id="_G4hNSDmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_G4hNSTmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_G4hNSjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" type="id_String" value="Eloqua2Redshift" xmi:id="_G4hNSzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" type="id_String" value="10.40.60.119" xmi:id="_G4hNTDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_G4hNTTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" type="id_String" value="talend-svc" xmi:id="_G4hNTjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ==" xmi:id="_G4hNTzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" type="id_String" value="Talend_DI_Metadata" xmi:id="_G4hNUDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema_implicit" prompt="LogDB_Schema_implicit?" promptNeeded="false" type="id_String" value="impcntx" xmi:id="_G4hNUTmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_G4hNUjmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" type="id_String" value="" xmi:id="_G4hNUzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" type="id_String" value="Eloqua2Redshift" xmi:id="_G4hNVDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" type="id_String" value="10.40.60.230" xmi:id="_G4hNVTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" type="id_String" value="1433" xmi:id="_G4hNVjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" type="id_String" value="talend-svc" xmi:id="_G4hNVzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ==" xmi:id="_G4hNWDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" type="id_String" value="Talend_DI_Metadata" xmi:id="_G4hNWTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LogDB_Schema_implicit" prompt="LogDB_Schema_implicit?" promptNeeded="false" type="id_String" value="impcntx" xmi:id="_G4hNWjmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c6247a4f-5fd0-4e47-80e3-f0d8e0698f0f"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>eF/brWcDo4MfLBzg5E6Z8swdtOwVKpkQCvvHZfeNzCcVbwlGzIzAiP44a5clgRX1rghvbh6RgnDg
+m2s9CgEgNQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_2e91e5b3-cce8-4da9-b472-8a10457caddb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LnYrIjaVDjTcWm9XjGtsFDtEGR7CtiGVur4+/M5Y5uZU8X6+nr2APQi9AVihH1s6GV4Y+iGv+au/
+y2cWZCjjWg==</DigestValue></Reference></SignedInfo><SignatureValue>CTNiYLndheW7iX9eszoC/izH9MWg8Uq4sXrDbTK2rJ4W6DgkRDGG1tL43/NodYuyOCUSgFUISFcp
+ta9iuAHaexNCa/Eood3KMZOOV9GYVJN6zW19ZAhb2aJGVbogrTd4B1giuBp7SqjAa6/gibmqDzkW
+Utr/NPq66rNyeyDrScuJovKKTrPBjJvBdKeOX6mNeYFAFmwHgjHrTZBoVwobnXvKdRlZu1LBDjwM
+hLEl0K5JuP/qX60qL1y0VaCYt2PO8KxtKccpuPCYB34R34IUUbv3U69mNBKv+QN8Yr8CN+Sw4+AO
+wda68QkxNVBqQZtqgIXdMsHZBNc564+lxy2wQA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_2e91e5b3-cce8-4da9-b472-8a10457caddb" Target="#_c6247a4f-5fd0-4e47-80e3-f0d8e0698f0f"><Timestamp>2019-02-26 04:50:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

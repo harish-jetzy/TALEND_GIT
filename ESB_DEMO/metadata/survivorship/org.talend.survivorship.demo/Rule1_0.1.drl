@@ -1,0 +1,27 @@
+package org.talend.survivorship.demo 
+
+rule "ExistInFile1"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Rule1Group"
+when
+    $input : RecordIn( file.equals("1"), acctname!= null, !acctname.trim().equals("") )  
+then
+    System.out.println("ExistInFile1 fired\t" + $input.record_id);
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Acctname" );
+    dataset.survive( $input.TALEND_INTERNAL_ID, "File" );
+end
+
+rule "NotExistFile1"
+    no-loop true
+    dialect "mvel"
+    ruleflow-group "Rule1Group"
+when
+    $input : RecordIn( file.equals("2"), acctname!= null && !acctname.trim().equals("") )  
+    (not (exists (RecordIn( file.equals("1") ))) 
+    or exists( RecordIn( file.equals("1"), acctname== null || acctname.trim().equals("") ) ))
+then
+    System.out.println("NotExistFile1 fired\t" + $input.record_id);
+    dataset.survive( $input.TALEND_INTERNAL_ID, "Acctname" );
+    dataset.survive( $input.TALEND_INTERNAL_ID, "File" );
+end

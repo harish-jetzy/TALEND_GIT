@@ -10,6 +10,16 @@
   <url>http://www.talend.org/</url>
   <modules>
     <module>code/routines</module>
+    <module>jobs/process/context_load_0.1</module>
+    <module>jobs/process/Target_EODS/di_eods_agrmpartyrole_load_from_partyagrmconfsource_0.2</module>
+    <module>jobs/process/Target_EODS/di_eods_party_load_from_survpartymdm_0.1</module>
+    <module>jobs/process/Target_EODS/di_eods_partyperson_load_from_survpartymdm_0.2</module>
+    <module>jobs/process/Target_EODS/di_eods_partyrole_load_from_partyagrmconfsource_0.3</module>
+    <module>jobs/process/Target_EODS/di_eods_load_context_0.1</module>
+    <module>jobs/process/amc_0.1</module>
+    <module>jobs/process/test_0.1</module>
+    <module>jobs/joblets/testcase_0.1</module>
+    <module>../../BAHREFERENCE/poms</module>
   </modules>
   <properties>
     <talend.project.name>BAH</talend.project.name>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore" xmi:version="2.0">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default"/>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" show="false" value="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" show="false" value="25000"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;C:/Talend/7.0.1/cmdline/studio/workspace/in.csv&quot;"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value="ORACLE_11"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="0RMsyjmybrE="/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="true"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="true"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+      <routinesParameter id="_hgSsgERLEemOersKuizZzw" name="DataOperation"/>
+      <routinesParameter id="_hyvHYERLEemOersKuizZzw" name="Mathematical"/>
+      <routinesParameter id="_hzQEwERLEemOersKuizZzw" name="Numeric"/>
+      <routinesParameter id="_hzmqEERLEemOersKuizZzw" name="Relational"/>
+      <routinesParameter id="_h1ReAERLEemOersKuizZzw" name="SQLike"/>
+      <routinesParameter id="_hz0FcERLEemOersKuizZzw" name="StringHandling"/>
+      <routinesParameter id="_h0HAYERLEemOersKuizZzw" name="TalendDataGenerator"/>
+      <routinesParameter id="_h0bwgERLEemOersKuizZzw" name="TalendDate"/>
+      <routinesParameter id="_h1F30ERLEemOersKuizZzw" name="TalendStringUtil"/>
+      <routinesParameter id="_h0yV0ERLEemOersKuizZzw" name="TalendString"/>
+    </parameters>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ec952b82-9eca-49d5-ad36-026d7c260d51"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>XHgZDOlewfSCUq+YW2T+Vbyhf0XihmsQuK1Ta3w0MRkPHF/FUA2vhgdCP369OA9PzsJ26B+11KB0
+Ys9a7WR43g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_3acb1b60-d381-4cb7-87b7-15d75f795ccc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>n+wbq9GJ6XvyryUw+jzvjFIXGnvJAIITBUEApO7CfRG5OnhSIOIf+73jD8Rr0wCOlhdzAxFPQ18N
+Oqd4jt/t+w==</DigestValue></Reference></SignedInfo><SignatureValue>jqDgm927fAtDSvQOetNk8hFXQJzSUOy15T/1tVeoLV15Q5EZf3+vc6vdmj3k02kqPsEH5jbwTf6+
+3wPk+EU33T0usaA/GxwRjqCUjqw3jlMH+qTdlwWLCPOuFaJG0bEyXsvHIH9Cm/YZFaTzSGiBpIBW
+Q0LASntsaU0QgoS9UVZgU6ASdCcydct/uqpksqxy8k+5XA7EAMiomXybI4Y4O2yNhEtxmHthTGLH
+/39llgGIsLCB323Vg/LIuI4V4oZiSVvZ3wi+cefgyts29l30jll5CxWWppyuBghLN/24nOz58LFC
+TrxRWyz9+o7bCUeieer9hT6NAbOaKhClfQF9eA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_3acb1b60-d381-4cb7-87b7-15d75f795ccc" Target="#_ec952b82-9eca-49d5-ad36-026d7c260d51"><Timestamp>2019-03-21 17:56:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

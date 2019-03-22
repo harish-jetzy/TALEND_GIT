@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SalesforceSchemaConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" batchSize="250" loginType="basic" moduleName="Billing_and_Programs__c" name="IDT_SF_Sandbox" password="3bJvr0NEgiYZS8BApZEgPH6GHmpnwxtRMJIRXM+S6Y76riJCyyHhGA==" proxyHost="61.163.92.4" proxyPassword="" proxyPort="1080" proxyUsername="" timeOut="60000" userName="replicon1@idt911.com.partial" webServiceUrl="https://cs3.salesforce.com/services/Soap/u/19.0" xmi:id="_fkwU4L65EeSGOfrwtiUUxg" xmi:version="2.0">
+  <modules id="_OVjFIKxpEeSPjrLY3zBJhA" label="Account" moduleName="Account" name="Account" xmi:id="_fkwU4b65EeSGOfrwtiUUxg"/>
+  <modules id="_QeIiQKxpEeSPjrLY3zBJhA" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_fkwVj765EeSGOfrwtiUUxg"/>
+  <modules id="_iDKvgLwxEeSz77F-ee9xZQ" label="Product2" moduleName="Product2" name="Product2" xmi:id="_fkwW3765EeSGOfrwtiUUxg"/>
+  <modules id="_ielgMLwxEeSz77F-ee9xZQ" label="Program_Mgt__History" moduleName="Program_Mgt__History" name="Program_Mgt__History" xmi:id="_fkwXDb65EeSGOfrwtiUUxg"/>
+  <modules id="_iozMILwxEeSz77F-ee9xZQ" label="Program_Mgt__c" moduleName="Program_Mgt__c" name="Program_Mgt__c" xmi:id="_fkwXH765EeSGOfrwtiUUxg"/>
+  <modules id="_izW2ULwxEeSz77F-ee9xZQ" label="Product2Feed" moduleName="Product2Feed" name="Product2Feed" xmi:id="_fkwX_b65EeSGOfrwtiUUxg"/>
+  <modules id="_13vZ4Ly4EeSz77F-ee9xZQ" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_fkwY2765EeSGOfrwtiUUxg"/>
+  <modules id="_AobnwL0mEeS6jZdhSJawqQ" label="Contact" moduleName="Contact" name="Contact" xmi:id="_fkw8Eb65EeSGOfrwtiUUxg"/>
+  <modules id="_Apy5sL0mEeS6jZdhSJawqQ" label="ContactFeed" moduleName="ContactFeed" name="ContactFeed" xmi:id="_fkw81765EeSGOfrwtiUUxg"/>
+  <modules id="_AqOXgL0mEeS6jZdhSJawqQ" label="ContactHistory" moduleName="ContactHistory" name="ContactHistory" xmi:id="_fkw9nb65EeSGOfrwtiUUxg"/>
+  <modules id="_AqnZEL0mEeS6jZdhSJawqQ" label="ContactShare" moduleName="ContactShare" name="ContactShare" xmi:id="_fkw9r765EeSGOfrwtiUUxg"/>
+  <modules id="_AsQX0L0mEeS6jZdhSJawqQ" label="Contract" moduleName="Contract" name="Contract" xmi:id="_fkw9wb65EeSGOfrwtiUUxg"/>
+  <modules id="_At9A8L0mEeS6jZdhSJawqQ" label="ContractContactRole" moduleName="ContractContactRole" name="ContractContactRole" xmi:id="_fkw_Yb65EeSGOfrwtiUUxg"/>
+  <modules id="_AvUS4L0mEeS6jZdhSJawqQ" label="ContractFeed" moduleName="ContractFeed" name="ContractFeed" xmi:id="_fkw_eb65EeSGOfrwtiUUxg"/>
+  <modules id="_Av3sgL0mEeS6jZdhSJawqQ" label="ContractHistory" moduleName="ContractHistory" name="ContractHistory" xmi:id="_fkw_kb65EeSGOfrwtiUUxg"/>
+  <modules id="_AwQHAL0mEeS6jZdhSJawqQ" label="ContractStatus" moduleName="ContractStatus" name="ContractStatus" xmi:id="_fkw_o765EeSGOfrwtiUUxg"/>
+  <modules id="_AyzrwL0mEeS6jZdhSJawqQ" label="Contract_Request__History" moduleName="Contract_Request__History" name="Contract_Request__History" xmi:id="_fkw_ub65EeSGOfrwtiUUxg"/>
+  <modules id="_AzUCEL0mEeS6jZdhSJawqQ" label="Contract_Request__c" moduleName="Contract_Request__c" name="Contract_Request__c" xmi:id="_fkw_y765EeSGOfrwtiUUxg"/>
+  <modules id="_Azu40L0mEeS6jZdhSJawqQ" label="Contract_v2__History" moduleName="Contract_v2__History" name="Contract_v2__History" xmi:id="_fkxAC765EeSGOfrwtiUUxg"/>
+  <modules id="_A1Qi0L0mEeS6jZdhSJawqQ" label="Contract_v2__c" moduleName="Contract_v2__c" name="Contract_v2__c" xmi:id="_fkxAHb65EeSGOfrwtiUUxg"/>
+  <modules id="_R8ERoL65EeSGOfrwtiUUxg" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_fkxBBb65EeSGOfrwtiUUxg"/>
+  <modules id="_d09yQL65EeSGOfrwtiUUxg" label="Billing_Product__History" moduleName="Billing_Product__History" name="Billing_Product__History" xmi:id="_fkxjD765EeSGOfrwtiUUxg"/>
+  <modules id="_d1v1YL65EeSGOfrwtiUUxg" label="Billing_Product__c" moduleName="Billing_Product__c" name="Billing_Product__c" xmi:id="_fkxjIb65EeSGOfrwtiUUxg"/>
+  <modules id="_d2ZVoL65EeSGOfrwtiUUxg" label="Billing_and_Programs__History" moduleName="Billing_and_Programs__History" name="Billing_and_Programs__History" xmi:id="_fkxjQ765EeSGOfrwtiUUxg"/>
+  <modules id="_d4EJkL65EeSGOfrwtiUUxg" label="Billing_and_Programs__c" moduleName="Billing_and_Programs__c" name="Billing_and_Programs__c" xmi:id="_fkxjVb65EeSGOfrwtiUUxg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_040a5a37-55b1-4bcf-9ffc-d0ec9f4facc3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Hx8c6AvPj1y5umjJVxFY7nhqvAT7GIHnYwht3On6h7TWNNYDeuLDvwpMayagxwkD8bBgDUc1g70n
+pfaKtN0Y7w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f2431f5d-a542-4788-9f30-dbee3e609066"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>023iEM7qjLjjugJnNJxF9bdLWjf79nKAzHOjA1u2XWZZg85jk2i0vbEiZCTosBdZ9LvPeCs5zRvW
+SJ80Nc7xZQ==</DigestValue></Reference></SignedInfo><SignatureValue>Df+wRv2E3I0xMYCtae15P9+nnORL+xfssoeWu1pv9YIfW3pgtohJ4Ds4bLexpCkCGjRpJQg8Fqf0
+vVwTgo34Q3yQMNYIPC4nEbATIM9/dLl4awz36tZdgrCpf1Tvndt0MR1WgPJ2YUn44ECOjhj0BuAP
+rh8GOAMtoF4CRVVFUIgCMpZM4zvJYtX7mj6lCzr2DMFflo6KD8wWDlqt1RwUoQt1uBG+aHkS464I
+kk0GzEhDti/+I/5qxbD2qoIMWOokGIt5a4rSZTkaoROld7BWp/bP6/QbQmE8y12Egjme+qa5Arjt
+FijXgfhkT8D6T75mzGaFbg+K3zuhtsI/Ro9WqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f2431f5d-a542-4788-9f30-dbee3e609066" Target="#_040a5a37-55b1-4bcf-9ffc-d0ec9f4facc3"><Timestamp>2019-03-04 21:45:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SalesforceSchemaConnection>

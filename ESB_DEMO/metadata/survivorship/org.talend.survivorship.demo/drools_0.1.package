@@ -1,0 +1,18 @@
+package org.talend.survivorship.demo 
+
+import java.util.Date
+import java.math.BigDecimal
+
+global org.talend.survivorship.model.DataSet dataset
+
+declare  RecordIn 
+
+    TALEND_INTERNAL_ID : int  
+    record_id : Integer  
+    file : String  
+    acctname : String  
+    grp_id : String  
+    grp_size : Integer  
+end
+
+

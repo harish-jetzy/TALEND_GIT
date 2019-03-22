@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;subscription&quot;"/>
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;db1.idt911.local&quot;"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;reportuser&quot;"/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;testODS&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;5432&quot;"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;staging&quot;"/>
+    <contextParameter comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;10.10.104.64&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="classname" prompt="classname?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;rssbus.jdbc.quickbooks.QuickBooksDriver&quot;"/>
+    <contextParameter comment="" name="JdbcURL" prompt="JdbcURL?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080&quot;"/>
+    <contextParameter comment="" name="QBPassword" prompt="QBPassword?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;artha123&quot;"/>
+    <contextParameter comment="" name="QBUserName" prompt="QBUserName?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;admin&quot;"/>
+    <contextParameter comment="" name="SFPassword" prompt="SFPassword?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;1repliconz1E90QcXV3VvrL7NFniofHv4&quot;"/>
+    <contextParameter comment="" name="SFUserName" prompt="SFUserName?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;replicon1@idt911.com.partial&quot;"/>
+    <contextParameter comment="" name="URL" prompt="URL?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;https://cs3.salesforce.com/services/Soap/u/19.0&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Test">
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;subscription&quot;"/>
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;db1.idt911.local&quot;"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;reportuser&quot;"/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;testODS&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;5432&quot;"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;staging&quot;"/>
+    <contextParameter comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;10.10.104.64&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="classname" prompt="classname?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;rssbus.jdbc.quickbooks.QuickBooksDriver&quot;"/>
+    <contextParameter comment="" name="JdbcURL" prompt="JdbcURL?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080&quot;"/>
+    <contextParameter comment="" name="QBPassword" prompt="QBPassword?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;artha123&quot;"/>
+    <contextParameter comment="" name="QBUserName" prompt="QBUserName?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;admin&quot;"/>
+    <contextParameter comment="" name="SFPassword" prompt="SFPassword?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;1repliconz1E90QcXV3VvrL7NFniofHv4&quot;"/>
+    <contextParameter comment="" name="SFUserName" prompt="SFUserName?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;replicon1@idt911.com.partial&quot;"/>
+    <contextParameter comment="" name="URL" prompt="URL?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;https://cs3.salesforce.com/services/Soap/u/19.0&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;subscription&quot;"/>
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;db1.idt911.local&quot;"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;reportuser&quot;"/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;testODS&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;5432&quot;"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;staging&quot;"/>
+    <contextParameter comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;10.10.104.64&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="classname" prompt="classname?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;rssbus.jdbc.quickbooks.QuickBooksDriver&quot;"/>
+    <contextParameter comment="" name="JdbcURL" prompt="JdbcURL?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080&quot;"/>
+    <contextParameter comment="" name="QBPassword" prompt="QBPassword?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;artha123&quot;"/>
+    <contextParameter comment="" name="QBUserName" prompt="QBUserName?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;admin&quot;"/>
+    <contextParameter comment="" name="SFPassword" prompt="SFPassword?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;1repliconz1E90QcXV3VvrL7NFniofHv4&quot;"/>
+    <contextParameter comment="" name="SFUserName" prompt="SFUserName?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;replicon1@idt911.com.partial&quot;"/>
+    <contextParameter comment="" name="URL" prompt="URL?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;https://cs3.salesforce.com/services/Soap/u/19.0&quot;"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;subscription&quot;"/>
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;db1.idt911.local&quot;"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" repositoryContextId="_z_KVQAn0EeW3AsRgq6xlKw" type="id_String" value="&quot;reportuser&quot;"/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;testODS&quot;"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;5432&quot;"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;staging&quot;"/>
+    <contextParameter comment="" name="Server" prompt="Server?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;10.10.104.64&quot;"/>
+    <contextParameter comment="" name="UserName" prompt="UserName?" promptNeeded="false" repositoryContextId="_hfyuIPllEeSw2MfAwvDm3w" type="id_String" value="&quot;postgres&quot;"/>
+    <contextParameter comment="" name="classname" prompt="classname?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;rssbus.jdbc.quickbooks.QuickBooksDriver&quot;"/>
+    <contextParameter comment="" name="JdbcURL" prompt="JdbcURL?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080&quot;"/>
+    <contextParameter comment="" name="QBPassword" prompt="QBPassword?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;artha123&quot;"/>
+    <contextParameter comment="" name="QBUserName" prompt="QBUserName?" promptNeeded="false" repositoryContextId="_gyzSAPl1EeSw2MfAwvDm3w" type="id_String" value="&quot;admin&quot;"/>
+    <contextParameter comment="" name="SFPassword" prompt="SFPassword?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;1repliconz1E90QcXV3VvrL7NFniofHv4&quot;"/>
+    <contextParameter comment="" name="SFUserName" prompt="SFUserName?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;replicon1@idt911.com.partial&quot;"/>
+    <contextParameter comment="" name="URL" prompt="URL?" promptNeeded="false" repositoryContextId="_J8SKEPlxEeSw2MfAwvDm3w" type="id_String" value="&quot;https://cs3.salesforce.com/services/Soap/u/19.0&quot;"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/ProgramData/Talend/Talend-Studio-r104014-V5.3.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <routinesParameter id="_FXWJgE_vEeS7dOgvHDzt0g" name="DataOperation"/>
+    <routinesParameter id="_FYXdME_vEeS7dOgvHDzt0g" name="Mathematical"/>
+    <routinesParameter id="_FYtbcE_vEeS7dOgvHDzt0g" name="Numeric"/>
+    <routinesParameter id="_FZBkgE_vEeS7dOgvHDzt0g" name="Relational"/>
+    <routinesParameter id="_FcAAAE_vEeS7dOgvHDzt0g" name="SQLike"/>
+    <routinesParameter id="_FZwkUE_vEeS7dOgvHDzt0g" name="StringHandling"/>
+    <routinesParameter id="_Fab5wE_vEeS7dOgvHDzt0g" name="TalendDataGenerator"/>
+    <routinesParameter id="_Fa1iYE_vEeS7dOgvHDzt0g" name="TalendDate"/>
+    <routinesParameter id="_FblJQE_vEeS7dOgvHDzt0g" name="TalendString"/>
+  </parameters>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="CCNew"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_KfBPYMl8EeSrPpMoF6hMJw"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="CreditcardInvoice"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_Jox30MvVEeSK3JxE77pWhQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tLibraryLoad" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="MODULE_LIST" name="LIBRARY" value="&quot;rssbus.jdbc.quickbooks.jar&quot;"/>
+    <elementParameter field="TABLE" name="HOTLIBS"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tLibraryLoad_1" offsetLabelX="0" offsetLabelY="0" source="tLibraryLoad_1" target="tRunJob_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLibraryLoad_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d37790ce-74e9-456b-92f3-e07ee5c12e20"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>g+yEF+mVteoGe8PPmz8rF8ShGdl+IWmoUqzP/jhsqqzxOZ9adNH76O5evRA+qQdeZrPz9wFmidAr
+9aBQ/Ky89g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_07fb6b58-f834-490e-827c-8e76e15ff425"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>HHWSGxbupZsI6Xa4PIWR22x7rj0XNoBXvXv27qKEHN9r8udMML3HF0C2JJNx20nReAxK6TsZ/H2l
+wyCXvhRjxA==</DigestValue></Reference></SignedInfo><SignatureValue>eXIjsQwz4QionGJUXLDEg9RNqrBwpKHJqwO79zvCQ/AAR7W2StRRg81dbjR7SemnhNIwnVj5TL6A
+BQk0pqLfXOAUtdMtpIB6jd2A6QYxaLrlnk+dONfbf3TPh9KPw4HVKpPmdZ0FmKC3MWw8J3cR4Xou
+PdUhgReAnsb99b4ZqXO4KmO6gGTLf02Rw+uUMT1CQaJK/oVDP/m/evGCYE4RT8wRK7OoDhWbNgoI
+m4zj89ZbN9YzWFHJoRl4aXw0q2J5YOKVNA5zdDly+LxAIYNM7rNN6GyBnjEpfFu8xeiqXS50HvUC
+Eu88/TSjG1U/SmuPXKPx+d7Q3Cn9QBhlHqcBUA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_07fb6b58-f834-490e-827c-8e76e15ff425" Target="#_d37790ce-74e9-456b-92f3-e07ee5c12e20"><Timestamp>2019-03-04 22:16:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

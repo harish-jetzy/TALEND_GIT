@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_G2xg0DmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg0TmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg0jmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg0zmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg1DmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg1TmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg1jmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg1zmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_G2xg2DmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg2TmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg2jmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg2zmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg3DmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg3TmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg3jmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" type="id_String" value="" xmi:id="_G2xg3zmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9ade7704-9bbb-452c-a712-b2a2b5ccac66"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X5Ivrj47TNat7b7ioQlPQLjj3b9teE8/obGTYzSfuFm0zCUlpCDdhhvxBC2M3tow20+f3TkFmI1i
+VYw0OwkWLw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f4c1e645-4cac-451a-af52-e007673ab327"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>+J2wSNjxh0rA/GXb94iJjWFwX3Sp/aXjOJUnrNx0h/n3mWrOlhbk4ytWWD/pElRdjcGy1Gq/VHZn
+IWjg/cmlnA==</DigestValue></Reference></SignedInfo><SignatureValue>aQBVZNiFAyqaGNHct0u5K3+GIe8uYRW9YRtfRtSBoSzM4BxLgYczDP8ZaebfZfLpRymFklvn+cJ6
+eCYaVOrthalYODezsl/hnxQrCTMwIrY4lkl8w9y2+YvnoNExCTpRaOOLeMy1RxEOQazveiDpJN39
+lD709Uj2nnSfyt0HlIJRlLugB0a0RMuwXbWJOjbOBQYExUNY3ZFadEGPgMGPKWUO6DascDbrEwIQ
+glhvdg9Tq4j4KKfffVc3nLLFrFn4ziMVWkkIxJND28jmCjrWhaJjM7ccvOzo2izhkSj8LujSigvk
+DaN7ttrOv+LN7maaQa9B3TmDcMZDnUZ6gK6/Pg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f4c1e645-4cac-451a-af52-e007673ab327" Target="#_9ade7704-9bbb-452c-a712-b2a2b5ccac66"><Timestamp>2019-02-26 04:50:58</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

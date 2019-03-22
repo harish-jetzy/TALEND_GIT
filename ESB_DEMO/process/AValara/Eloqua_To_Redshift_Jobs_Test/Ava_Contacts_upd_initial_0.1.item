@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="prod" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketing&quot;"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingAdmin123!&quot;"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;5439&quot;"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingadmin&quot;"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="Avalara\robert.pierson:5Talend5!"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="Servername" prompt="Servername?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="10.40.60.119"/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="Tableprefix" prompt="Tableprefix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="Ava_"/>
+    <contextParameter comment="" name="Tablesuffix" prompt="Tablesuffix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="_Dev"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="impcntx"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="10.40.60.119"/>
+  </context>
+  <context confirmationNeeded="false" name="prod">
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketing&quot;"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingAdmin123!&quot;"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;5439&quot;"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingadmin&quot;"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="Avalara\robert.pierson:5Talend5!"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="Servername" prompt="Servername?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="10.40.60.230"/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="Tableprefix" prompt="Tableprefix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="Ava_"/>
+    <contextParameter comment="" name="Tablesuffix" prompt="Tablesuffix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value=""/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="impcntx"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="10.40.60.230"/>
+  </context>
+  <context confirmationNeeded="false" name="Dev">
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketing&quot;"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingAdmin123!&quot;"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;5439&quot;"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingadmin&quot;"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="Avalara\robert.pierson:5Talend5!"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="Servername" prompt="Servername?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="10.40.60.119"/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="Tableprefix" prompt="Tableprefix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="Ava_"/>
+    <contextParameter comment="" name="Tablesuffix" prompt="Tablesuffix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="_Dev"/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="impcntx"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="10.40.60.119"/>
+  </context>
+  <context confirmationNeeded="false" name="Prod">
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="1900-01-01"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketing&quot;"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingAdmin123!&quot;"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;5439&quot;"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;public&quot;"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="&quot;marketingadmin&quot;"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value="Avalara\robert.pierson:5Talend5!"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Boolean" value="false"/>
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_Integer" value=""/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" repositoryContextId="_6Qn9gDnHEeajsMkIg6SXwA" type="id_String" value=""/>
+    <contextParameter comment="" name="Database" prompt="Database?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="Password" prompt="Password?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="Port" prompt="Port?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="1433"/>
+    <contextParameter comment="" name="Schema" prompt="Schema?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="dbo"/>
+    <contextParameter comment="" name="Servername" prompt="Servername?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="10.40.60.230"/>
+    <contextParameter comment="" name="Username" prompt="Username?" promptNeeded="false" repositoryContextId="_6TucgDhhEeaTr-IQ-xD4Yw" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="Tableprefix" prompt="Tableprefix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value="Ava_"/>
+    <contextParameter comment="" name="Tablesuffix" prompt="Tablesuffix?" promptNeeded="false" repositoryContextId="_MZfBcD0XEeaiy-QeRGF3cw" type="id_String" value=""/>
+    <contextParameter comment="" name="From" prompt="From?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Host" prompt="SMTP_Host?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Password" prompt="SMTP_Password?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_AdditionalParams" prompt="LogDB_AdditionalParams?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Port" prompt="SMTP_Port?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="SMTP_Username" prompt="SMTP_Username?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_Database" prompt="LogDB_Database?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="Talend_DI_Metadata"/>
+    <contextParameter comment="" name="LogDB_Login" prompt="LogDB_Login?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="talend-svc"/>
+    <contextParameter comment="" name="Subject_ELQ" prompt="Subject_ELQ?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="To" prompt="To?" promptNeeded="false" repositoryContextId="_kCzFUEpuEeaEGMxytOV7Ig" type="id_String" value=""/>
+    <contextParameter comment="" name="LogDB_Password" prompt="LogDB_Password?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_Password" value="eVU+sTvtio/lxRU/Oe3cnQ=="/>
+    <contextParameter comment="" name="LogDB_Port" prompt="LogDB_Port?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="1433"/>
+    <contextParameter comment="" name="LogDB_Schema" prompt="LogDB_Schema?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="impcntx"/>
+    <contextParameter comment="" name="LogDB_Server" prompt="LogDB_Server?" promptNeeded="false" repositoryContextId="_si4NYPfXEeWY0ZdEFfhBTQ" type="id_String" value="10.40.60.230"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="64"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="true"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="true"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="true"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="tMSSqlInput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;marketing&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;marketingadmin&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="Rn50p3lqfQqW3tbb7LPxusuHHpu+e1Fk"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Users/srilatha.guntaka/Documents/Workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="_37BOYBQzEeac48sqURcO4w"/>
+    <routinesParameter id="_xLnl4BkPEea9LpTRgnocxA" name="DQTechnical"/>
+    <routinesParameter id="_xMSUQBkPEea9LpTRgnocxA" name="DataOperation"/>
+    <routinesParameter id="_xLTc0BkPEea9LpTRgnocxA" name="DataQualityDependencies"/>
+    <routinesParameter id="_xLK58BkPEea9LpTRgnocxA" name="DataQuality"/>
+    <routinesParameter id="_xLfDABkPEea9LpTRgnocxA" name="DqStringHandling"/>
+    <routinesParameter id="_xMJKUBkPEea9LpTRgnocxA" name="MDM"/>
+    <routinesParameter id="_xMcFQBkPEea9LpTRgnocxA" name="Mathematical"/>
+    <routinesParameter id="_xMvAMBkPEea9LpTRgnocxA" name="Numeric"/>
+    <routinesParameter id="_xM4xMBkPEea9LpTRgnocxA" name="Relational"/>
+    <routinesParameter id="_w4rbwBkPEea9LpTRgnocxA" name="SQLike"/>
+    <routinesParameter id="_xNB7IBkPEea9LpTRgnocxA" name="StringHandling"/>
+    <routinesParameter id="_xNLsIBkPEea9LpTRgnocxA" name="TalendDataGenerator"/>
+    <routinesParameter id="_xNenEBkPEea9LpTRgnocxA" name="TalendDate"/>
+    <routinesParameter id="_xNoYEBkPEea9LpTRgnocxA" name="TalendString"/>
+  </parameters>
+  <node componentName="tParallelize" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="CLOSED_LIST" name="WAIT_FOR" value="All"/>
+    <elementParameter field="TEXT" name="SLEEPTIME" value="100"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Ava_Contact_Update_Sub1_initial"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_gWaoMDodEea-kt9KOeeeEQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Ava_Contact_Update_sub2_initial"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_iP-K0DodEea-kt9KOeeeEQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="32" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="Ava_Contact_Update_Merge_initial"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_eeT3EDodEea-kt9KOeeeEQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="false"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tParallelize_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="PARALLELIZE" label="Parallelize" lineStyle="13" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tParallelize_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Parallelize"/>
+  </connection>
+  <connection connectorName="SYNCHRONIZE" label="Synchronize" lineStyle="12" metaname="tParallelize_1" offsetLabelX="0" offsetLabelY="0" source="tParallelize_1" target="tRunJob_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="Synchronize"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tParallelize_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_d7f32ab2-c953-4a47-88dd-e99f5d70fa56"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9LQ6GjEoWa1jrE750sDS6dStlZV7bsLsKaUs9zT27bMraTsNh5v3LBpy/cXiogUaJRP9gjETc/Sg
+wPl/AQIDAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_16c7dfc5-6047-4998-9224-5e38e7f026fc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>83poLDxQjk5+Of9QXdhteJ8tlnLFXoZyfE80PEV6Q/Y/jRkT81px0ffFKsSaQ/43QXdjP8QncDB/
+bLoFsT6cvw==</DigestValue></Reference></SignedInfo><SignatureValue>fqWmia1gja+bZ5rgrFH0wYcyZyWbIB0ZA2zNKKBawI/riDQlynFOxk8OmcLmH6BQxdyswVATFxPh
+H7A5OI8nCt+IYATejDiKglysRyk2BrdjXxlNKba4jmPj8UjjL9U7YqL4s0s3nY6wYGQ5qlYHKVaw
+R7QeQ7aKUSmvGngOJ+EWOPr7kkG3OUfaoT0pF6Qudaf1+eRbOT7pu8Kz5b6nnWZzCHiuZn/1T7a8
+jLqHLKPylIs8Grj6YWNIAqyH+k64ICkRFjM7HuOgsW6Df77g7U4NHHhSva4kyT+LNg9hKPLm1YZ6
+723IuYp21QFxBP60565zjZpYGGmh4J2Rnp244Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_16c7dfc5-6047-4998-9224-5e38e7f026fc" Target="#_d7f32ab2-c953-4a47-88dd-e99f5d70fa56"><Timestamp>2019-03-04 21:32:26</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

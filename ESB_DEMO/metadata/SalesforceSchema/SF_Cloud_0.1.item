@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SalesforceSchemaConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" batchSize="250" loginType="basic" moduleName="AccountContactRole" name="SF_Cloud" password="zrPmUqPfk1riTu+jLffdpahTlLqCr2zxFIgkSRk8d7xmSfcmPDML/w==" timeOut="60000" userName="replicon1@idt911.com.dev" webServiceUrl="https://cs12.salesforce.com/services/Soap/u/19.0" xmi:id="_Elj0oKGbEeSQjdcVB7dQRg" xmi:version="2.0">
+  <modules id="_Fg8DsFidEeS70LwQlwyJag" label="Order" moduleName="Order" name="Order" xmi:id="_Elj0oaGbEeSQjdcVB7dQRg"/>
+  <modules id="_FhonQFidEeS70LwQlwyJag" label="OrderHistory" moduleName="OrderHistory" name="OrderHistory" xmi:id="_Elj04aGbEeSQjdcVB7dQRg"/>
+  <modules id="_FkUH0FidEeS70LwQlwyJag" label="OrderItem" moduleName="OrderItem" name="OrderItem" xmi:id="_Elj086GbEeSQjdcVB7dQRg"/>
+  <modules id="_GW6CYFidEeS70LwQlwyJag" label="replicon__RepliconClientManager__History" moduleName="replicon__RepliconClientManager__History" name="replicon__RepliconClientManager__History" xmi:id="_Elj1EaGbEeSQjdcVB7dQRg"/>
+  <modules id="_GXtToFidEeS70LwQlwyJag" label="replicon__RepliconClientManager__c" moduleName="replicon__RepliconClientManager__c" name="replicon__RepliconClientManager__c" xmi:id="_Elj1I6GbEeSQjdcVB7dQRg"/>
+  <modules id="_Gaor0FidEeS70LwQlwyJag" label="replicon__Replicon_Opportunity_Workflow_Rule__History" moduleName="replicon__Replicon_Opportunity_Workflow_Rule__History" name="replicon__Replicon_Opportunity_Workflow_Rule__History" xmi:id="_Elj1O6GbEeSQjdcVB7dQRg"/>
+  <modules id="_GblHAFidEeS70LwQlwyJag" label="replicon__Replicon_Opportunity_Workflow_Rule__c" moduleName="replicon__Replicon_Opportunity_Workflow_Rule__c" name="replicon__Replicon_Opportunity_Workflow_Rule__c" xmi:id="_Elj1TaGbEeSQjdcVB7dQRg"/>
+  <modules id="_GcoP4FidEeS70LwQlwyJag" label="replicon__Replicon_Project_Manager__History" moduleName="replicon__Replicon_Project_Manager__History" name="replicon__Replicon_Project_Manager__History" xmi:id="_Elj1Z6GbEeSQjdcVB7dQRg"/>
+  <modules id="_GdZE4FidEeS70LwQlwyJag" label="replicon__Replicon_Project_Manager__c" moduleName="replicon__Replicon_Project_Manager__c" name="replicon__Replicon_Project_Manager__c" xmi:id="_Elj1eaGbEeSQjdcVB7dQRg"/>
+  <modules id="_GenM4FidEeS70LwQlwyJag" label="replicon__Replicon_Settings__History" moduleName="replicon__Replicon_Settings__History" name="replicon__Replicon_Settings__History" xmi:id="_Elj1kaGbEeSQjdcVB7dQRg"/>
+  <modules id="_GffWoFidEeS70LwQlwyJag" label="replicon__Replicon_Settings__c" moduleName="replicon__Replicon_Settings__c" name="replicon__Replicon_Settings__c" xmi:id="_Elj1o6GbEeSQjdcVB7dQRg"/>
+  <modules id="_5zazgKCkEeSQjdcVB7dQRg" label="Contact" moduleName="Contact" name="Contact" xmi:id="_Elj1w6GbEeSQjdcVB7dQRg"/>
+  <modules id="_57B3YKCkEeSQjdcVB7dQRg" label="ContactFeed" moduleName="ContactFeed" name="ContactFeed" xmi:id="_Elj2c6GbEeSQjdcVB7dQRg"/>
+  <modules id="_6BMJwKCkEeSQjdcVB7dQRg" label="ContactHistory" moduleName="ContactHistory" name="ContactHistory" xmi:id="_ElkcWqGbEeSQjdcVB7dQRg"/>
+  <modules id="_6JslgKCkEeSQjdcVB7dQRg" label="ContactShare" moduleName="ContactShare" name="ContactShare" xmi:id="_ElkcbKGbEeSQjdcVB7dQRg"/>
+  <modules id="_rLSisKE3EeSQjdcVB7dQRg" label="Billing_and_Programs__History" moduleName="Billing_and_Programs__History" name="Billing_and_Programs__History" xmi:id="_ElkcfqGbEeSQjdcVB7dQRg"/>
+  <modules id="_rPVVMKE3EeSQjdcVB7dQRg" label="Billing_and_Programs__c" moduleName="Billing_and_Programs__c" name="Billing_and_Programs__c" xmi:id="_ElkckKGbEeSQjdcVB7dQRg"/>
+  <modules id="_txo54KE3EeSQjdcVB7dQRg" label="Account" moduleName="Account" name="Account" xmi:id="_ElkdcqGbEeSQjdcVB7dQRg"/>
+  <modules id="_tyw7QKE3EeSQjdcVB7dQRg" label="AccountPartner" moduleName="AccountPartner" name="AccountPartner" xmi:id="_ElkeIKGbEeSQjdcVB7dQRg"/>
+  <modules id="_tzabgKE3EeSQjdcVB7dQRg" label="AccountHistory" moduleName="AccountHistory" name="AccountHistory" xmi:id="_ElkePKGbEeSQjdcVB7dQRg"/>
+  <modules id="_t0RXIKE3EeSQjdcVB7dQRg" label="AccountFeed" moduleName="AccountFeed" name="AccountFeed" xmi:id="_ElkeTqGbEeSQjdcVB7dQRg"/>
+  <modules id="_t2Df0KE3EeSQjdcVB7dQRg" label="AccountShare" moduleName="AccountShare" name="AccountShare" xmi:id="_ElkeYKGbEeSQjdcVB7dQRg"/>
+  <modules id="_t3LhMKE3EeSQjdcVB7dQRg" label="ActivityHistory" moduleName="ActivityHistory" name="ActivityHistory" xmi:id="_ElkeeKGbEeSQjdcVB7dQRg"/>
+  <modules id="_t51zoKE3EeSQjdcVB7dQRg" label="AdditionalNumber" moduleName="AdditionalNumber" name="AdditionalNumber" xmi:id="_EllC4KGbEeSQjdcVB7dQRg"/>
+  <modules id="_t61SIKE3EeSQjdcVB7dQRg" label="AggregateResult" moduleName="AggregateResult" name="AggregateResult" xmi:id="_EllC-KGbEeSQjdcVB7dQRg"/>
+  <modules id="_t7c9MKE3EeSQjdcVB7dQRg" label="ApexClass" moduleName="ApexClass" name="ApexClass" xmi:id="_EllC_KGbEeSQjdcVB7dQRg"/>
+  <modules id="_t8RckKE3EeSQjdcVB7dQRg" label="ApexComponent" moduleName="ApexComponent" name="ApexComponent" xmi:id="_EllDGqGbEeSQjdcVB7dQRg"/>
+  <modules id="_t8yZ8KE3EeSQjdcVB7dQRg" label="ApexLog" moduleName="ApexLog" name="ApexLog" xmi:id="_EllDOKGbEeSQjdcVB7dQRg"/>
+  <modules id="_t9iA0KE3EeSQjdcVB7dQRg" label="ApexPage" moduleName="ApexPage" name="ApexPage" xmi:id="_EllDUqGbEeSQjdcVB7dQRg"/>
+  <modules id="_t-OkYKE3EeSQjdcVB7dQRg" label="ApexTrigger" moduleName="ApexTrigger" name="ApexTrigger" xmi:id="_EllDcKGbEeSQjdcVB7dQRg"/>
+  <modules id="_t_OC4KE3EeSQjdcVB7dQRg" label="Approval" moduleName="Approval" name="Approval" xmi:id="_EllDoKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uAWrUKE3EeSQjdcVB7dQRg" label="Asset" moduleName="Asset" name="Asset" xmi:id="_EllDuqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uBvLYKE3EeSQjdcVB7dQRg" label="AssetFeed" moduleName="AssetFeed" name="AssetFeed" xmi:id="_EllD5KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uCO6oKE3EeSQjdcVB7dQRg" label="AssignmentRule" moduleName="AssignmentRule" name="AssignmentRule" xmi:id="_EllEDqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uC8sUKE3EeSQjdcVB7dQRg" label="AsyncApexJob" moduleName="AsyncApexJob" name="AsyncApexJob" xmi:id="_EllEIqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uELbYKE3EeSQjdcVB7dQRg" label="Attachment" moduleName="Attachment" name="Attachment" xmi:id="_EllEPKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uEs_0KE3EeSQjdcVB7dQRg" label="BrandTemplate" moduleName="BrandTemplate" name="BrandTemplate" xmi:id="_EllEXKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uFhfMKE3EeSQjdcVB7dQRg" label="BusinessHours" moduleName="BusinessHours" name="BusinessHours" xmi:id="_EllEdqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uF_ZQKE3EeSQjdcVB7dQRg" label="BusinessProcess" moduleName="BusinessProcess" name="BusinessProcess" xmi:id="_EllEqKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uGdTUKE3EeSQjdcVB7dQRg" label="CallCenter" moduleName="CallCenter" name="CallCenter" xmi:id="_EllEwKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uIqSwKE3EeSQjdcVB7dQRg" label="Campaign" moduleName="Campaign" name="Campaign" xmi:id="_EllE1KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uKCy0KE3EeSQjdcVB7dQRg" label="CampaignFeed" moduleName="CampaignFeed" name="CampaignFeed" xmi:id="_EllFJqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uKxLkKE3EeSQjdcVB7dQRg" label="CampaignMember" moduleName="CampaignMember" name="CampaignMember" xmi:id="_Ellp8qGbEeSQjdcVB7dQRg"/>
+  <modules id="_uLb58KE3EeSQjdcVB7dQRg" label="CampaignMemberStatus" moduleName="CampaignMemberStatus" name="CampaignMemberStatus" xmi:id="_EllqDqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uMWf8KE3EeSQjdcVB7dQRg" label="CampaignShare" moduleName="CampaignShare" name="CampaignShare" xmi:id="_EllqKKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uOd_0KE3EeSQjdcVB7dQRg" label="Case" moduleName="Case" name="Case" xmi:id="_EllqOqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uPYl0KE3EeSQjdcVB7dQRg" label="CaseComment" moduleName="CaseComment" name="CaseComment" xmi:id="_EllqjqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uSTW8KE3EeSQjdcVB7dQRg" label="CaseContactRole" moduleName="CaseContactRole" name="CaseContactRole" xmi:id="_EllqpKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uS_6gKE3EeSQjdcVB7dQRg" label="CaseFeed" moduleName="CaseFeed" name="CaseFeed" xmi:id="_EllquqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uTtsMKE3EeSQjdcVB7dQRg" label="CaseHistory" moduleName="CaseHistory" name="CaseHistory" xmi:id="_Ellq0KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uUXzgKE3EeSQjdcVB7dQRg" label="CaseShare" moduleName="CaseShare" name="CaseShare" xmi:id="_Ellq4qGbEeSQjdcVB7dQRg"/>
+  <modules id="_uVFlMKE3EeSQjdcVB7dQRg" label="CaseSolution" moduleName="CaseSolution" name="CaseSolution" xmi:id="_Ellq9KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uVjfQKE3EeSQjdcVB7dQRg" label="CaseStatus" moduleName="CaseStatus" name="CaseStatus" xmi:id="_EllrBKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uYLVcKE3EeSQjdcVB7dQRg" label="CaseTeamMember" moduleName="CaseTeamMember" name="CaseTeamMember" xmi:id="_EllrGqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uY35AKE3EeSQjdcVB7dQRg" label="CaseTeamRole" moduleName="CaseTeamRole" name="CaseTeamRole" xmi:id="_EllrMKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uZmRwKE3EeSQjdcVB7dQRg" label="CaseTeamTemplate" moduleName="CaseTeamTemplate" name="CaseTeamTemplate" xmi:id="_ElmQ8qGbEeSQjdcVB7dQRg"/>
+  <modules id="_uaS1UKE3EeSQjdcVB7dQRg" label="CaseTeamTemplateMember" moduleName="CaseTeamTemplateMember" name="CaseTeamTemplateMember" xmi:id="_ElmRBKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uavhQKE3EeSQjdcVB7dQRg" label="CaseTeamTemplateRecord" moduleName="CaseTeamTemplateRecord" name="CaseTeamTemplateRecord" xmi:id="_ElmRGKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uboSEKE3EeSQjdcVB7dQRg" label="CategoryData" moduleName="CategoryData" name="CategoryData" xmi:id="_ElmRJqGbEeSQjdcVB7dQRg"/>
+  <modules id="_ucGzMKE3EeSQjdcVB7dQRg" label="CategoryNode" moduleName="CategoryNode" name="CategoryNode" xmi:id="_ElmROqGbEeSQjdcVB7dQRg"/>
+  <modules id="_udeFIKE3EeSQjdcVB7dQRg" label="CollaborationGroup" moduleName="CollaborationGroup" name="CollaborationGroup" xmi:id="_ElmRUKGbEeSQjdcVB7dQRg"/>
+  <modules id="_ue2lMKE3EeSQjdcVB7dQRg" label="CollaborationGroupFeed" moduleName="CollaborationGroupFeed" name="CollaborationGroupFeed" xmi:id="_ElmRZqGbEeSQjdcVB7dQRg"/>
+  <modules id="_ugPsUKE3EeSQjdcVB7dQRg" label="CollaborationGroupMember" moduleName="CollaborationGroupMember" name="CollaborationGroupMember" xmi:id="_ElmRfKGbEeSQjdcVB7dQRg"/>
+  <modules id="_ujjfAKE3EeSQjdcVB7dQRg" label="Community" moduleName="Community" name="Community" xmi:id="_ElmRkqGbEeSQjdcVB7dQRg"/>
+  <modules id="_umDZYKE3EeSQjdcVB7dQRg" label="Contract" moduleName="Contract" name="Contract" xmi:id="_ElmRpqGbEeSQjdcVB7dQRg"/>
+  <modules id="_um1cgKE3EeSQjdcVB7dQRg" label="ContractContactRole" moduleName="ContractContactRole" name="ContractContactRole" xmi:id="_ElmTRqGbEeSQjdcVB7dQRg"/>
+  <modules id="_upYaMKE3EeSQjdcVB7dQRg" label="ContractFeed" moduleName="ContractFeed" name="ContractFeed" xmi:id="_Elm4AKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uqDvoKE3EeSQjdcVB7dQRg" label="ContractHistory" moduleName="ContractHistory" name="ContractHistory" xmi:id="_Elm4GKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uqhpsKE3EeSQjdcVB7dQRg" label="ContractStatus" moduleName="ContractStatus" name="ContractStatus" xmi:id="_Elm4KqGbEeSQjdcVB7dQRg"/>
+  <modules id="_urEcQKE3EeSQjdcVB7dQRg" label="CronTrigger" moduleName="CronTrigger" name="CronTrigger" xmi:id="_Elm4QKGbEeSQjdcVB7dQRg"/>
+  <modules id="_ur6JwKE3EeSQjdcVB7dQRg" label="Document" moduleName="Document" name="Document" xmi:id="_Elm4XKGbEeSQjdcVB7dQRg"/>
+  <modules id="_usnUYKE3EeSQjdcVB7dQRg" label="DocumentAttachmentMap" moduleName="DocumentAttachmentMap" name="DocumentAttachmentMap" xmi:id="_Elm4iqGbEeSQjdcVB7dQRg"/>
+  <modules id="_utdB4KE3EeSQjdcVB7dQRg" label="EmailServicesAddress" moduleName="EmailServicesAddress" name="EmailServicesAddress" xmi:id="_Elm4mKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uuNP0KE3EeSQjdcVB7dQRg" label="EmailServicesFunction" moduleName="EmailServicesFunction" name="EmailServicesFunction" xmi:id="_Elm4sqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uuzswKE3EeSQjdcVB7dQRg" label="EmailStatus" moduleName="EmailStatus" name="EmailStatus" xmi:id="_Elm44KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uvTcAKE3EeSQjdcVB7dQRg" label="EmailTemplate" moduleName="EmailTemplate" name="EmailTemplate" xmi:id="_Elm4-KGbEeSQjdcVB7dQRg"/>
+  <modules id="_uwr8EKE3EeSQjdcVB7dQRg" label="EntitySubscription" moduleName="EntitySubscription" name="EntitySubscription" xmi:id="_Elm5KqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uxRx8KE3EeSQjdcVB7dQRg" label="Event" moduleName="Event" name="Event" xmi:id="_Elm5XKGbEeSQjdcVB7dQRg"/>
+  <modules id="_uyO0MKE3EeSQjdcVB7dQRg" label="EventAttendee" moduleName="EventAttendee" name="EventAttendee" xmi:id="_Elm5uqGbEeSQjdcVB7dQRg"/>
+  <modules id="_uzn7UKE3EeSQjdcVB7dQRg" label="FeedComment" moduleName="FeedComment" name="FeedComment" xmi:id="_Elm51KGbEeSQjdcVB7dQRg"/>
+  <modules id="_u0_0UKE3EeSQjdcVB7dQRg" label="FeedPost" moduleName="FeedPost" name="FeedPost" xmi:id="_Elm57qGbEeSQjdcVB7dQRg"/>
+  <modules id="_u2aJkKE3EeSQjdcVB7dQRg" label="FeedTrackedChange" moduleName="FeedTrackedChange" name="FeedTrackedChange" xmi:id="_Elm6CKGbEeSQjdcVB7dQRg"/>
+  <modules id="_u3Na0KE3EeSQjdcVB7dQRg" label="FiscalYearSettings" moduleName="FiscalYearSettings" name="FiscalYearSettings" xmi:id="_Elm6IqGbEeSQjdcVB7dQRg"/>
+  <modules id="_u3sjAKE3EeSQjdcVB7dQRg" label="Folder" moduleName="Folder" name="Folder" xmi:id="_Elm6QqGbEeSQjdcVB7dQRg"/>
+  <modules id="_u4XRYKE3EeSQjdcVB7dQRg" label="ForecastShare" moduleName="ForecastShare" name="ForecastShare" xmi:id="_Elm6XKGbEeSQjdcVB7dQRg"/>
+  <modules id="_u5ocsKE3EeSQjdcVB7dQRg" label="Group" moduleName="Group" name="Group" xmi:id="_Elm6bqGbEeSQjdcVB7dQRg"/>
+  <modules id="_u8MBcKE3EeSQjdcVB7dQRg" label="GroupMember" moduleName="GroupMember" name="GroupMember" xmi:id="_Elm6iqGbEeSQjdcVB7dQRg"/>
+  <modules id="_u8qikKE3EeSQjdcVB7dQRg" label="Holiday" moduleName="Holiday" name="Holiday" xmi:id="_Elm6lKGbEeSQjdcVB7dQRg"/>
+  <modules id="_u9khgKE3EeSQjdcVB7dQRg" label="Idea" moduleName="Idea" name="Idea" xmi:id="_ElnfE6GbEeSQjdcVB7dQRg"/>
+  <modules id="_u-OBwKE3EeSQjdcVB7dQRg" label="IdeaComment" moduleName="IdeaComment" name="IdeaComment" xmi:id="_ElnfP6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vAwYYKE3EeSQjdcVB7dQRg" label="Lead" moduleName="Lead" name="Lead" xmi:id="_ElnfUaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vCI4cKE3EeSQjdcVB7dQRg" label="LeadFeed" moduleName="LeadFeed" name="LeadFeed" xmi:id="_ElngM6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vC4fUKE3EeSQjdcVB7dQRg" label="LeadHistory" moduleName="LeadHistory" name="LeadHistory" xmi:id="_ElnhFaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vFyCUKE3EeSQjdcVB7dQRg" label="LeadShare" moduleName="LeadShare" name="LeadShare" xmi:id="_ElnhJ6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vG5coKE3EeSQjdcVB7dQRg" label="LeadStatus" moduleName="LeadStatus" name="LeadStatus" xmi:id="_ElnhOaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vHqRoKE3EeSQjdcVB7dQRg" label="MailmergeTemplate" moduleName="MailmergeTemplate" name="MailmergeTemplate" xmi:id="_ElnhT6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vIy6EKE3EeSQjdcVB7dQRg" label="Name" moduleName="Name" name="Name" xmi:id="_ElnhbaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vJvVQKE3EeSQjdcVB7dQRg" label="NewsFeed" moduleName="NewsFeed" name="NewsFeed" xmi:id="_ElnhiaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vMoRMKE3EeSQjdcVB7dQRg" label="Note" moduleName="Note" name="Note" xmi:id="_ElnhpaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vNjeQKE3EeSQjdcVB7dQRg" label="NoteAndAttachment" moduleName="NoteAndAttachment" name="NoteAndAttachment" xmi:id="_Elnhv6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vOWvgKE3EeSQjdcVB7dQRg" label="OpenActivity" moduleName="OpenActivity" name="OpenActivity" xmi:id="_Elnh2aGbEeSQjdcVB7dQRg"/>
+  <modules id="_vQ2C0KE3EeSQjdcVB7dQRg" label="Opportunity" moduleName="Opportunity" name="Opportunity" xmi:id="_EloGTaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vR6Z0KE3EeSQjdcVB7dQRg" label="OpportunityCompetitor" moduleName="OpportunityCompetitor" name="OpportunityCompetitor" xmi:id="_EloHLaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vS9isKE3EeSQjdcVB7dQRg" label="OpportunityContactRole" moduleName="OpportunityContactRole" name="OpportunityContactRole" xmi:id="_EloHRaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vUZGEKE3EeSQjdcVB7dQRg" label="OpportunityFeed" moduleName="OpportunityFeed" name="OpportunityFeed" xmi:id="_EloHXaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vU6qgKE3EeSQjdcVB7dQRg" label="OpportunityFieldHistory" moduleName="OpportunityFieldHistory" name="OpportunityFieldHistory" xmi:id="_EloHdaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vVnOEKE3EeSQjdcVB7dQRg" label="OpportunityHistory" moduleName="OpportunityHistory" name="OpportunityHistory" xmi:id="_EloHh6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vWlecKE3EeSQjdcVB7dQRg" label="OpportunityLineItem" moduleName="OpportunityLineItem" name="OpportunityLineItem" xmi:id="_EloHoaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vXgEcKE3EeSQjdcVB7dQRg" label="OpportunityPartner" moduleName="OpportunityPartner" name="OpportunityPartner" xmi:id="_EloH2aGbEeSQjdcVB7dQRg"/>
+  <modules id="_vaV9EKE3EeSQjdcVB7dQRg" label="OpportunityShare" moduleName="OpportunityShare" name="OpportunityShare" xmi:id="_EloH86GbEeSQjdcVB7dQRg"/>
+  <modules id="_vbDuwKE3EeSQjdcVB7dQRg" label="OpportunityStage" moduleName="OpportunityStage" name="OpportunityStage" xmi:id="_EloIBaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vbksIKE3EeSQjdcVB7dQRg" label="OrgWideEmailAddress" moduleName="OrgWideEmailAddress" name="OrgWideEmailAddress" xmi:id="_EloIJaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vcM-QKE3EeSQjdcVB7dQRg" label="Organization" moduleName="Organization" name="Organization" xmi:id="_EloIOaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vc13cKE3EeSQjdcVB7dQRg" label="Partner" moduleName="Partner" name="Partner" xmi:id="_EloIh6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vfdtoKE3EeSQjdcVB7dQRg" label="PartnerRole" moduleName="PartnerRole" name="PartnerRole" xmi:id="_EloIo6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vgPwwKE3EeSQjdcVB7dQRg" label="Period" moduleName="Period" name="Period" xmi:id="_EloIt6GbEeSQjdcVB7dQRg"/>
+  <modules id="_viSYIKE3EeSQjdcVB7dQRg" label="Pricebook2" moduleName="Pricebook2" name="Pricebook2" xmi:id="_ElotJ6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vjAJ0KE3EeSQjdcVB7dQRg" label="PricebookEntry" moduleName="PricebookEntry" name="PricebookEntry" xmi:id="_ElotP6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vjeq8KE3EeSQjdcVB7dQRg" label="ProcessInstance" moduleName="ProcessInstance" name="ProcessInstance" xmi:id="_ElotXaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vkW0sKE3EeSQjdcVB7dQRg" label="ProcessInstanceHistory" moduleName="ProcessInstanceHistory" name="ProcessInstanceHistory" xmi:id="_Elotc6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vm-q4KE3EeSQjdcVB7dQRg" label="ProcessInstanceStep" moduleName="ProcessInstanceStep" name="ProcessInstanceStep" xmi:id="_Elotj6GbEeSQjdcVB7dQRg"/>
+  <modules id="_vnrOcKE3EeSQjdcVB7dQRg" label="ProcessInstanceWorkitem" moduleName="ProcessInstanceWorkitem" name="ProcessInstanceWorkitem" xmi:id="_Eloto6GbEeSQjdcVB7dQRg"/>
+  <modules id="_voefsKE3EeSQjdcVB7dQRg" label="Product2" moduleName="Product2" name="Product2" xmi:id="_ElottaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vp6qIKE3EeSQjdcVB7dQRg" label="Product2Feed" moduleName="Product2Feed" name="Product2Feed" xmi:id="_Elot46GbEeSQjdcVB7dQRg"/>
+  <modules id="_vtHvIKE3EeSQjdcVB7dQRg" label="Profile" moduleName="Profile" name="Profile" xmi:id="_ElouEaGbEeSQjdcVB7dQRg"/>
+  <modules id="_vuJC0KE3EeSQjdcVB7dQRg" label="QueueSobject" moduleName="QueueSobject" name="QueueSobject" xmi:id="_ElouwaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v0HH8KE3EeSQjdcVB7dQRg" label="RecordType" moduleName="RecordType" name="RecordType" xmi:id="_ElouzaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v09cgKE3EeSQjdcVB7dQRg" label="Scontrol" moduleName="Scontrol" name="Scontrol" xmi:id="_Elou6aGbEeSQjdcVB7dQRg"/>
+  <modules id="_v19iEKE3EeSQjdcVB7dQRg" label="SelfServiceUser" moduleName="SelfServiceUser" name="SelfServiceUser" xmi:id="_ElovDaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v2yBcKE3EeSQjdcVB7dQRg" label="Site" moduleName="Site" name="Site" xmi:id="_ElovM6GbEeSQjdcVB7dQRg"/>
+  <modules id="_v3X3UKE3EeSQjdcVB7dQRg" label="SiteHistory" moduleName="SiteHistory" name="SiteHistory" xmi:id="_ElovaaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v4cOUKE3EeSQjdcVB7dQRg" label="Solution" moduleName="Solution" name="Solution" xmi:id="_Elove6GbEeSQjdcVB7dQRg"/>
+  <modules id="_v5LOIKE3EeSQjdcVB7dQRg" label="SolutionFeed" moduleName="SolutionFeed" name="SolutionFeed" xmi:id="_Elovn6GbEeSQjdcVB7dQRg"/>
+  <modules id="_v5q9YKE3EeSQjdcVB7dQRg" label="SolutionHistory" moduleName="SolutionHistory" name="SolutionHistory" xmi:id="_Elovw6GbEeSQjdcVB7dQRg"/>
+  <modules id="_v6W54KE3EeSQjdcVB7dQRg" label="SolutionStatus" moduleName="SolutionStatus" name="SolutionStatus" xmi:id="_ElpUM6GbEeSQjdcVB7dQRg"/>
+  <modules id="_v7EEgKE3EeSQjdcVB7dQRg" label="StaticResource" moduleName="StaticResource" name="StaticResource" xmi:id="_ElpUSaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v71gkKE3EeSQjdcVB7dQRg" label="Task" moduleName="Task" name="Task" xmi:id="_ElpUZaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v8jSQKE3EeSQjdcVB7dQRg" label="TaskPriority" moduleName="TaskPriority" name="TaskPriority" xmi:id="_ElpUvaGbEeSQjdcVB7dQRg"/>
+  <modules id="_v_LIcKE3EeSQjdcVB7dQRg" label="TaskStatus" moduleName="TaskStatus" name="TaskStatus" xmi:id="_ElpU06GbEeSQjdcVB7dQRg"/>
+  <modules id="_wA_GUKE3EeSQjdcVB7dQRg" label="User" moduleName="User" name="User" xmi:id="_ElpU6aGbEeSQjdcVB7dQRg"/>
+  <modules id="_wCh-cKE3EeSQjdcVB7dQRg" label="UserFeed" moduleName="UserFeed" name="UserFeed" xmi:id="_ElpVX6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wFH_cKE3EeSQjdcVB7dQRg" label="UserLicense" moduleName="UserLicense" name="UserLicense" xmi:id="_ElpV1aGbEeSQjdcVB7dQRg"/>
+  <modules id="_wH3xcKE3EeSQjdcVB7dQRg" label="UserPreference" moduleName="UserPreference" name="UserPreference" xmi:id="_ElpV36GbEeSQjdcVB7dQRg"/>
+  <modules id="_wJaCgKE3EeSQjdcVB7dQRg" label="UserProfileFeed" moduleName="UserProfileFeed" name="UserProfileFeed" xmi:id="_ElpV66GbEeSQjdcVB7dQRg"/>
+  <modules id="_wKNTwKE3EeSQjdcVB7dQRg" label="UserRole" moduleName="UserRole" name="UserRole" xmi:id="_ElpV96GbEeSQjdcVB7dQRg"/>
+  <modules id="_wLK9EKE3EeSQjdcVB7dQRg" label="Vote" moduleName="Vote" name="Vote" xmi:id="_ElpWGaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wMB4sKE3EeSQjdcVB7dQRg" label="WebLink" moduleName="WebLink" name="WebLink" xmi:id="_ElpWKaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wM73oKE3EeSQjdcVB7dQRg" label="APXTConga4__Conga_Composer_Settings__c" moduleName="APXTConga4__Conga_Composer_Settings__c" name="APXTConga4__Conga_Composer_Settings__c" xmi:id="_ElpWY6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wOAOoKE3EeSQjdcVB7dQRg" label="APXTConga4__Conga_Email_Staging__c" moduleName="APXTConga4__Conga_Email_Staging__c" name="APXTConga4__Conga_Email_Staging__c" xmi:id="_ElpWfaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wO60oKE3EeSQjdcVB7dQRg" label="APXTConga4__Conga_Email_Template__c" moduleName="APXTConga4__Conga_Email_Template__c" name="APXTConga4__Conga_Email_Template__c" xmi:id="_Elp7S6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wP2BsKE3EeSQjdcVB7dQRg" label="APXTConga4__Conga_Merge_Query__c" moduleName="APXTConga4__Conga_Merge_Query__c" name="APXTConga4__Conga_Merge_Query__c" xmi:id="_Elp7b6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wQp6AKE3EeSQjdcVB7dQRg" label="APXTConga4__Conga_Template__c" moduleName="APXTConga4__Conga_Template__c" name="APXTConga4__Conga_Template__c" xmi:id="_Elp7iaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wRZg4KE3EeSQjdcVB7dQRg" label="AccountTeamMember" moduleName="AccountTeamMember" name="AccountTeamMember" xmi:id="_Elp7raGbEeSQjdcVB7dQRg"/>
+  <modules id="_wUClMKE3EeSQjdcVB7dQRg" label="AssetHistory" moduleName="AssetHistory" name="AssetHistory" xmi:id="_Elp7xaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wU0oUKE3EeSQjdcVB7dQRg" label="Breach_Claims_Notice__History" moduleName="Breach_Claims_Notice__History" name="Breach_Claims_Notice__History" xmi:id="_Elp716GbEeSQjdcVB7dQRg"/>
+  <modules id="_wWKFEKE3EeSQjdcVB7dQRg" label="Breach_Claims_Notice__c" moduleName="Breach_Claims_Notice__c" name="Breach_Claims_Notice__c" xmi:id="_Elp76aGbEeSQjdcVB7dQRg"/>
+  <modules id="_wW_ykKE3EeSQjdcVB7dQRg" label="Breach_Proposal__History" moduleName="Breach_Proposal__History" name="Breach_Proposal__History" xmi:id="_Elp8i6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wXwnkKE3EeSQjdcVB7dQRg" label="Breach_Proposal__Share" moduleName="Breach_Proposal__Share" name="Breach_Proposal__Share" xmi:id="_Elp8naGbEeSQjdcVB7dQRg"/>
+  <modules id="_wYaH0KE3EeSQjdcVB7dQRg" label="Breach_Proposal__c" moduleName="Breach_Proposal__c" name="Breach_Proposal__c" xmi:id="_Elp8r6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wZJHoKE3EeSQjdcVB7dQRg" label="Breach__History" moduleName="Breach__History" name="Breach__History" xmi:id="_Elp88aGbEeSQjdcVB7dQRg"/>
+  <modules id="_wZ58oKE3EeSQjdcVB7dQRg" label="Breach__Share" moduleName="Breach__Share" name="Breach__Share" xmi:id="_Elp9A6GbEeSQjdcVB7dQRg"/>
+  <modules id="_wb3rgKE3EeSQjdcVB7dQRg" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_Elp9FaGbEeSQjdcVB7dQRg"/>
+  <modules id="_wcqVsKE3EeSQjdcVB7dQRg" label="Campaign_Expense__History" moduleName="Campaign_Expense__History" name="Campaign_Expense__History" xmi:id="_ElqitKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wdeOAKE3EeSQjdcVB7dQRg" label="Campaign_Expense__c" moduleName="Campaign_Expense__c" name="Campaign_Expense__c" xmi:id="_ElqixqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wePqEKE3EeSQjdcVB7dQRg" label="Campaign_Time_of_Staff__History" moduleName="Campaign_Time_of_Staff__History" name="Campaign_Time_of_Staff__History" xmi:id="_Elqi5KGbEeSQjdcVB7dQRg"/>
+  <modules id="_wfCUQKE3EeSQjdcVB7dQRg" label="Campaign_Time_of_Staff__c" moduleName="Campaign_Time_of_Staff__c" name="Campaign_Time_of_Staff__c" xmi:id="_Elqi9qGbEeSQjdcVB7dQRg"/>
+  <modules id="_wgDn8KE3EeSQjdcVB7dQRg" label="Cancel_Program__c" moduleName="Cancel_Program__c" name="Cancel_Program__c" xmi:id="_ElqjGKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wgqE4KE3EeSQjdcVB7dQRg" label="Cancellation_Termination__c" moduleName="Cancellation_Termination__c" name="Cancellation_Termination__c" xmi:id="_ElqjOKGbEeSQjdcVB7dQRg"/>
+  <modules id="_whWBYKE3EeSQjdcVB7dQRg" label="ClientBrowser" moduleName="ClientBrowser" name="ClientBrowser" xmi:id="_ElqjqKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wiB94KE3EeSQjdcVB7dQRg" label="Client_Program__History" moduleName="Client_Program__History" name="Client_Program__History" xmi:id="_ElqjtqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wjRUAKE3EeSQjdcVB7dQRg" label="Client_Program__c" moduleName="Client_Program__c" name="Client_Program__c" xmi:id="_ElqjyKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wkHokKE3EeSQjdcVB7dQRg" label="CloudingoAgent__CldIn__c" moduleName="CloudingoAgent__CldIn__c" name="CloudingoAgent__CldIn__c" xmi:id="_ElqkmKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wlKKYKE3EeSQjdcVB7dQRg" label="CloudingoAgent__Log__c" moduleName="CloudingoAgent__Log__c" name="CloudingoAgent__Log__c" xmi:id="_ElqkvqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wmBGAKE3EeSQjdcVB7dQRg" label="CloudingoAgent__POSync__c" moduleName="CloudingoAgent__POSync__c" name="CloudingoAgent__POSync__c" xmi:id="_Elqk2KGbEeSQjdcVB7dQRg"/>
+  <modules id="_wm1lYKE3EeSQjdcVB7dQRg" label="CloudingoAgent__PO__c" moduleName="CloudingoAgent__PO__c" name="CloudingoAgent__PO__c" xmi:id="_Elqk-KGbEeSQjdcVB7dQRg"/>
+  <modules id="_wnr58KE3EeSQjdcVB7dQRg" label="CloudingoAgent__SearchFilter__c" moduleName="CloudingoAgent__SearchFilter__c" name="CloudingoAgent__SearchFilter__c" xmi:id="_ElqlEKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wol44KE3EeSQjdcVB7dQRg" label="Contract_Request__History" moduleName="Contract_Request__History" name="Contract_Request__History" xmi:id="_ElrJZqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wpM84KE3EeSQjdcVB7dQRg" label="Contract_Request__c" moduleName="Contract_Request__c" name="Contract_Request__c" xmi:id="_ElrJeKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wp6ukKE3EeSQjdcVB7dQRg" label="Contract_v2__History" moduleName="Contract_v2__History" name="Contract_v2__History" xmi:id="_ElrJuKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wrwhoKE3EeSQjdcVB7dQRg" label="Contract_v2__c" moduleName="Contract_v2__c" name="Contract_v2__c" xmi:id="_ElrJyqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wsjL0KE3EeSQjdcVB7dQRg" label="DRM_Engagement__History" moduleName="DRM_Engagement__History" name="DRM_Engagement__History" xmi:id="_ElrKsqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wtRkkKE3EeSQjdcVB7dQRg" label="DRM_Engagement__c" moduleName="DRM_Engagement__c" name="DRM_Engagement__c" xmi:id="_ElrKxKGbEeSQjdcVB7dQRg"/>
+  <modules id="_wuS4QKE3EeSQjdcVB7dQRg" label="Field_Trip__Field_Analysis__History" moduleName="Field_Trip__Field_Analysis__History" name="Field_Trip__Field_Analysis__History" xmi:id="_ElrK8KGbEeSQjdcVB7dQRg"/>
+  <modules id="_wvmf0KE3EeSQjdcVB7dQRg" label="Field_Trip__Field_Analysis__c" moduleName="Field_Trip__Field_Analysis__c" name="Field_Trip__Field_Analysis__c" xmi:id="_ElrLAqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wwZKAKE3EeSQjdcVB7dQRg" label="Field_Trip__Object_Analysis__History" moduleName="Field_Trip__Object_Analysis__History" name="Field_Trip__Object_Analysis__History" xmi:id="_ElrLJqGbEeSQjdcVB7dQRg"/>
+  <modules id="_wzC1YKE3EeSQjdcVB7dQRg" label="Field_Trip__Object_Analysis__Share" moduleName="Field_Trip__Object_Analysis__Share" name="Field_Trip__Object_Analysis__Share" xmi:id="_ElrLOKGbEeSQjdcVB7dQRg"/>
+  <modules id="_w1EOoKE3EeSQjdcVB7dQRg" label="Field_Trip__Object_Analysis__c" moduleName="Field_Trip__Object_Analysis__c" name="Field_Trip__Object_Analysis__c" xmi:id="_ElrLSqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w1z1gKE3EeSQjdcVB7dQRg" label="LineitemOverride" moduleName="LineitemOverride" name="LineitemOverride" xmi:id="_ElrLcqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w2fK8KE3EeSQjdcVB7dQRg" label="LoginIp" moduleName="LoginIp" name="LoginIp" xmi:id="_ElrLmKGbEeSQjdcVB7dQRg"/>
+  <modules id="_w3WtoKE3EeSQjdcVB7dQRg" label="Marketing_Project__History" moduleName="Marketing_Project__History" name="Marketing_Project__History" xmi:id="_ElrLpqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w38jgKE3EeSQjdcVB7dQRg" label="Marketing_Project__c" moduleName="Marketing_Project__c" name="Marketing_Project__c" xmi:id="_ElrLuKGbEeSQjdcVB7dQRg"/>
+  <modules id="_w42icKE3EeSQjdcVB7dQRg" label="Marketing__History" moduleName="Marketing__History" name="Marketing__History" xmi:id="_ElrwjqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w6GfoKE3EeSQjdcVB7dQRg" label="Marketing__c" moduleName="Marketing__c" name="Marketing__c" xmi:id="_ElrwoKGbEeSQjdcVB7dQRg"/>
+  <modules id="_w7PIEKE3EeSQjdcVB7dQRg" label="OpportunityLineItemSchedule" moduleName="OpportunityLineItemSchedule" name="OpportunityLineItemSchedule" xmi:id="_ElrxCqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w8H44KE3EeSQjdcVB7dQRg" label="OpportunityOverride" moduleName="OpportunityOverride" name="OpportunityOverride" xmi:id="_ElrxJqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w8-0gKE3EeSQjdcVB7dQRg" label="Press_Release__c" moduleName="Press_Release__c" name="Press_Release__c" xmi:id="_ElrxTqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w9rYEKE3EeSQjdcVB7dQRg" label="Pricebook2History" moduleName="Pricebook2History" name="Pricebook2History" xmi:id="_ElrxsqGbEeSQjdcVB7dQRg"/>
+  <modules id="_w-c0IKE3EeSQjdcVB7dQRg" label="ProcessDefinition" moduleName="ProcessDefinition" name="ProcessDefinition" xmi:id="_ElrxxKGbEeSQjdcVB7dQRg"/>
+  <modules id="_w_JXsKE3EeSQjdcVB7dQRg" label="ProcessNode" moduleName="ProcessNode" name="ProcessNode" xmi:id="_Elrx4KGbEeSQjdcVB7dQRg"/>
+  <modules id="_w_4-kKE3EeSQjdcVB7dQRg" label="Program_Mgt__History" moduleName="Program_Mgt__History" name="Program_Mgt__History" xmi:id="_Elrx7qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xBe6AKE3EeSQjdcVB7dQRg" label="Program_Mgt__c" moduleName="Program_Mgt__c" name="Program_Mgt__c" xmi:id="_ElryAKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xCPvAKE3EeSQjdcVB7dQRg" label="Proposals__History" moduleName="Proposals__History" name="Proposals__History" xmi:id="_Elry3qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xDByIKE3EeSQjdcVB7dQRg" label="Proposals__Share" moduleName="Proposals__Share" name="Proposals__Share" xmi:id="_Elry8KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xD_bcKE3EeSQjdcVB7dQRg" label="Proposals__c" moduleName="Proposals__c" name="Proposals__c" xmi:id="_ElrzAqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xFHc0KE3EeSQjdcVB7dQRg" label="Proposals_do_not_use__c" moduleName="Proposals_do_not_use__c" name="Proposals_do_not_use__c" xmi:id="_ElsXtqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xGCp4KE3EeSQjdcVB7dQRg" label="QuantityForecast" moduleName="QuantityForecast" name="QuantityForecast" xmi:id="_ElsXzKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xG9P4KE3EeSQjdcVB7dQRg" label="QuantityForecastHistory" moduleName="QuantityForecastHistory" name="QuantityForecastHistory" xmi:id="_ElsYHKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xHmJEKE3EeSQjdcVB7dQRg" label="Quote" moduleName="Quote" name="Quote" xmi:id="_ElsYOqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xIeS0KE3EeSQjdcVB7dQRg" label="QuoteDocument" moduleName="QuoteDocument" name="QuoteDocument" xmi:id="_ElsYoqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xJ0WoKE3EeSQjdcVB7dQRg" label="QuoteLineItem" moduleName="QuoteLineItem" name="QuoteLineItem" xmi:id="_ElsYvKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xKuVkKE3EeSQjdcVB7dQRg" label="Resolution_Center__History" moduleName="Resolution_Center__History" name="Resolution_Center__History" xmi:id="_ElsY6KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xMMVMKE3EeSQjdcVB7dQRg" label="Resolution_Center__c" moduleName="Resolution_Center__c" name="Resolution_Center__c" xmi:id="_ElsY-qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xNG7MKE3EeSQjdcVB7dQRg" label="RevenueForecast" moduleName="RevenueForecast" name="RevenueForecast" xmi:id="_ElsZgqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xN_E8KE3EeSQjdcVB7dQRg" label="RevenueForecastHistory" moduleName="RevenueForecastHistory" name="RevenueForecastHistory" xmi:id="_ElsZ0qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xO98YKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Application_Properties__c" moduleName="SFSSDupeCatcher__Application_Properties__c" name="SFSSDupeCatcher__Application_Properties__c" xmi:id="_ElsZ8KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xPv_gKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Application_Settings__History" moduleName="SFSSDupeCatcher__Application_Settings__History" name="SFSSDupeCatcher__Application_Settings__History" xmi:id="_ElsaCKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xQWccKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Application_Settings__c" moduleName="SFSSDupeCatcher__Application_Settings__c" name="SFSSDupeCatcher__Application_Settings__c" xmi:id="_ElsaGqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xRaMYKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__DcIn__c" moduleName="SFSSDupeCatcher__DcIn__c" name="SFSSDupeCatcher__DcIn__c" xmi:id="_Els-pqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xSfxgKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Duplicate_Warning__c" moduleName="SFSSDupeCatcher__Duplicate_Warning__c" name="SFSSDupeCatcher__Duplicate_Warning__c" xmi:id="_Els-zKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xVQKkKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Override_Cache__c" moduleName="SFSSDupeCatcher__Override_Cache__c" name="SFSSDupeCatcher__Override_Cache__c" xmi:id="_Els-5qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xWT6gKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Potential_Duplicate__c" moduleName="SFSSDupeCatcher__Potential_Duplicate__c" name="SFSSDupeCatcher__Potential_Duplicate__c" xmi:id="_Els-_KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xXSK4KE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__RequiredFieldSupport__c" moduleName="SFSSDupeCatcher__RequiredFieldSupport__c" name="SFSSDupeCatcher__RequiredFieldSupport__c" xmi:id="_Els_KqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xYedsKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Scenario_Rule__c" moduleName="SFSSDupeCatcher__Scenario_Rule__c" name="SFSSDupeCatcher__Scenario_Rule__c" xmi:id="_Els_QKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xZOroKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Scenario__History" moduleName="SFSSDupeCatcher__Scenario__History" name="SFSSDupeCatcher__Scenario__History" xmi:id="_Els_ZqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xaFnQKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Scenario__c" moduleName="SFSSDupeCatcher__Scenario__c" name="SFSSDupeCatcher__Scenario__c" xmi:id="_Els_eKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xbDQkKE3EeSQjdcVB7dQRg" label="SFSSDupeCatcher__Web_To_Lead_Sources__c" moduleName="SFSSDupeCatcher__Web_To_Lead_Sources__c" name="SFSSDupeCatcher__Web_To_Lead_Sources__c" xmi:id="_Els_qqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xby3cKE3EeSQjdcVB7dQRg" label="Training__c" moduleName="Training__c" name="Training__c" xmi:id="_Els_vqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xcQKcKE3EeSQjdcVB7dQRg" label="UserAccountTeamMember" moduleName="UserAccountTeamMember" name="UserAccountTeamMember" xmi:id="_EltAFqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xdSsQKE3EeSQjdcVB7dQRg" label="ctct__CTCTAgreement__History" moduleName="ctct__CTCTAgreement__History" name="ctct__CTCTAgreement__History" xmi:id="_EltAMqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xeHysKE3EeSQjdcVB7dQRg" label="ctct__CTCTAgreement__c" moduleName="ctct__CTCTAgreement__c" name="ctct__CTCTAgreement__c" xmi:id="_EltARKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xfV6sKE3EeSQjdcVB7dQRg" label="ctct__CTCTCustomMapping__History" moduleName="ctct__CTCTCustomMapping__History" name="ctct__CTCTCustomMapping__History" xmi:id="_EltAXqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xgKaEKE3EeSQjdcVB7dQRg" label="ctct__CTCTCustomMapping__c" moduleName="ctct__CTCTCustomMapping__c" name="ctct__CTCTCustomMapping__c" xmi:id="_EltAcKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xhOKAKE3EeSQjdcVB7dQRg" label="ctct__CTCTDonotEmailInfo__History" moduleName="ctct__CTCTDonotEmailInfo__History" name="ctct__CTCTDonotEmailInfo__History" xmi:id="_EltAjKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xhxjoKE3EeSQjdcVB7dQRg" label="ctct__CTCTDonotEmailInfo__c" moduleName="ctct__CTCTDonotEmailInfo__c" name="ctct__CTCTDonotEmailInfo__c" xmi:id="_EltAnqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xi8oUKE3EeSQjdcVB7dQRg" label="ctct__CTCTOptOutsDateInfo__c" moduleName="ctct__CTCTOptOutsDateInfo__c" name="ctct__CTCTOptOutsDateInfo__c" xmi:id="_EltAvqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xj9U8KE3EeSQjdcVB7dQRg" label="ctct__CTCTParameterInfo__History" moduleName="ctct__CTCTParameterInfo__History" name="ctct__CTCTParameterInfo__History" xmi:id="_EltA3KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xk8MYKE3EeSQjdcVB7dQRg" label="ctct__CTCTParameterInfo__c" moduleName="ctct__CTCTParameterInfo__c" name="ctct__CTCTParameterInfo__c" xmi:id="_EltA7qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xl7q4KE3EeSQjdcVB7dQRg" label="ctct__CTCTStandardMapping__History" moduleName="ctct__CTCTStandardMapping__History" name="ctct__CTCTStandardMapping__History" xmi:id="_EltBCqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xmtG8KE3EeSQjdcVB7dQRg" label="ctct__CTCTStandardMapping__c" moduleName="ctct__CTCTStandardMapping__c" name="ctct__CTCTStandardMapping__c" xmi:id="_EltBHKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xpmC4KE3EeSQjdcVB7dQRg" label="ctct__CTCTUploadOptOutDateInfo__History" moduleName="ctct__CTCTUploadOptOutDateInfo__History" name="ctct__CTCTUploadOptOutDateInfo__History" xmi:id="_EltltKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xqWQ0KE3EeSQjdcVB7dQRg" label="ctct__CTCTUploadOptOutDateInfo__c" moduleName="ctct__CTCTUploadOptOutDateInfo__c" name="ctct__CTCTUploadOptOutDateInfo__c" xmi:id="_EltlxqGbEeSQjdcVB7dQRg"/>
+  <modules id="_xrTTEKE3EeSQjdcVB7dQRg" label="ctct__CTCTUser__History" moduleName="ctct__CTCTUser__History" name="ctct__CTCTUser__History" xmi:id="_Eltl5KGbEeSQjdcVB7dQRg"/>
+  <modules id="_xsEIEKE3EeSQjdcVB7dQRg" label="ctct__CTCTUser__c" moduleName="ctct__CTCTUser__c" name="ctct__CTCTUser__c" xmi:id="_Eltl9qGbEeSQjdcVB7dQRg"/>
+  <modules id="_xtENoKE3EeSQjdcVB7dQRg" label="pi__ObjectChangeLog__c" moduleName="pi__ObjectChangeLog__c" name="pi__ObjectChangeLog__c" xmi:id="_EltmFKGbEeSQjdcVB7dQRg"/>
+  <modules id="_xt1psKE3EeSQjdcVB7dQRg" label="AccountContactRole" moduleName="AccountContactRole" name="AccountContactRole" xmi:id="_EltmMKGbEeSQjdcVB7dQRg"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_441e751e-1996-4f08-8c43-596efc65ffd6"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>6XLiPmOrAfGvU+3OBYHKoR7d8GTmwGNfk4vV6CXe5OfKkY5TgHkGsd7t6EETnM9BvAbjAKu+xOAN
+/PyrcJ/IRg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a566afb6-7009-4022-9a7e-43d856a0b5b3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>uxFyS0NADzXxW5FLCVSyWtqtUfn2evzfd3kvPn2a8yUYvOLpT62m3h72FfJ6ImPW2TRhmLAYNe4D
+hLRubXQIlA==</DigestValue></Reference></SignedInfo><SignatureValue>wcj0B1aaCQ1Q57Q3XD3hSlNHPLmQ2z/WzxHrmPmk1ckVl8dzEir8lcDCb5yKy8Nd8evFNSsXjJRc
++zd31oXFZK+Y/5i9ixRBgfCiroo1cmQJVEuLjDvyVuuDCrAQ3iQr+y++mMLHatH19J0SYQzD2NNi
+Wu+z/8NEDYsRiChCzNg3+Pk2zxpT4+PrqTi0VoTupJ5BKO8JUCeU8pWmpYfYKyn2a6fJ48DSvGdk
+XcIP2bqj6C3pFQFj2Bu60mIqcTHv8M++dOrO0xSYqfDHQk6vAvBqr12kOZlrA4BRXpWzpxiss2xY
+AQiNOW5h552ebesgZG/jkvO2Vabv0jAyu7hFVg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a566afb6-7009-4022-9a7e-43d856a0b5b3" Target="#_441e751e-1996-4f08-8c43-596efc65ffd6"><Timestamp>2019-03-04 21:45:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SalesforceSchemaConnection>

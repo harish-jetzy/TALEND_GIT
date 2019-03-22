@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TalendMetadata:SalesforceSchemaConnection xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:xmi="http://www.omg.org/XMI" batchSize="250" loginType="basic" moduleName="Billing_and_Programs__c" name="IDT_Sandbox_partial" password="ogN4jVF2ZF78VoN1w2crgEgK5gtSi5k10tokzk9nWIUQs9JTje8SFw==" timeOut="60000" userName="replicon1@idt911.com.partial" webServiceUrl="https://cs3.salesforce.com/services/Soap/u/19.0" xmi:id="_59p3MOkqEeS7qPeeqEDqnQ" xmi:version="2.0">
+  <modules id="_7CyTQN9mEeS-Xc-Z93uvhg" label="Account" moduleName="Account" name="Account" xmi:id="_59qeQOkqEeS7qPeeqEDqnQ"/>
+  <modules id="_8L0-8N9mEeS-Xc-Z93uvhg" label="Contract" moduleName="Contract" name="Contract" xmi:id="_59qfAukqEeS7qPeeqEDqnQ"/>
+  <modules id="_8WG8UN9mEeS-Xc-Z93uvhg" label="Contact" moduleName="Contact" name="Contact" xmi:id="_59rF3ekqEeS7qPeeqEDqnQ"/>
+  <modules id="_8gr0oN9mEeS-Xc-Z93uvhg" label="ContactFeed" moduleName="ContactFeed" name="ContactFeed" xmi:id="_59rGo-kqEeS7qPeeqEDqnQ"/>
+  <modules id="_8tzDkN9mEeS-Xc-Z93uvhg" label="ContactShare" moduleName="ContactShare" name="ContactShare" xmi:id="_59rsk-kqEeS7qPeeqEDqnQ"/>
+  <modules id="_DiPL0N9nEeS-Xc-Z93uvhg" label="RecordType" moduleName="RecordType" name="RecordType" xmi:id="_59rspekqEeS7qPeeqEDqnQ"/>
+  <modules id="_7Zvw8OK3EeSevPgogNkSHA" label="Account" moduleName="Account" name="Account" xmi:id="_59rswekqEeS7qPeeqEDqnQ"/>
+  <modules id="_7c39cOK3EeSevPgogNkSHA" label="Contact" moduleName="Contact" name="Contact" xmi:id="_59rtg-kqEeS7qPeeqEDqnQ"/>
+  <modules id="_7gwX4OK3EeSevPgogNkSHA" label="ContactFeed" moduleName="ContactFeed" name="ContactFeed" xmi:id="_59ruSekqEeS7qPeeqEDqnQ"/>
+  <modules id="_-XvzIOK3EeSevPgogNkSHA" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_59sULOkqEeS7qPeeqEDqnQ"/>
+  <modules id="_YWkU0OPlEeSdOuqLQF2JbA" label="Breach__c" moduleName="Breach__c" name="Breach__c" xmi:id="_59s6rekqEeS7qPeeqEDqnQ"/>
+  <modules id="_ZIPpYOPlEeSdOuqLQF2JbA" label="Billing_Product__History" moduleName="Billing_Product__History" name="Billing_Product__History" xmi:id="_59s7_ekqEeS7qPeeqEDqnQ"/>
+  <modules id="_ZJJBQOPlEeSdOuqLQF2JbA" label="Billing_Product__c" moduleName="Billing_Product__c" name="Billing_Product__c" xmi:id="_59s8D-kqEeS7qPeeqEDqnQ"/>
+  <modules id="_ZK7J8OPlEeSdOuqLQF2JbA" label="Billing_and_Programs__History" moduleName="Billing_and_Programs__History" name="Billing_and_Programs__History" xmi:id="_59s8a-kqEeS7qPeeqEDqnQ"/>
+  <modules id="_4iPCEOkqEeS7qPeeqEDqnQ" label="Billing_and_Programs__c" moduleName="Billing_and_Programs__c" name="Billing_and_Programs__c" xmi:id="_59thoekqEeS7qPeeqEDqnQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ad97c7ec-5007-4a12-a81a-13af2f100493"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Ak7P9IGlwu1CFtY6+8h9NyHhw1OAaDsPQRF4WNOqNhh/+fOt+t4xpvcytFIFOf8gaN5Me+IUIRHj
+2nWYPCLMSQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_74e1574b-851a-41ef-b480-a7aac7596a61"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Jjy2FDXsCfjt+sjOV3TWZf6Ivp+oT/WhBh4/Y719wgAptF9UhAJR/YcdX1EWadQ5bSDYARlDcr4V
+30KtDL8vPw==</DigestValue></Reference></SignedInfo><SignatureValue>bLiftRdGDjGn8x9rGOqB2gCinD9dG6A9f0n0ik9TpDLUzlDf+EMJ9656Mr8EclWog61bPQVitHer
+GILVPnT85bZeVcJcpvLW0/Jx5mxTXvRasj6xpAMDjZ/rhoxP2YdSpPAwe46bRil4I22/bxwEPObi
+zPY9MNFLR5njdLz2x5fyktjXiQ994a5Mlhr+DSvLilz0FyPBzwh8y0xcCIgeQFRcyORQH9OIwoeE
+PwYeu6DoBs9Vrd3zp7nkUz7sIOlCk94HSZtrqaq6zaesPS6zrVvcB1UpZ4xyGHTEeg8AKaRotExI
+X5CfdcJroFovMWvZIhlLWsTlu/F+dKHo8QptKg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_74e1574b-851a-41ef-b480-a7aac7596a61" Target="#_ad97c7ec-5007-4a12-a81a-13af2f100493"><Timestamp>2019-03-04 21:45:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></TalendMetadata:SalesforceSchemaConnection>

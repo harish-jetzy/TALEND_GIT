@@ -1,0 +1,12 @@
+package routines;
+
+public class ConvertDecimalCol {
+
+    public static String getDecimalConvertedValue(String data) {
+        
+    	if(data == null || data.equalsIgnoreCase(""))
+    		return "0.00";
+    	else 
+    		return data;
+    }
+}

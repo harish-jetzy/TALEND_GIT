@@ -1,0 +1,213 @@
+package routines;
+
+import java.util.Calendar;
+import java.util.Date;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class DimDate {
+
+    /**
+     * helloExample: not return value, only print "hello" + message.
+     * 
+     * 
+     * {talendTypes} String
+     * 
+     * {Category} User Defined
+     * 
+     * {param} string("world") input: The string need to be printed.
+     * 
+     * {example} helloExemple("world") # hello world !.
+     */
+   
+
+	public static int getDate (Date date)
+	{
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		int day = cal.get(Calendar.DAY_OF_MONTH);
+		return day;
+		
+	}
+		
+	public static int getMonth (Date date)
+	{
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		int month = cal.get(Calendar.MONTH)+1;
+		return month;
+	}
+	
+	public static int getYear (Date date)
+	{
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		int year = cal.get(Calendar.YEAR);
+		return year;
+	}
+	
+	public static int getWeekOfYear (Date date)
+	{
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(date);
+		int weekOfYear = cal.get(Calendar.WEEK_OF_YEAR);
+		return weekOfYear;
+	}
+	
+	public static int getQuarter (Date date)
+
+{
+	
+		int month = getMonth(date);
+		
+		
+	if (month >=1 && month <= 3 )
+		return 1;
+	
+	if (month >=4 && month <= 6 )
+		return 2;
+	
+	if (month >=7 && month <= 9 )
+		return 3;
+	
+	if (month >=10 && month <= 12 )
+		return 4;
+	
+	return 0;
+	
+	
+}
+
+public static String getQuarterBeginDate (Date date)
+
+{
+	String beginDate = "";
+	int quarter = getQuarter(date);
+	int year = getYear(date);
+	
+	if(quarter == 1)
+		beginDate = year + "-01-01";
+	
+	if(quarter == 2)
+		beginDate = year + "-04-01";
+	
+	if(quarter == 3)
+		beginDate = year + "-07-01";
+	
+	if(quarter == 4)
+		beginDate = year + "-10-01";
+	
+	return beginDate;
+	
+	
+}
+
+public static String getQuarterEndDate (Date date)
+
+{
+	String endDate = "";
+	int quarter = getQuarter(date);
+	int year = getYear(date);
+	
+	if(quarter == 1)
+		endDate = year + "-03-31" ;
+	
+	if(quarter == 2)
+		endDate = year + "-06-30/";
+	
+	if(quarter == 3)
+		endDate = year + "-09-30/";
+	
+	if(quarter == 4)
+		endDate = year + "-12-31/";
+	
+	return endDate;
+	
+}
+
+public static int getCountOfDaysInMonth (int date, int month, int year)
+{
+	Calendar cal = Calendar.getInstance();
+	cal.set(year, month-1, date);
+	int numDays = cal.getActualMaximum(Calendar.DATE);
+	return numDays;
+	
+}
+
+public static int getNumDayOfQuarter (Date date)
+
+{
+	int month = getMonth(date);
+	int quarter = getQuarter (date);
+	int date1 = getDate (date);
+	int year = getYear(date);
+	
+	int monthMod = month % 3;
+	
+	if (monthMod == 0)
+		monthMod = 3;
+	
+	//System.out.println(monthMod);
+	
+	int countNumDaysOfQuarter = 0;
+	
+	
+		if (monthMod == 1)
+			countNumDaysOfQuarter = getDate(date);
+		
+		if (monthMod == 2)
+			countNumDaysOfQuarter = getDate(date) + getCountOfDaysInMonth(date1, month - 1, year);
+		
+		if (monthMod == 3)
+			countNumDaysOfQuarter = getDate(date) + getCountOfDaysInMonth(date1, month - 1, year) + getCountOfDaysInMonth(date1, month - 1, year);
+		
+	//	System.out.println(" - "+countNumDaysOfQuarter);
+		
+		return countNumDaysOfQuarter;
+		
+	}
+
+public static double getJulianDate (Date date)
+
+{
+	
+	int M = getMonth(date);
+	int Y = getYear(date);
+	int D = getDate(date);
+	
+	int A;
+	int B;
+	int C;
+	double JD;
+	double E;
+	double F;
+	
+	
+			  A = Y/100;
+			  B = A/4;
+			  C = 2-A+B;
+			  E = 365.25 * (Y+4716);
+			  F = 30.6001 * (M+1);
+			  JD= C+D+E+F-1524.5;
+			  
+			  return JD;
+	
+}
+
+}

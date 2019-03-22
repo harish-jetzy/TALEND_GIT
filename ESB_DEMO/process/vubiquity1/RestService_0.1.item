@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="Default" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx1024M&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPTIONS" value="none"/>
+    <elementParameter field="TEXT" name="OEM_CUSTOM_ATTRIBUTE" value=""/>
+    <elementParameter field="TEXT" name="HADOOP_APP_PATH" value=""/>
+    <elementParameter field="TEXT" name="JOBID_FOR_OOZIE" value=""/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_10"/>
+    <routinesParameter id="_fq2PMI4jEeO48POWPW3cTg" name="DQTechnical"/>
+    <routinesParameter id="_fq6goI4jEeO48POWPW3cTg" name="DataOperation"/>
+    <routinesParameter id="_fU50YI4jEeO48POWPW3cTg" name="DataQuality"/>
+    <routinesParameter id="_fqpa4I4jEeO48POWPW3cTg" name="DqStringHandling"/>
+    <routinesParameter id="_fsRykI4jEeO48POWPW3cTg" name="MDM"/>
+    <routinesParameter id="_frFfwI4jEeO48POWPW3cTg" name="Mathematical"/>
+    <routinesParameter id="_frjZ0I4jEeO48POWPW3cTg" name="Numeric"/>
+    <routinesParameter id="_fr1tsI4jEeO48POWPW3cTg" name="Relational"/>
+    <routinesParameter id="_fsWEAI4jEeO48POWPW3cTg" name="SQLike"/>
+    <routinesParameter id="_fr5_II4jEeO48POWPW3cTg" name="StringHandling"/>
+    <routinesParameter id="_fsAFwI4jEeO48POWPW3cTg" name="TalendDataGenerator"/>
+    <routinesParameter id="_fsFlUI4jEeO48POWPW3cTg" name="TalendDate"/>
+    <routinesParameter id="_fsLE4I4jEeO48POWPW3cTg" name="TalendString"/>
+  </parameters>
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1"/>
+    <elementParameter field="CHECK" name="START" value="true"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;http://localhost:8088/Adoniss&quot;"/>
+    <elementParameter field="TABLE" name="SCHEMAS">
+      <elementValue elementRef="SCHEMA" value="Request"/>
+      <elementValue elementRef="HTTP_VERB" value="POST"/>
+      <elementValue elementRef="URI_PATTERN" value="&quot;/&quot;"/>
+      <elementValue elementRef="CONSUMES" value="XML"/>
+      <elementValue elementRef="PRODUCES" value="XML"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_TYPE" value="BASIC"/>
+    <elementParameter field="CHECK" name="NEED_AUTHORIZATION" value="false"/>
+    <elementParameter field="CHECK" name="SERVICE_LOCATOR" value="false"/>
+    <elementParameter field="TEXT" name="SERVICE_NAMESPACE" value="&quot;http://www.talend.org/rest/&quot;"/>
+    <elementParameter field="TEXT" name="SERVICE_NAME" value="&quot;RestService&quot;"/>
+    <elementParameter field="CHECK" name="SERVICE_ACTIVITY_MONITOR" value="false"/>
+    <elementParameter field="CHECK" name="USE_BUSINESS_CORRELATION" value="false"/>
+    <elementParameter field="CHECK" name="LOG_MESSAGES" value="false"/>
+    <elementParameter field="CHECK" name="WRAP_JSON_REQUEST" value="false"/>
+    <elementParameter field="TABLE" name="SERVICE_LOCATOR_CUSTOM_PROPERTIES"/>
+    <elementParameter field="TABLE" name="SERVICE_ACTIVITY_MONITOR_CUSTOM_PROPERTIES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="WRONG_CALLS" name="WRONG_CALLS">
+      <column defaultValue="" key="false" length="255" name="uri" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="method" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="0" name="status" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="1024" name="error" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="Request" name="Request">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="adoniss" name="Res">
+      <column comment="" key="true" length="10" name="AssertID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="titleID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="Request">
+        <nodes expression="" name="body" type="id_Document" xpath="Request/body">
+          <children expression="" loop="true" main="true" name="MDMTitleRequest" type="id_String" xpath="Request.body:/MDMTitleRequest">
+            <children name="idMDMTitleID" outgoingConnections="//@node.1/@nodeData/@connections.2" type="id_String" xpath="Request.body:/MDMTitleRequest/idMDMTitleID"/>
+            <children lookupOutgoingConnections="//@node.1/@nodeData/@connections.0" name="rootAssetID" type="id_String" xpath="Request.body:/MDMTitleRequest/rootAssetID"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <inputTrees lookup="true" lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row1">
+        <nodes expression="Integer.parseInt([Request.body:/MDMTitleRequest/rootAssetID]) " lookupIncomingConnections="//@node.1/@nodeData/@connections.0" name="AssertID" nullable="false" outgoingConnections="//@node.1/@nodeData/@connections.1" type="id_Integer" xpath="row1/AssertID"/>
+        <nodes name="titleID" type="id_String" xpath="row1/titleID"/>
+        <nodes name="Source_type" type="id_String" xpath="row1/Source_type"/>
+      </inputTrees>
+      <outputTrees name="Res">
+        <nodes expression="row1.AssertID" incomingConnections="//@node.1/@nodeData/@connections.1" name="AssertID" type="id_Integer" xpath="Res/AssertID"/>
+        <nodes expression=" [Request.body:/MDMTitleRequest/idMDMTitleID]" incomingConnections="//@node.1/@nodeData/@connections.2" name="titleID" type="id_String" xpath="Res/titleID"/>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@inputTrees.1/@nodes.0" xsi:type="TalendXMLMap:LookupConnection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.1/@nodes.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlInput_1"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-Y_mMGLvEeOxZe9RYAVeDQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;adoniss&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  `adoniss`.`AssertID`, &#10;  `adoniss`.`titleID`, &#10;  `adoniss`.`Source_type`&#10;FROM `adoniss`&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AssertID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="titleID"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Source_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="adoniss" name="tMysqlInput_1">
+      <column comment="" key="true" length="10" name="AssertID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="titleID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="Source_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMysqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMysqlOutput_1"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_-Y_mMGLvEeOxZe9RYAVeDQ"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value=""/>
+    <elementParameter field="TEXT" name="TYPE" value="MYSQL"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;3306&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;test&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;root&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="pphwy87hqwU="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;adoniss&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT_OR_UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+    <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+    <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="AssertID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="titleID"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="ON_DUPLICATE_KEY_UPDATE" value="false"/>
+    <elementParameter field="TABLE" name="DUPLICATED_KEYS"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" label="adoniss" name="tMysqlOutput_1">
+      <column comment="" key="true" length="10" name="AssertID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="titleID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="adoniss" name="REJECT">
+      <column comment="" key="true" length="10" name="AssertID" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="45" name="titleID" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="576" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="resp">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees lookupMode="LOAD_ONCE" matchingMode="ALL_ROWS" name="row2">
+        <nodes name="AssertID" nullable="false" outgoingConnections="//@node.4/@nodeData/@connections.0" type="id_Integer" xpath="row2/AssertID"/>
+        <nodes name="titleID" outgoingConnections="//@node.4/@nodeData/@connections.1" type="id_String" xpath="row2/titleID"/>
+        <nodes name="Source_type" type="id_String" xpath="row2/Source_type"/>
+      </inputTrees>
+      <outputTrees name="resp">
+        <nodes expression="" name="body" type="id_Document" xpath="resp/body">
+          <children expression="" loop="true" main="true" name="MDMTitlesResponse" type="id_String" xpath="resp.body:/MDMTitlesResponse" xsi:type="TalendXMLMap:OutputTreeNode">
+            <children expression="row2.AssertID" incomingConnections="//@node.4/@nodeData/@connections.0" name="id_assets_root" type="id_String" xpath="resp.body:/MDMTitlesResponse/id_assets_root" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression=" row2.titleID" incomingConnections="//@node.4/@nodeData/@connections.1" name="returncode" type="id_String" xpath="resp.body:/MDMTitlesResponse/returncode" xsi:type="TalendXMLMap:OutputTreeNode"/>
+            <children expression="&quot;Successfully Updated&quot;" name="returncodedesc" type="id_String" xpath="resp.body:/MDMTitlesResponse/returncodedesc" xsi:type="TalendXMLMap:OutputTreeNode"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <varTables minimized="true" name="Var"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0" xsi:type="TalendXMLMap:Connection"/>
+      <connections source="//@node.4/@nodeData/@inputTrees.0/@nodes.1" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1" xsi:type="TalendXMLMap:Connection"/>
+    </nodeData>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_Document"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+    <elementParameter field="CHECK" name="VALIDATION_RULES" value="false"/>
+    <metadata connector="FLOW" name="tRESTResponse_1">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="Request" lineStyle="0" metaname="Request" offsetLabelX="0" offsetLabelY="0" source="tRESTRequest_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="string"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="head"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Request"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="Res" lineStyle="0" metaname="Res" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMysqlOutput_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="AssertID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="titleID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Res"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="8" metaname="tMysqlInput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlInput_1" target="tXMLMap_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="AssertID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="titleID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tMysqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tMysqlOutput_1" target="tXMLMap_2">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="AssertID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="titleID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Source_type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
+  </connection>
+  <connection connectorName="FLOW" label="resp" lineStyle="0" metaname="resp" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tRESTResponse_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" value="true"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="USEROWLABEL" value="true"/>
+    <elementParameter field="TEXT" name="METTERLABEL" value="&quot;MyLabel&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="ABSOLUTE" value="Absolute"/>
+    <elementParameter field="CONNECTION_LIST" name="CONNECTIONS" value=""/>
+    <elementParameter field="TABLE" name="THRESHLODS"/>
+    <elementParameter field="RADIO" name="PARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="DEPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="REPARTITIONER" value="false"/>
+    <elementParameter field="RADIO" name="NONE" value="true"/>
+    <elementParameter field="TEXT" name="NUM_PARTITIONS" value="5"/>
+    <elementParameter field="TEXT" name="PART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="HASH_PARTITION" value="false"/>
+    <elementParameter field="TABLE" name="HASH_KEYS"/>
+    <elementParameter field="TEXT" name="DEPART_QUEUE_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="IS_SORTING" value="true"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="resp"/>
+    <elementParameter field="CHECK" name="RESUMING_CHECKPOINT" value="false"/>
+    <elementParameter field="TEXT" name="RESUMLABEL" value=""/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+    <elementParameter field="CHECK" name="ACTIVEBREAKPOINT" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS"/>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#10;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#10;// replace the following expression by your own filter condition &#10;input_row.columnName1.equals(input_row.columnName2)&#10;&#9;&#9;&#9;"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f7780b3c-2a52-4cb5-a7c5-28b2bf9e485b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>3u76+u5X//pBMEnELWKetqs9J/U2FP2ANCtU+r7Ffj4k7KgVeGeAUOS7R8ZgRImjwWnHzDUpzDrs
+Z3cJhOnlqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_d3436d52-8bd2-4f59-b57b-02562b136020"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>BH0FceumQWlI3nHwst9LpWzr6JlU4KpUqXTtLInL6U66XsxVEI7NoJPE9Ll5GCdxFKDszm9jrKef
+Tor3d8QdDg==</DigestValue></Reference></SignedInfo><SignatureValue>0dhG1MtyDXe2pftBCi3yOLzDw0GxRdv6MGNlUxp/RHdm7xu/pw0mEbqEwo6R7Kell2MVIeR1wjI8
+Y5SEvnG/nwnkjV59a+bHyA49rBI9gkv6KiddLSXYhMFUUnGicdz1E5TbCw5tQfb+2PGDXqFcu1lM
+s40gFueZh/OLFYSKn+wW7Hz0HKzeDLIYQ0ZACxuKDjEZNqUwAm08yD1YPQDjlQGBJ1MySFgooDnA
+08xeorBtaqBRpxS3tgQNJticNFJw3B2PY3pkP4iDfQx/4s0/qLM/JLjULhcxu5lZILe/k/RYEdUo
+jQ+Gr6jHBcpNkMNRNmw62BJs0wMCWUoVrzabcA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_d3436d52-8bd2-4f59-b57b-02562b136020" Target="#_f7780b3c-2a52-4cb5-a7c5-28b2bf9e485b"><Timestamp>2019-02-25 04:36:16</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

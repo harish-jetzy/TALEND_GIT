@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_BRWc4D7GEemXKpAD0sHC8w">
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" type="id_String" value="&quot;db1.idt911.local&quot;" xmi:id="_BRWc4T7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" type="id_String" value="&quot;subscription&quot;" xmi:id="_BRWc4j7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" type="id_String" value="&quot;reportuser&quot;" xmi:id="_BRWc4z7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;" xmi:id="_BRWc5D7GEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_BRWc5T7GEemXKpAD0sHC8w">
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" type="id_String" value="&quot;db1.idt911.local&quot;" xmi:id="_BRWc5j7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" type="id_String" value="&quot;subscription&quot;" xmi:id="_BRWc5z7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" type="id_String" value="&quot;reportuser&quot;" xmi:id="_BRWc6D7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;" xmi:id="_BRWc6T7GEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_BRWc6j7GEemXKpAD0sHC8w">
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" type="id_String" value="&quot;db1.idt911.local&quot;" xmi:id="_BRWc6z7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" type="id_String" value="&quot;subscription&quot;" xmi:id="_BRWc7D7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" type="id_String" value="&quot;reportuser&quot;" xmi:id="_BRWc7T7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;" xmi:id="_BRWc7j7GEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Test" xmi:id="_BRWc7z7GEemXKpAD0sHC8w">
+    <contextParameter comment="" name="CCHost" prompt="CCHost?" promptNeeded="false" type="id_String" value="&quot;db1.idt911.local&quot;" xmi:id="_BRWc8D7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCDatabase" prompt="CCDatabase?" promptNeeded="false" type="id_String" value="&quot;subscription&quot;" xmi:id="_BRWc8T7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCusername" prompt="CCusername?" promptNeeded="false" type="id_String" value="&quot;reportuser&quot;" xmi:id="_BRWc8j7GEemXKpAD0sHC8w"/>
+    <contextParameter comment="" name="CCpassword" prompt="CCpassword?" promptNeeded="false" type="id_String" value="&quot;nDcmvhLQ4SS7&quot;" xmi:id="_BRWc8z7GEemXKpAD0sHC8w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_00397bd2-6955-4325-b136-b7ce50213daa"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>tOPb40nDZnJ/PG2HBpLqQQZh/A+zk2UKPfhTVA2sHYiEuhONvE8PUS8rci8S3X7mQAssB8hjXe/S
++s9xP4I1Fw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_30c9fad8-eb26-4ddf-bf88-aee629e210db"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>EvH1X//Fqs+RqY9d7LBElMsCrtZ5tZ4ZXMmGM2278Rfs47bjYDjsbFNagRekTztxe40QjIAe2V7E
+1Z0zM2A4/A==</DigestValue></Reference></SignedInfo><SignatureValue>lMkRuJSmGRgj5CfQt0278r1jyFm3pAKFsD/QJcYKDCuu/Ri+AC5aym+CTjoBTxu7XJvPHCUBGX5J
+ot6pGzATnefMmvJUJ1cfwxVbxWbob9JxdCzCleg6RYI0NS6VZkXdayr8+ytaPqcc7CTvvpomrN3l
+Ro/9TnJTNFur+6efh1EFuXZ4gNs1GD6NjNaiS6rSQBoHwsxhrlJ+0Y5Q5fwCZfVHd+aXeccsE9F+
+DIdoDnnnLMFKOYmt8Hj1VilmNZbEJ8x7l5yaXAriTwWAZQUPS0wW8KBpKWE+7/6N7tIiGBpXhE2h
+1Ig9OsqVA67DkSPqpyZh2CO9OWyxBcfALofLTw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_30c9fad8-eb26-4ddf-bf88-aee629e210db" Target="#_00397bd2-6955-4325-b136-b7ce50213daa"><Timestamp>2019-03-04 21:39:42</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

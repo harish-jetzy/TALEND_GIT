@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:version="2.0">
+  <talendfile:ContextType confirmationNeeded="false" name="Default" xmi:id="_GwTFYDmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFYTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFYjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFYzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFZDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFZTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFZjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFZzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFaDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFaTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFajmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;" xmi:id="_GwTFazmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFbDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFbTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFbjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFbzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFcDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFcTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers" xmi:id="_GwTFcjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;" xmi:id="_GwTFczmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" type="id_String" value="&quot;5439&quot;" xmi:id="_GwTFdDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" type="id_String" value="&quot;marketing&quot;" xmi:id="_GwTFdTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" type="id_String" value="&quot;public&quot;" xmi:id="_GwTFdjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" type="id_String" value="&quot;marketingadmin&quot;" xmi:id="_GwTFdzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" type="id_String" value="&quot;marketingAdmin123!&quot;" xmi:id="_GwTFeDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFeTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFejmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" type="id_String" value="Avalara\robert.pierson:5Talend5!" xmi:id="_GwTFezmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFfDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="dropquery" prompt="dropquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFfTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="createquery" prompt="createquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFfjmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Dev" xmi:id="_GwTFfzmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFgDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFgTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFgjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFgzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFhDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFhTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFhjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFhzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFiDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFiTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;" xmi:id="_GwTFijmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFizmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFjDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFjTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFjjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFjzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFkDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers" xmi:id="_GwTFkTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;" xmi:id="_GwTFkjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" type="id_String" value="&quot;5439&quot;" xmi:id="_GwTFkzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" type="id_String" value="&quot;marketing&quot;" xmi:id="_GwTFlDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" type="id_String" value="&quot;public&quot;" xmi:id="_GwTFlTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" type="id_String" value="&quot;marketingadmin&quot;" xmi:id="_GwTFljmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" type="id_String" value="&quot;marketingAdmin123!&quot;" xmi:id="_GwTFlzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFmDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFmTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" type="id_String" value="Avalara\robert.pierson:5Talend5!" xmi:id="_GwTFmjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFmzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="dropquery" prompt="dropquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFnDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="createquery" prompt="createquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFnTmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+  <talendfile:ContextType confirmationNeeded="false" name="Prod" xmi:id="_GwTFnjmCEemO_ubB0sJV1w">
+    <contextParameter comment="" name="Start_Time" prompt="Start_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFnzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="End_Time" prompt="End_Time?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFoDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Api_uri" prompt="Api_uri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFoTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Syncedactivities" prompt="Syncedactivities?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFojmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="SyncedUri" prompt="SyncedUri?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFozmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Status" prompt="Status?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFpDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Uri_val" prompt="Uri_val?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFpTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created" prompt="Date_Created?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFpjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified" prompt="Date_Modified?" promptNeeded="false" type="id_String" value="1900-01-01" xmi:id="_GwTFpzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Filters" prompt="Filters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFqDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Attributes" prompt="Attributes?" promptNeeded="false" type="id_String" value="&quot;\\&quot;name\\&quot;:\\&quot;Bulk Activity Export - Web Visit\\&quot;,\\&quot;fields\\&quot;:{\\&quot;ActivityId\\&quot;:\\&quot;{{Activity.Id}}\\&quot;,\\&quot;ActivityType\\&quot;:\\&quot;{{Activity.Type}}\\&quot;,\\&quot;ActivityDate\\&quot;:\\&quot;{{Activity.CreatedAt}}\\&quot;,\\&quot;ContactId\\&quot;:\\&quot;{{Activity.Contact.Id}}\\&quot;,\\&quot;VisitorId\\&quot;:\\&quot;{{Activity.Visitor.Id}}\\&quot;,\\&quot;VisitorExternalId\\&quot;:\\&quot;{{Activity.Visitor.ExternalId}}\\&quot;,\\&quot;ReferrerUrl\\&quot;:\\&quot;{{Activity.Field(ReferrerUrl)}}\\&quot;,\\&quot;IpAddress\\&quot;:\\&quot;{{Activity.Field(IpAddress)}}\\&quot;,\\&quot;NumberOfPages\\&quot;:\\&quot;{{Activity.Field(NumberOfPages)}}\\&quot;,\\&quot;FirstPageViewUrl\\&quot;:\\&quot;{{Activity.Field(FirstPageViewUrl)}}\\&quot;,\\&quot;Duration\\&quot;:\\&quot;{{Activity.Field(Duration)}}\\&quot;,\\&quot;ExternalId\\&quot;:\\&quot;{{Activity.ExternalId}}\\&quot;}}&quot;&quot;" xmi:id="_GwTFqTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="FinalFilters" prompt="FinalFilters?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFqjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="states" prompt="states?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFqzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopStatus" prompt="LoopStatus?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFrDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopRecInsert" prompt="LoopRecInsert?" promptNeeded="false" type="id_Boolean" value="false" xmi:id="_GwTFrTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationVal" prompt="LoopIterationVal?" promptNeeded="false" type="id_Integer" value="" xmi:id="_GwTFrjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LoopIterationValStr" prompt="LoopIterationValStr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFrzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="LocalFilePath" prompt="LocalFilePath?" promptNeeded="false" type="id_Directory" value="\\wa3depfsv-wv01\execution_servers" xmi:id="_GwTFsDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBHost" prompt="DBHost?" promptNeeded="false" type="id_String" value="&quot;rs-mkt-us-west-2a-01.cgpkmxcya4le.us-west-2.redshift.amazonaws.com&quot;" xmi:id="_GwTFsTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPort" prompt="DBPort?" promptNeeded="false" type="id_String" value="&quot;5439&quot;" xmi:id="_GwTFsjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBName" prompt="DBName?" promptNeeded="false" type="id_String" value="&quot;marketing&quot;" xmi:id="_GwTFszmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBSchema" prompt="DBSchema?" promptNeeded="false" type="id_String" value="&quot;public&quot;" xmi:id="_GwTFtDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBusername" prompt="DBusername?" promptNeeded="false" type="id_String" value="&quot;marketingadmin&quot;" xmi:id="_GwTFtTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="DBPassword" prompt="DBPassword?" promptNeeded="false" type="id_String" value="&quot;marketingAdmin123!&quot;" xmi:id="_GwTFtjmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Created_Incr" prompt="Date_Created_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFtzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="Date_Modified_Incr" prompt="Date_Modified_Incr?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFuDmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="eloqua_pair" prompt="eloqua_pair?" promptNeeded="false" type="id_String" value="Avalara\robert.pierson:5Talend5!" xmi:id="_GwTFuTmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="authvalue" prompt="authvalue?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFujmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="dropquery" prompt="dropquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFuzmCEemO_ubB0sJV1w"/>
+    <contextParameter comment="" name="createquery" prompt="createquery?" promptNeeded="false" type="id_String" value="" xmi:id="_GwTFvDmCEemO_ubB0sJV1w"/>
+  </talendfile:ContextType>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9eb1fdc4-d347-4ee8-b22f-3551a235b916"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ow7Z6b5uocej0efoZCvswkRVeqScW0eQaS3xe+xv/fS823ZaD3faoH++xDfLqHXi8aHJY8jiP3ab
+PCURDKWkwQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1e94b19c-1595-4d1a-a980-1fcff40992b1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>8szRgzSf0UG8ZXxgxstVoGDrPZoPtd/AgWO+B0q5NHdfSHWevz8JkB8pKBJYNQQwbjCWl2fkzzqJ
+9qUhdCrvGA==</DigestValue></Reference></SignedInfo><SignatureValue>ab3RRVqCGiwNoAawyeGtSyhW8Q1fQN+fRuo5h1fFK7Kt2Z3+EC9dYgLaZqPsHIvyzYjo1hHR8gol
+6JAPWU2fQy12J7ynqeyzW0s1cP3IO4WFe3IjecAtP3Ru8VaJOTGScLlibNG3uyfJ2iAj6ytj8E32
+ANQDYAzPLZmygR/eS7sYEPbqN6H6maVPeSPbo3AUgjXe/K1TPZh64NRwgq1xS1x4rNbgTZjm/QM7
+M27jgVqo40KxPIht/auMxeMWobAt3JIX5Jf3mOWhpT5w76a5fojWJZJYK8SMzw4p0Cmu4yCtCz8w
+3UZIVqm41WapRYmxGuF9FEI5voNTmNspxEYezA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1e94b19c-1595-4d1a-a980-1fcff40992b1" Target="#_9eb1fdc4-d347-4ee8-b22f-3551a235b916"><Timestamp>2019-02-26 04:50:57</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

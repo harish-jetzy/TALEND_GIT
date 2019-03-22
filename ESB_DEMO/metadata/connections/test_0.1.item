@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xmi:XMI xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:version="2.0">
+  <TalendMetadata:DatabaseConnection AdditionalParams="" DatabaseType="JDBC" DatasourceName="" DbmsId="mysql_id" DriverClass="rssbus.jdbc.quickbooks.QuickBooksDriver" DriverJarPath="rssbus.jdbc.quickbooks.jar" FileFieldName="" Password="XUDUI0ARG5BiqYpDd6k42g==" Port="xxxx" ProductId="JDBC" SID="" SQLMode="false" ServerName="" SqlSynthax="SQL Syntax" StandardSQL="true" URL="jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080" UiSchema="" Username="admin" compProperties="{&quot;@type&quot;:&quot;org.talend.components.jdbc.wizard.JDBCConnectionWizardProperties&quot;,&quot;name&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:null,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;name&quot;,&quot;tags&quot;:null},&quot;repositoryLocation&quot;:&quot;_7nHgEArvEeW3AsRgq6xlKw&quot;,&quot;connection&quot;:{&quot;jdbcUrl&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;jdbc:quickbooks:User=admin;Password=artha123;URL=http://10.10.104.64:2080&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;jdbcUrl&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;jdbcUrl&quot;,&quot;tags&quot;:null},&quot;driverTable&quot;:{&quot;drivers&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;,&quot;@items&quot;:[&quot;\&quot;mvn:org.talend.libraries/rssbus.jdbc.quickbooks/6.0.0-SNAPSHOT/jar\&quot;&quot;]},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;drivers&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.util.List&lt;java.lang.String&gt;&quot;,&quot;name&quot;:&quot;drivers&quot;,&quot;tags&quot;:null},&quot;name&quot;:&quot;driverTable&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;driverClass&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;rssbus.jdbc.quickbooks.QuickBooksDriver&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;driverClass&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;driverClass&quot;,&quot;tags&quot;:null},&quot;userPassword&quot;:{&quot;useAuth&quot;:{&quot;flags&quot;:null,&quot;storedValue&quot;:{&quot;@type&quot;:&quot;boolean&quot;,&quot;value&quot;:false},&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.Boolean&quot;,&quot;name&quot;:&quot;useAuth&quot;,&quot;tags&quot;:null},&quot;userId&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;admin&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;userId&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;userId&quot;,&quot;tags&quot;:null},&quot;password&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:{&quot;@type&quot;:&quot;java.util.RegularEnumSet&quot;,&quot;@items&quot;:[{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;ENCRYPT&quot;},{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.Property$Flags&quot;,&quot;name&quot;:&quot;SUPPRESS_LOGGING&quot;}]},&quot;storedValue&quot;:&quot;XUDUI0ARG5BiqYpDd6k42g==&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false,&quot;REPOSITORY_VALUE&quot;:&quot;password&quot;},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:1,&quot;occurMaxTimes&quot;:1,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;password&quot;,&quot;tags&quot;:null},&quot;needSwitch&quot;:false,&quot;name&quot;:&quot;userPassword&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;useInWizard&quot;:true,&quot;name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null},&quot;mappingFile&quot;:{&quot;@type&quot;:&quot;org.talend.daikon.properties.property.StringProperty&quot;,&quot;possibleValues2&quot;:null,&quot;flags&quot;:null,&quot;storedValue&quot;:&quot;mysql_id&quot;,&quot;storedDefaultValue&quot;:null,&quot;children&quot;:{&quot;@type&quot;:&quot;java.util.ArrayList&quot;},&quot;taggedValues&quot;:{&quot;@type&quot;:&quot;java.util.HashMap&quot;,&quot;IS_CONTEXT_MODE&quot;:false},&quot;size&quot;:-1,&quot;occurMinTimes&quot;:0,&quot;occurMaxTimes&quot;:0,&quot;precision&quot;:0,&quot;pattern&quot;:null,&quot;nullable&quot;:false,&quot;possibleValues&quot;:null,&quot;currentType&quot;:&quot;java.lang.String&quot;,&quot;name&quot;:&quot;mappingFile&quot;,&quot;tags&quot;:null},&quot;org.talend.daikon.properties.PropertiesImpl.name&quot;:&quot;connection&quot;,&quot;validationResult&quot;:null,&quot;tags&quot;:null}" dataPackage="_FAfh4Ar-EeW7MatLIczO6A" id="_7nHgEArvEeW3AsRgq6xlKw" label="test" name="test" xmi:id="_IIDREArwEeW3AsRgq6xlKw">
+    <taggedValue tag="Is Conn Need Reload" value="false" xmi:id="_IIDREQrwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="package filter" value="" xmi:id="_IXR_4ArwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="Status" value="" xmi:id="_IqDx8ArwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="Version" value="0.1" xmi:id="_IqDx8QrwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="Purpose" value="" xmi:id="_IqDx8grwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="Description" value="" xmi:id="_IqDx8wrwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="Author" value="" xmi:id="_IqDx9ArwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="otherParameter" xmi:id="_IqDx9QrwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="DB ProductName" value="RSSBus JDBC Driver for QuickBooks V4" xmi:id="_IqM74ArwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="DB ProductVersion" value="4.0.5450" xmi:id="_IqM74QrwEeW3AsRgq6xlKw"/>
+    <taggedValue tag="DB IdentifierQuoteString" value="&quot;" xmi:id="_IqM74grwEeW3AsRgq6xlKw"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog dataManager="_IIDREArwEeW3AsRgq6xlKw" name="RSSBus" xmi:id="_FAfh4Ar-EeW7MatLIczO6A">
+    <ownedElement name="QuickBooks" xmi:id="_FAfh4Qr-EeW7MatLIczO6A" xsi:type="orgomg.cwm.resource.relational:Schema">
+      <ownedElement comment="Items" id="_RHqQYArwEeW3AsRgq6xlKw" label="Items" name="Items" tableType="TABLE" xmi:id="_FAfh4gr-EeW7MatLIczO6A" xsi:type="relational:TdTable">
+        <taggedValue tag="Comment" value="Items" xmi:id="_FAfh4wr-EeW7MatLIczO6A"/>
+        <feature comment="The unique identifier." key="true" label="ID" length="255" name="ID" nullable="false" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh5Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The unique identifier." xmi:id="_FAfh5Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh5gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh5wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the item." label="Name" length="100" name="Name" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh6Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the item." xmi:id="_FAfh6Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh6gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh6wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Full item name in the format parentname:name if the item is a subitem." label="FullName" length="1000" name="FullName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh7Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Full item name in the format parentname:name if the item is a subitem." xmi:id="_FAfh7Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh7gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh7wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The type of item. This is required to have a value when inserting." label="Type" length="100" name="Type" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh8Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The type of item. This is required to have a value when inserting." xmi:id="_FAfh8Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh8gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh8wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Account name the item is associated with." label="Account" length="1000" name="Account" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh9Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Account name the item is associated with." xmi:id="_FAfh9Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh9gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh9wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Account Id the item is associated with." label="AccountId" length="255" name="AccountId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh-Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Account Id the item is associated with." xmi:id="_FAfh-Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh-gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh-wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Cost of Goods Sold account for the item." label="COGSAccount" length="1000" name="COGSAccount" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfh_Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Cost of Goods Sold account for the item." xmi:id="_FAfh_Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfh_gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfh_wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Cost of Goods Sold account for the item." label="COGSAccountId" length="255" name="COGSAccountId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiAAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Cost of Goods Sold account for the item." xmi:id="_FAfiAQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiAgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiAwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Inventory asset account for the item if it is an inventory item." label="AssetAccount" length="1000" name="AssetAccount" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiBAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Inventory asset account for the item if it is an inventory item." xmi:id="_FAfiBQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiBgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiBwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Inventory asset account for the item if it is an inventory item." label="AssetAccountId" length="255" name="AssetAccountId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiCAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Inventory asset account for the item if it is an inventory item." xmi:id="_FAfiCQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiCgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiCwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Indicates the date an asset was sold. This is required for fixed asset items. It is not used for any other types of items." label="DateSold" length="2000" name="DateSold" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATETIME" talendType="id_Date" xmi:id="_FAfiDAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Indicates the date an asset was sold. This is required for fixed asset items. It is not used for any other types of items." xmi:id="_FAfiDQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiDgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiDwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Indicates date asset was purchased. This field is required for the fixed-asset item type. It is not used by any other item type." label="PurchaseDate" length="2000" name="PurchaseDate" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfiEAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Indicates date asset was purchased. This field is required for the fixed-asset item type. It is not used by any other item type." xmi:id="_FAfiEQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiEgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiEwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number of line items associated with the inventory assembly." label="ItemCount" length="38" name="ItemCount" precision="6" sourceType="INTEGER" talendType="id_String" xmi:id="_FAfiFAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number of line items associated with the inventory assembly." xmi:id="_FAfiFQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiFgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INTEGER" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiFwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The parent name of the item if the item is a subitem." label="ParentName" length="2000" name="ParentName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiGAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The parent name of the item if the item is a subitem." xmi:id="_FAfiGQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiGgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiGwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The parent Id of the item if the item is a subitem." label="ParentId" length="255" name="ParentId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiHAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The parent Id of the item if the item is a subitem." xmi:id="_FAfiHQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiHgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiHwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A description of the item." label="Description" length="5000" name="Description" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiIAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A description of the item." xmi:id="_FAfiIQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiIgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiIwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The price for the item." label="Price" length="38" name="Price" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiJAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The price for the item." xmi:id="_FAfiJQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiJgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiJwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A price percent for this item (you might use a price percent if, for example, you are a service shop that calculates labor costs as a percentage of parts costs). If you set PricePercent, Price will be set to zero. Not used for payment, sales tax, or subtotal items." label="PricePercent" length="38" name="PricePercent" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiKAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A price percent for this item (you might use a price percent if, for example, you are a service shop that calculates labor costs as a percentage of parts costs). If you set PricePercent, Price will be set to zero. Not used for payment, sales tax, or subtotal items." xmi:id="_FAfiKQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiKgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiKwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The average cost of the item." label="AverageCost" length="38" name="AverageCost" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiLAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The average cost of the item." xmi:id="_FAfiLQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiLgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiLwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Whether the item is active or not." label="IsActive" length="2000" name="IsActive" precision="255" sourceType="BOOLEAN" talendType="id_String" xmi:id="_FAfiMAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Whether the item is active or not." xmi:id="_FAfiMQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiMgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="16" name="BOOLEAN" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiMwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Purchase cost for the item." label="PurchaseCost" length="38" name="PurchaseCost" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiNAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Purchase cost for the item." xmi:id="_FAfiNQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiNgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiNwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Purchase description for the item." label="PurchaseDescription" length="5000" name="PurchaseDescription" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiOAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Purchase description for the item." xmi:id="_FAfiOQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiOgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiOwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Expense account for the item." label="ExpenseAccount" length="1000" name="ExpenseAccount" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiPAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Expense account for the item." xmi:id="_FAfiPQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiPgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiPwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Expense account for the item." label="ExpenseAccountId" length="255" name="ExpenseAccountId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiQAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Expense account for the item." xmi:id="_FAfiQQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiQgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiQwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Preferred vendor for the item." label="PreferredVendor" length="1000" name="PreferredVendor" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiRAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Preferred vendor for the item." xmi:id="_FAfiRQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiRgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiRwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Preferred vendor for the item." label="PreferredVendorId" length="255" name="PreferredVendorId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiSAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Preferred vendor for the item." xmi:id="_FAfiSQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiSgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiSwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Quantity in stock for this inventory item." label="QuantityOnHand" length="38" name="QuantityOnHand" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiTAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Quantity in stock for this inventory item." xmi:id="_FAfiTQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiTgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiTwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number of these items that have been ordered from vendors, but not received." label="QuantityOnOrder" length="38" name="QuantityOnOrder" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiUAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number of these items that have been ordered from vendors, but not received." xmi:id="_FAfiUQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiUgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiUwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number of these items that have been ordered by customers, but not delivered." label="QuantityOnSalesOrder" length="38" name="QuantityOnSalesOrder" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiVAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number of these items that have been ordered by customers, but not delivered." xmi:id="_FAfiVQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiVgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiVwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The date when the item was converted into an inventory item." label="InventoryDate" length="2000" name="InventoryDate" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfiWAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The date when the item was converted into an inventory item." xmi:id="_FAfiWQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiWgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiWwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Quantity at which the user will be reminded to reorder this inventory item." label="ReorderPoint" length="38" name="ReorderPoint" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiXAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Quantity at which the user will be reminded to reorder this inventory item." xmi:id="_FAfiXQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiXgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiXwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Reference to a sales tax code predefined within QuickBooks." label="TaxCode" length="3" name="TaxCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiYAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Reference to a sales tax code predefined within QuickBooks." xmi:id="_FAfiYQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiYgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiYwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Reference to a sales tax code predefined within QuickBooks." label="TaxCodeId" length="255" name="TaxCodeId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiZAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Reference to a sales tax code predefined within QuickBooks." xmi:id="_FAfiZQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiZgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiZwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Determines if tax is included in the transaction amount. Available in only international editions of QuickBooks." label="IsTaxIncluded" length="2000" name="IsTaxIncluded" precision="255" sourceType="BOOLEAN" talendType="id_String" xmi:id="_FAfiaAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Determines if tax is included in the transaction amount. Available in only international editions of QuickBooks." xmi:id="_FAfiaQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiagr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="16" name="BOOLEAN" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiawr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Reference to a purchase tax code predefined within QuickBooks. Only available in international versions of QuickBooks." label="PurchaseTaxCode" length="3" name="PurchaseTaxCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfibAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Reference to a purchase tax code predefined within QuickBooks. Only available in international versions of QuickBooks." xmi:id="_FAfibQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfibgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfibwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="This is a reference to a purchase tax code predefined within QuickBooks. Available in only international versions of QuickBooks." label="PurchaseTaxCodeId" length="255" name="PurchaseTaxCodeId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAficAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="This is a reference to a purchase tax code predefined within QuickBooks. Available in only international versions of QuickBooks." xmi:id="_FAficQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAficgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAficwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The manufacturer's part number for the item. This property requires QBXML Version 7.0 or higher and is only applicable to inventory and noninventory item types." label="PartNumber" length="31" name="PartNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfidAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The manufacturer's part number for the item. This property requires QBXML Version 7.0 or higher and is only applicable to inventory and noninventory item types." xmi:id="_FAfidQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfidgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfidwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The method of payment: check, credit card, etc." label="PaymentMethodName" length="100" name="PaymentMethodName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfieAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The method of payment: check, credit card, etc." xmi:id="_FAfieQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiegr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiewr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The method of payment: check, credit card, etc." label="PaymentMethodId" length="255" name="PaymentMethodId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfifAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The method of payment: check, credit card, etc." xmi:id="_FAfifQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfifgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfifwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The percentage rate of tax." label="TaxRate" length="38" name="TaxRate" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfigAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The percentage rate of tax." xmi:id="_FAfigQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiggr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfigwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The VENDOR or tax agency to whom taxes are due." label="TaxVendorName" length="1000" name="TaxVendorName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfihAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The VENDOR or tax agency to whom taxes are due." xmi:id="_FAfihQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfihgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfihwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The VENDOR or tax agency to whom taxes are due." label="TaxVendorId" length="255" name="TaxVendorId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiiAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The VENDOR or tax agency to whom taxes are due." xmi:id="_FAfiiQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiigr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiiwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The type of the item when the value of item type is Unknown. Calling Add on such an item will result in an error, however Get or GetByName can get any item without causing an error." label="SpecialItemType" length="50" name="SpecialItemType" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfijAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The type of the item when the value of item type is Unknown. Calling Add on such an item will result in an error, however Get or GetByName can get any item without causing an error." xmi:id="_FAfijQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfijgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfijwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Name of the vendor from whom this asset was purchased." label="VendorOrPayeeName" length="50" name="VendorOrPayeeName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfikAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Name of the vendor from whom this asset was purchased." xmi:id="_FAfikQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfikgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfikwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Any expenses that were incurred during the sale of a fixed asset. This is applicable only if the asset has been sold." label="SalesExpense" length="2000" name="SalesExpense" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfilAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Any expenses that were incurred during the sale of a fixed asset. This is applicable only if the asset has been sold." xmi:id="_FAfilQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfilgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfilwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Indicates whether this item was new or used when the business acquired it. If AssetAcquiredAs is left blank, it will not be sent in the request." label="AssetAcquiredAs" length="3" name="AssetAcquiredAs" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfimAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Indicates whether this item was new or used when the business acquired it. If AssetAcquiredAs is left blank, it will not be sent in the request." xmi:id="_FAfimQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfimgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfimwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Description of the asset." label="AssetDescription" length="5000" name="AssetDescription" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfinAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Description of the asset." xmi:id="_FAfinQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfingr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfinwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Where the asset is located or has been placed into service." label="AssetLocation" length="50" name="AssetLocation" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfioAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Where the asset is located or has been placed into service." xmi:id="_FAfioQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiogr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiowr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The purchase order number associated with this asset." label="AssetPONumber" length="30" name="AssetPONumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfipAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The purchase order number associated with this asset." xmi:id="_FAfipQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfipgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfipwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The serial number of the asset." label="AssetSerialNumber" length="5000" name="AssetSerialNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiqAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The serial number of the asset." xmi:id="_FAfiqQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiqgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiqwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The date when the warranty for this asset expires." label="AssetWarrantyExpires" length="2000" name="AssetWarrantyExpires" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfirAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The date when the warranty for this asset expires." xmi:id="_FAfirQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfirgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfirwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Additional information about the asset." label="AssetNotes" length="5000" name="AssetNotes" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfisAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Additional information about the asset." xmi:id="_FAfisQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfisgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiswr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number used by the QuickBooks Fixed Asset Manager to identify this asset." label="AssetNumber" length="10" name="AssetNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfitAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number used by the QuickBooks Fixed Asset Manager to identify this asset." xmi:id="_FAfitQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfitgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfitwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The total cost of the fixed asset. This can include the cost of improvements or repairs. This amount is used to figure depreciation." label="AssetCostBasis" length="38" name="AssetCostBasis" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiuAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The total cost of the fixed asset. This can include the cost of improvements or repairs. This amount is used to figure depreciation." xmi:id="_FAfiuQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiugr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiuwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The amount the fixed asset has lost in value since it was purchased, as of the end of the year." label="AssetDepreciation" length="38" name="AssetDepreciation" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfivAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The amount the fixed asset has lost in value since it was purchased, as of the end of the year." xmi:id="_FAfivQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfivgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfivwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A reasonable estimate of the sales value of the fixed asset, as of the end of the year." label="AssetBookValue" length="38" name="AssetBookValue" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfiwAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A reasonable estimate of the sales value of the fixed asset, as of the end of the year." xmi:id="_FAfiwQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiwgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfiwwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Name of the units that the item is measured in. Requires QBXML Version 7.0 or higher." label="UnitOfMeasure" length="100" name="UnitOfMeasure" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfixAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Name of the units that the item is measured in. Requires QBXML Version 7.0 or higher." xmi:id="_FAfixQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfixgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfixwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Id of the units that the item is measured in. Requires QBXML Version 7.0 or higher." label="UnitOfMeasureId" length="255" name="UnitOfMeasureId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfiyAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Id of the units that the item is measured in. Requires QBXML Version 7.0 or higher." xmi:id="_FAfiyQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfiygr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfiywr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number of ancestors this item has." label="Sublevel" length="38" name="Sublevel" precision="6" sourceType="INTEGER" talendType="id_String" xmi:id="_FAfizAr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number of ancestors this item has." xmi:id="_FAfizQr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfizgr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INTEGER" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfizwr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Custom fields returned from QuickBooks and formatted into XML." label="CustomFields" length="2000" name="CustomFields" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi0Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Custom fields returned from QuickBooks and formatted into XML." xmi:id="_FAfi0Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi0gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi0wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="An identifier for this copy of the object." label="EditSequence" length="16" name="EditSequence" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi1Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="An identifier for this copy of the object." xmi:id="_FAfi1Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi1gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi1wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="When the item was last modified." label="TimeModified" length="2000" name="TimeModified" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATETIME" talendType="id_Date" xmi:id="_FAfi2Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="When the item was last modified." xmi:id="_FAfi2Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi2gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi2wr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="When the item was created." label="TimeCreated" length="2000" name="TimeCreated" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATETIME" talendType="id_Date" xmi:id="_FAfi3Ar-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="When the item was created." xmi:id="_FAfi3Qr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi3gr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi3wr-EeW7MatLIczO6A"/>
+        </feature>
+      </ownedElement>
+      <ownedElement comment="Customers" id="_DxXcUAr-EeW7MatLIczO6A" label="Customers" name="Customers" tableType="TABLE" xmi:id="_FAfi4Ar-EeW7MatLIczO6A" xsi:type="relational:TdTable">
+        <taggedValue tag="Comment" value="Customers" xmi:id="_FAfi4Qr-EeW7MatLIczO6A"/>
+        <feature comment="The unique identifier of the customer." key="true" label="ID" length="255" name="ID" nullable="false" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi4gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The unique identifier of the customer." xmi:id="_FAfi4wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi5Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi5Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the customer. This is required to have a value when inserting." label="Name" length="100" name="Name" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi5gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the customer. This is required to have a value when inserting." xmi:id="_FAfi5wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi6Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi6Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The full name of the customer, including parents in the format parent:customer." label="FullName" length="1000" name="FullName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi6gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The full name of the customer, including parents in the format parent:customer." xmi:id="_FAfi6wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi7Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi7Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A salutation, such as Mr., Mrs., etc." label="Salutation" length="15" name="Salutation" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi7gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A salutation, such as Mr., Mrs., etc." xmi:id="_FAfi7wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi8Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi8Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The first name of the customer as stated in the address info." label="FirstName" length="25" name="FirstName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi8gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The first name of the customer as stated in the address info." xmi:id="_FAfi8wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi9Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi9Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A middle name or middle initial of the customer." label="MiddleInitial" length="25" name="MiddleInitial" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi9gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A middle name or middle initial of the customer." xmi:id="_FAfi9wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi-Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi-Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The last name of the customer as stated in the address info." label="LastName" length="25" name="LastName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi-gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The last name of the customer as stated in the address info." xmi:id="_FAfi-wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfi_Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfi_Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The account number for the customer." label="AccountNumber" length="99" name="AccountNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfi_gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The account number for the customer." xmi:id="_FAfi_wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjAAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjAQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the company of the customer." label="Company" length="50" name="Company" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjAgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the company of the customer." xmi:id="_FAfjAwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjBAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjBQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The balance owned by this customer including subcustomers." label="Balance" length="38" name="Balance" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfjBgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The balance owned by this customer including subcustomers." xmi:id="_FAfjBwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjCAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjCQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The balance owned by only this customer not including subcustomers." label="CustomerBalance" length="38" name="CustomerBalance" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfjCgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The balance owned by only this customer not including subcustomers." xmi:id="_FAfjCwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjDAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjDQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the main contact person for the customer." label="Contact" length="41" name="Contact" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjDgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the main contact person for the customer." xmi:id="_FAfjDwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjEAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjEQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A predefined customer type within QuickBooks. Typical customer types, if defined, might be Commercial, Residential, etc." label="Type" length="1000" name="Type" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjEgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A predefined customer type within QuickBooks. Typical customer types, if defined, might be Commercial, Residential, etc." xmi:id="_FAfjEwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjFAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjFQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A predefined customer type within QuickBooks." label="TypeId" length="255" name="TypeId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjFgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A predefined customer type within QuickBooks." xmi:id="_FAfjFwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjGAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjGQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The main telephone number for the customer." label="Phone" length="21" name="Phone" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjGgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The main telephone number for the customer." xmi:id="_FAfjGwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjHAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjHQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The fax number number for the customer." label="Fax" length="21" name="Fax" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjHgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The fax number number for the customer." xmi:id="_FAfjHwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjIAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjIQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of an alternate contact person for the customer." label="AlternateContact" length="41" name="AlternateContact" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjIgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of an alternate contact person for the customer." xmi:id="_FAfjIwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjJAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjJQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The alternate telephone number for the customer." label="AlternatePhone" length="21" name="AlternatePhone" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjJgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The alternate telephone number for the customer." xmi:id="_FAfjJwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjKAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjKQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The email address for communicating with the customer." label="Email" length="1023" name="Email" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjKgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The email address for communicating with the customer." xmi:id="_FAfjKwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjLAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjLQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A CC email address associated with the customer. Requires QBXML Version 12.0 or higher." label="Cc" length="1023" name="Cc" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjLgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A CC email address associated with the customer. Requires QBXML Version 12.0 or higher." xmi:id="_FAfjLwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjMAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjMQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Notes on this customer." label="Notes" length="5000" name="Notes" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjMgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Notes on this customer." xmi:id="_FAfjMwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjNAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjNQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="An xml aggregate of the additional notes associated with the customer. Aggregate must include NoteId and Note elements. Requires QBXML Version 12.0." label="NotesAggregate" length="5000" name="NotesAggregate" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjNgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="An xml aggregate of the additional notes associated with the customer. Aggregate must include NoteId and Note elements. Requires QBXML Version 12.0." xmi:id="_FAfjNwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjOAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjOQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The parent name of the job." label="ParentName" length="2000" name="ParentName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjOgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The parent name of the job." xmi:id="_FAfjOwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjPAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjPQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The parent Id of the job." label="ParentId" length="255" name="ParentId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjPgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The parent Id of the job." xmi:id="_FAfjPwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjQAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjQQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The number of ancestors this customer has." label="Sublevel" length="38" name="Sublevel" precision="6" sourceType="INTEGER" talendType="id_String" xmi:id="_FAfjQgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The number of ancestors this customer has." xmi:id="_FAfjQwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjRAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INTEGER" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjRQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The current status of the job." label="JobStatus" length="10" name="JobStatus" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjRgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The current status of the job." xmi:id="_FAfjRwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjSAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjSQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The start date of the job." label="JobStartDate" length="2000" name="JobStartDate" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfjSgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The start date of the job." xmi:id="_FAfjSwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjTAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjTQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The expected end date for the job." label="JobProjectedEndDate" length="2000" name="JobProjectedEndDate" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfjTgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The expected end date for the job." xmi:id="_FAfjTwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjUAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjUQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The actual end date for the job." label="JobEndDate" length="2000" name="JobEndDate" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATE" talendType="id_Date" xmi:id="_FAfjUgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The actual end date for the job." xmi:id="_FAfjUwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjVAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="91" name="DATE" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjVQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A description of the job." label="JobDescription" length="99" name="JobDescription" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjVgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A description of the job." xmi:id="_FAfjVwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjWAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjWQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the job type." label="JobType" length="1000" name="JobType" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjWgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the job type." xmi:id="_FAfjWwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjXAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjXQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A job type reference Id." label="JobTypeId" length="255" name="JobTypeId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjXgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A job type reference Id." xmi:id="_FAfjXwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjYAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjYQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The address associated with the credit card." label="CreditCardAddress" length="41" name="CreditCardAddress" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjYgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The address associated with the credit card." xmi:id="_FAfjYwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjZAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjZQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The expiration month associated with the credit card." label="CreditCardExpMonth" length="38" name="CreditCardExpMonth" precision="6" sourceType="INTEGER" talendType="id_String" xmi:id="_FAfjZgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The expiration month associated with the credit card." xmi:id="_FAfjZwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjaAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INTEGER" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjaQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The expiration year associated with the credit card." label="CreditCardExpYear" length="38" name="CreditCardExpYear" precision="6" sourceType="INTEGER" talendType="id_String" xmi:id="_FAfjagr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The expiration year associated with the credit card." xmi:id="_FAfjawr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjbAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="4" name="INTEGER" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjbQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name as it appears on the credit card of the customer." label="CreditCardNameOnCard" length="41" name="CreditCardNameOnCard" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjbgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name as it appears on the credit card of the customer." xmi:id="_FAfjbwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjcAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjcQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The credit card number on file for this customer." label="CreditCardNumber" length="25" name="CreditCardNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjcgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The credit card number on file for this customer." xmi:id="_FAfjcwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjdAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjdQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The postal code associated with the address and number on file for this customer." label="CreditCardPostalCode" length="41" name="CreditCardPostalCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjdgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The postal code associated with the address and number on file for this customer." xmi:id="_FAfjdwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjeAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjeQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The credit limit for this customer. If it is equal to 0, there is no credit limit." label="CreditLimit" length="38" name="CreditLimit" precision="6" sourceType="DOUBLE" talendType="id_Double" xmi:id="_FAfjegr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The credit limit for this customer. If it is equal to 0, there is no credit limit." xmi:id="_FAfjewr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjfAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="8" name="DOUBLE" nullable="columnNullable" numericPrecision="6" numericPrecisionRadix="10" xmi:id="_FAfjfQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Full billing address returned by QuickBooks." label="BillingAddress" length="2000" name="BillingAddress" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjfgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Full billing address returned by QuickBooks." xmi:id="_FAfjfwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjgAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjgQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="First line of the billing address." label="BillingLine1" length="500" name="BillingLine1" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjggr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="First line of the billing address." xmi:id="_FAfjgwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjhAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjhQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Second line of the billing address." label="BillingLine2" length="500" name="BillingLine2" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjhgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Second line of the billing address." xmi:id="_FAfjhwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjiAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjiQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Third line of the billing address." label="BillingLine3" length="500" name="BillingLine3" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjigr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Third line of the billing address." xmi:id="_FAfjiwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjjAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjjQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Fourth line of the billing address." label="BillingLine4" length="500" name="BillingLine4" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjjgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Fourth line of the billing address." xmi:id="_FAfjjwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjkAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjkQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Fifth line of the billing address." label="BillingLine5" length="41" name="BillingLine5" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjkgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Fifth line of the billing address." xmi:id="_FAfjkwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjlAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjlQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="City name for the billing address of the customer." label="BillingCity" length="255" name="BillingCity" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjlgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="City name for the billing address of the customer." xmi:id="_FAfjlwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjmAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjmQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="State name for the billing address of the customer." label="BillingState" length="255" name="BillingState" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjmgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="State name for the billing address of the customer." xmi:id="_FAfjmwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjnAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjnQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Postal code for the billing address of the customer." label="BillingPostalCode" length="30" name="BillingPostalCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjngr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Postal code for the billing address of the customer." xmi:id="_FAfjnwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjoAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjoQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Country for the billing address of the customer." label="BillingCountry" length="255" name="BillingCountry" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjogr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Country for the billing address of the customer." xmi:id="_FAfjowr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjpAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjpQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Note for the billing address of the customer." label="BillingNote" length="41" name="BillingNote" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjpgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Note for the billing address of the customer." xmi:id="_FAfjpwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjqAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjqQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Full shipping address returned by QuickBooks." label="ShippingAddress" length="2000" name="ShippingAddress" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjqgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Full shipping address returned by QuickBooks." xmi:id="_FAfjqwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjrAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjrQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="First line of the shipping address." label="ShippingLine1" length="500" name="ShippingLine1" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjrgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="First line of the shipping address." xmi:id="_FAfjrwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjsAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjsQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Second line of the shipping address." label="ShippingLine2" length="500" name="ShippingLine2" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjsgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Second line of the shipping address." xmi:id="_FAfjswr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjtAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjtQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Third line of the shipping address." label="ShippingLine3" length="500" name="ShippingLine3" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjtgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Third line of the shipping address." xmi:id="_FAfjtwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAfjuAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAfjuQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Fourth line of the shipping address." label="ShippingLine4" length="500" name="ShippingLine4" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAfjugr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Fourth line of the shipping address." xmi:id="_FAfjuwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor0Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor0Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Fifth line of the shipping address." label="ShippingLine5" length="41" name="ShippingLine5" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor0gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Fifth line of the shipping address." xmi:id="_FAor0wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor1Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor1Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="City name for the shipping address of the customer." label="ShippingCity" length="255" name="ShippingCity" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor1gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="City name for the shipping address of the customer." xmi:id="_FAor1wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor2Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor2Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="State name for the shipping address of the customer." label="ShippingState" length="255" name="ShippingState" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor2gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="State name for the shipping address of the customer." xmi:id="_FAor2wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor3Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor3Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Postal code for the shipping address of the customer." label="ShippingPostalCode" length="30" name="ShippingPostalCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor3gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Postal code for the shipping address of the customer." xmi:id="_FAor3wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor4Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor4Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Country for the shipping address of the customer." label="ShippingCountry" length="255" name="ShippingCountry" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor4gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Country for the shipping address of the customer." xmi:id="_FAor4wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor5Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor5Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Note for the shipping address of the customer." label="ShippingNote" length="41" name="ShippingNote" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor5gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Note for the shipping address of the customer." xmi:id="_FAor5wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor6Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor6Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="An XML aggregate of the shipping addresses associated with the customer. Requires QBXML Version 12.0" label="ShippingAggregate" length="5000" name="ShippingAggregate" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor6gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="An XML aggregate of the shipping addresses associated with the customer. Requires QBXML Version 12.0" xmi:id="_FAor6wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor7Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor7Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The resale number of the customer, if he/she has one. This field can be set in inserts but not in updates." label="ResaleNumber" length="16" name="ResaleNumber" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor7gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The resale number of the customer, if he/she has one. This field can be set in inserts but not in updates." xmi:id="_FAor7wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor8Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor8Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A reference to a sales rep for the customer." label="SalesRep" length="5" name="SalesRep" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor8gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A reference to a sales rep for the customer." xmi:id="_FAor8wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor9Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor9Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A reference to a sales rep for the customer." label="SalesRepId" length="255" name="SalesRepId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor9gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A reference to a sales rep for the customer." xmi:id="_FAor9wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor-Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor-Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A reference to terms of payment for this customer. A typical example might be '2% 10 Net 60'. This field can be set in inserts but not in updates." label="Terms" length="100" name="Terms" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor-gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A reference to terms of payment for this customer. A typical example might be '2% 10 Net 60'. This field can be set in inserts but not in updates." xmi:id="_FAor-wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAor_Ar-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAor_Qr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A reference to terms of payment for this customer." label="TermsId" length="255" name="TermsId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAor_gr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A reference to terms of payment for this customer." xmi:id="_FAor_wr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosAAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosAQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The name of the currency for this customer. A minimum QBXML Version of 8.0 is required for this feature." label="CurrencyName" length="64" name="CurrencyName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosAgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The name of the currency for this customer. A minimum QBXML Version of 8.0 is required for this feature." xmi:id="_FAosAwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosBAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosBQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The unique Id of the currency for this customer. A minimum QBXML Version of 8.0 is required for this feature." label="CurrencyId" length="255" name="CurrencyId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosBgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The unique Id of the currency for this customer. A minimum QBXML Version of 8.0 is required for this feature." xmi:id="_FAosBwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosCAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosCQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="This is a reference to a sales tax code predefined within QuickBooks. This field can be set in inserts but not in updates." label="TaxCode" length="3" name="TaxCode" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosCgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="This is a reference to a sales tax code predefined within QuickBooks. This field can be set in inserts but not in updates." xmi:id="_FAosCwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosDAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosDQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="This is a reference to a sales tax code predefined within QuickBooks. This field can be set in inserts but not in updates." label="TaxCodeId" length="255" name="TaxCodeId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosDgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="This is a reference to a sales tax code predefined within QuickBooks. This field can be set in inserts but not in updates." xmi:id="_FAosDwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosEAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosEQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A sales tax item refers to a single sales tax that is collected at a specified rate and paid to a single agency." label="TaxItem" length="100" name="TaxItem" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosEgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A sales tax item refers to a single sales tax that is collected at a specified rate and paid to a single agency." xmi:id="_FAosEwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosFAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosFQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A sales tax item refers to a single sales tax that is collected at a specified rate and paid to a single agency." label="TaxItemId" length="255" name="TaxItemId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosFgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A sales tax item refers to a single sales tax that is collected at a specified rate and paid to a single agency." xmi:id="_FAosFwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosGAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosGQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Identifies the country collecting applicable sales taxes. Only available in international editons of QuickBooks." label="SalesTaxCountry" length="100" name="SalesTaxCountry" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosGgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Identifies the country collecting applicable sales taxes. Only available in international editons of QuickBooks." xmi:id="_FAosGwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosHAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosHQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Reference to a price level for the customer." label="PriceLevel" length="100" name="PriceLevel" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosHgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Reference to a price level for the customer." xmi:id="_FAosHwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosIAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosIQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Reference to a price level for the customer." label="PriceLevelId" length="255" name="PriceLevelId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosIgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Reference to a price level for the customer." xmi:id="_FAosIwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosJAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosJQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The preferred delivery method for the customer. Enter either: fax, email, or none. This column requires QBXML Version 12.0." label="PreferredDeliveryMethod" length="20" name="PreferredDeliveryMethod" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosJgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The preferred delivery method for the customer. Enter either: fax, email, or none. This column requires QBXML Version 12.0." xmi:id="_FAosJwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosKAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosKQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The preferred method of payment." label="PreferredPaymentMethodName" length="100" name="PreferredPaymentMethodName" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosKgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The preferred method of payment." xmi:id="_FAosKwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosLAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosLQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="The preferred method of payment." label="PreferredPaymentMethodId" length="255" name="PreferredPaymentMethodId" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosLgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="The preferred method of payment." xmi:id="_FAosLwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosMAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosMQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="A QuickBooks Online field describing how to print the name on checks." label="PrintAs" length="110" name="PrintAs" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosMgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="A QuickBooks Online field describing how to print the name on checks." xmi:id="_FAosMwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosNAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosNQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Whether or not the customer is active." label="IsActive" length="2000" name="IsActive" precision="255" sourceType="BOOLEAN" talendType="id_String" xmi:id="_FAosNgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Whether or not the customer is active." xmi:id="_FAosNwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosOAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="16" name="BOOLEAN" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosOQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="Custom fields returned from QuickBooks and formatted into XML." label="CustomFields" length="2000" name="CustomFields" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosOgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="Custom fields returned from QuickBooks and formatted into XML." xmi:id="_FAosOwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosPAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosPQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="An identifier used for versioning for this copy of the object." label="EditSequence" length="16" name="EditSequence" precision="255" sourceType="STRING" talendType="id_String" xmi:id="_FAosPgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="An identifier used for versioning for this copy of the object." xmi:id="_FAosPwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosQAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="12" name="STRING" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosQQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="When the customer was last modified." label="TimeModified" length="2000" name="TimeModified" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATETIME" talendType="id_Date" xmi:id="_FAosQgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="When the customer was last modified." xmi:id="_FAosQwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosRAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosRQr-EeW7MatLIczO6A"/>
+        </feature>
+        <feature comment="When the customer was created." label="TimeCreated" length="2000" name="TimeCreated" pattern="&quot;dd-MM-yyyy&quot;" precision="255" sourceType="DATETIME" talendType="id_Date" xmi:id="_FAosRgr-EeW7MatLIczO6A" xsi:type="relational:TdColumn">
+          <taggedValue tag="Comment" value="When the customer was created." xmi:id="_FAosRwr-EeW7MatLIczO6A"/>
+          <initialValue language="COLUMN_DEF" xmi:id="_FAosSAr-EeW7MatLIczO6A" xsi:type="relational:TdExpression"/>
+          <sqlDataType javaDataType="93" name="DATETIME" nullable="columnNullable" numericPrecision="255" numericPrecisionRadix="10" xmi:id="_FAosSQr-EeW7MatLIczO6A"/>
+        </feature>
+      </ownedElement>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Catalog>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b8cd190a-9ad8-4211-88d5-f5ed6fc33e51"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KtsjQc1IKdvNcQ4iXQ5wDjbj228Xj9A8oWwBkCjKif49xUhsz/wjImTLpNt26GDDelnLBqxX5r3s
+Av0Yi8JVBA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1a47d371-b3d8-49dc-a1e7-38d924b86913"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>cMKV3KL43LK6r1CwYpW7uRQsrG46aQ7zsl5m4GpyC1ijRl2usGMRLE0KK6ZB0DfmLWXilNcWOGke
+FUX0lDzCYg==</DigestValue></Reference></SignedInfo><SignatureValue>F0Lm+Nygaxi9JRuxhxGXNNbGt92oppR/hUMebRIXdhY1SRIs0TvYWGc7Kmb0UJiI7kgDG5x8Tc+F
+MosTMRDkhe3YglDJSZtCafjW5BIkgLGBUEY5IXIGaYyX1a30XtTI9hclhMJppiR6bvYkuiwG/9fb
+XKZsQ1WXx85e7dd/z02ciPMNIUDr0u1FOL40NpSjPnpjnGpv4u0W0M36QpfKlIqt5EUwtaH/r6B+
+svG5c6UgIBOTWhrxLp2VVSapGTwbfbYSQu1/EUuWQvyy611v8JgogXvETXrufBg9IPdQDHXf5JuI
+2V8jb/FP8prmz3ZKhj3b8cR3DXKOQ7z9M4LghQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=Default code-signing certificate,OU=R&amp;D,O=Talend Inc.,ST=Paris,C=FR</X509SubjectName><X509Certificate>MIIFYzCCA0ugAwIBAgIBATANBgkqhkiG9w0BAQsFADCBjTELMAkGA1UEBhMCRlIxDjAMBgNVBAgM
+BVBhcmlzMQ4wDAYDVQQHDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1Im
+RDEWMBQGA1UEAwwNVGFsZW5kIFImRCBDQTEiMCAGCSqGSIb3DQEJARYTc2VjdXJpdHlAdGFsZW5k
+LmNvbTAeFw0xODAxMTgwMDA2MTJaFw0yMTAxMTcwMDA2MTJaMGwxCzAJBgNVBAYTAkZSMQ4wDAYD
+VQQIDAVQYXJpczEUMBIGA1UECgwLVGFsZW5kIEluYy4xDDAKBgNVBAsMA1ImRDEpMCcGA1UEAwwg
+RGVmYXVsdCBjb2RlLXNpZ25pbmcgY2VydGlmaWNhdGUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDiCz1II/o6hDUWu/ygxTCT2o/fYxVzPW23AoONQC/Vuiqh0COyLIgaMTjBPmQdTQFq
+rmM5tD64gi4TEQF+Z3iYt3daLdQUfaW9SzaMlY+XVNz5xnMBVDuiSHJSFE9lKnhgbKAHvOeoJo46
+UgWwb1za0WpRckDtjKcntwEK1orZCgrcIo1nDvFXyB5n0KfpLyktEOa0bSHde50MPbvQeB66XlEb
+lhjfs5S9WnAUja9RgqdwqZoI0ss+x/pjkQygDT8f17MktM21HOtg09lJlhMGJckhgD7jUF5tfYGM
+sv/O27g5CToFhxOnutDtsrDw7AkEQIml8KJp97bQLAFlLnh1AgMBAAGjge0wgeowHQYDVR0OBBYE
+FFzdy6ZfpUX8JwkM/SUrqkwLNqWAMB8GA1UdIwQYMBaAFOd9C3L8tYGZxoAr2SzsgnMytaj3MAsG
+A1UdDwQEAwIHgDATBgNVHSUEDDAKBggrBgEFBQcDAzAJBgNVHRMEAjAAMHsGCWCGSAGG+EIBDQRu
+FmxEZWZhdWx0IHRoaXJkIHBhcnR5IGNvZGUtc2lnbmluZyBjZXJ0aWZpY2F0ZS4gTm8gY29tbWl0
+bWVudCBpcyBtYWRlIG9uIHRoZSBjb250ZW50IHNpZ25lZCBieSB0aGUgdGhpcmQgcGFydHkwDQYJ
+KoZIhvcNAQELBQADggIBAKzYdnzoFgrRtDLSSzWtwuOrGo5+1RPoDHm/1dlbVnB7oZzUwfRGwZT5
+ser0V7OZyt9wWR8iQ2ka30fHWrNAosNtlIkF88s5YZw7OOIMxR+qYA99BnWLa79DZVIuukI2f5qJ
+Cr9nw6Oygo8CWeNMWhtXcvV4gqROhb2QMBrvWBw9QvNK1XMdtPShfWiXwyPzzRKgwqrN2meXtOY3
+S+MXu6u+RUD9EYeElp9M+9Yp+zRySl5/s+0sbvo7qz369dlsw8XhKXT+s4YQQe3Sx14Kg3SDFXKn
+QcVgycaZMOw4YUxOeP2hKOHnNuOMORfu3qlYkN/0RMGjn6r4PU4+yL276TiWI5b8J06y4leng2as
+r3/fbKJ02Ni9kCnkY8wQS1yn45UNl1woSjryza4f4uLKGkrrIsUPXK+Vy4A1Il8XgFfmrtgA8m9s
+EHyu0OyAJH/agWN+GLhF/ssp26oXhiYqTkG4sQtNRFQG0isaYf/JWSt3f8Q+7/pnZpz4mfEAFimI
+BBLzRwDA6x9qqOn0RXxBo9pH16EO3SXPLR64cJum8B/RI/i8H6OkQDO1tEiE6UeceZk++U7fnD3c
+6i9Km85GTgQi6REsVZGIL/tZNIzN//qPwi7cDo3Cf/xmPrIKQhHJaxCqmbjGDmC8AXOaqNfWotVX
+Wy2dcglW62PDszE/HKh9</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1a47d371-b3d8-49dc-a1e7-38d924b86913" Target="#_b8cd190a-9ad8-4211-88d5-f5ed6fc33e51"><Timestamp>2019-03-04 21:45:18</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>

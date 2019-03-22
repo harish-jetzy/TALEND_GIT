@@ -1,0 +1,13 @@
+package routines;
+
+public class CustomRoutines {
+
+	public static String removeCntrlChars(String message){
+    	if(message==null){
+    		return null;
+          }
+    	String retString=message.replaceAll("\\p{Cntrl}", "   ");
+    	return retString;
+    	
+    }
+}
