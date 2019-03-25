@@ -19,6 +19,41 @@
     <module>jobs/process/amc_0.1</module>
     <module>jobs/process/test_0.1</module>
     <module>jobs/joblets/testcase_0.1</module>
+    <module>jobs/process/MAIN/MAIN_500_TARGET_INGESTION/mjob501_transform_query_using_impala_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob226_metadata_database_update_0.1</module>
+    <module>jobs/process/MAIN/MAIN_400_SOURCE_INGESTION/cjob400_1_sqoop_ingestion_1.0</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob200_create_hive_source_table_0.1</module>
+    <module>jobs/process/MAIN/MAIN_4000_FILE_WATCHER/mjob4000_file_watcher_job_old_0.1</module>
+    <module>jobs/process/MAIN/MAIN_300_INGESTION_LIST/mjob320_context_param_update_0.1</module>
+    <module>jobs/process/MAIN/MAIN_100/mjob100_build_hadoop_dictionary_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob210_generate_hive_source_table_create_query_0.1</module>
+    <module>jobs/process/MAIN/MAIN_300_INGESTION_LIST/mjob300_ingestion_list_0.1</module>
+    <module>jobs/process/MAIN/MAIN_300_INGESTION_LIST/mjob300_ingestion_list_0.2</module>
+    <module>jobs/process/MAIN/MAIN_1000_INGESTION_NOTIFICATION/mjob1000_ingestion_notification_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob215_generate_hive_target_table_create_query_0.1</module>
+    <module>jobs/process/MAIN/MAIN_300_INGESTION_LIST/mjob330_hard_kill_0.1</module>
+    <module>jobs/process/MAIN/MAIN_500_TARGET_INGESTION/mjob502_transform_query_using_hive_0.1</module>
+    <module>jobs/process/MAIN/MAIN_4000_FILE_WATCHER/mjob4000_file_watcher_julian_date_0.1</module>
+    <module>jobs/joblets/exception_handling_0.1</module>
+    <module>jobs/process/MAIN/MAIN_500_TARGET_INGESTION/mjob503_update_status_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob225_generate_hive_target_table_select_query_0.1</module>
+    <module>jobs/process/MAIN/MAIN_600_MONITOR_INGESTION/mjob600_monitor_ingestion_1.0</module>
+    <module>jobs/process/MAIN/MAIN_1100_FLUSH_QUEUE_AND_TOPIC/mjob1100_flush_queue_and_topic_0.1</module>
+    <module>jobs/process/MAIN/MAIN_600_MONITOR_INGESTION/mjob600_monitor_ingestion_0.1</module>
+    <module>jobs/process/MAIN/MAIN_900_INGESTION_REPORTS/mjob900_ingestion_reports_run_date_0.1</module>
+    <module>jobs/process/MAIN/MAIN_900_INGESTION_REPORTS/mjob900_1_ingestion_reports_0.1</module>
+    <module>jobs/joblets/connection_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob205_create_hive_target_table_0.1</module>
+    <module>jobs/process/MAIN/MAIN_500_TARGET_INGESTION/mjob500_target_ingestion_0.2</module>
+    <module>jobs/process/MAIN/MAIN_4000_FILE_WATCHER/mjob4000_file_watcher_0.1</module>
+    <module>jobs/process/MAIN/MAIN_400_SOURCE_INGESTION/cjob400_2_sqoop_ingestion_0.1</module>
+    <module>jobs/process/MAIN/MAIN_100/mjob110_onboard_source_0.1</module>
+    <module>jobs/process/MAIN/MAIN_900_INGESTION_REPORTS/BDI800_INGESTION_VERIFICATION/mjob800_ingestion_verification_0.1</module>
+    <module>jobs/process/MAIN/MAIN_300_INGESTION_LIST/mjob310_start_message_broker_0.1</module>
+    <module>jobs/joblets/BDI_MAIN/BDI2000_JOBLETS/mjoblet2001_load_context_0.1</module>
+    <module>jobs/process/MAIN/MAIN_400_SOURCE_INGESTION/mjob400_source_ingestion1_0.1</module>
+    <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob220_generate_hive_source_table_select_query_0.1</module>
+    <module>jobs/process/MAIN/MAIN_900_INGESTION_REPORTS/mjob900_ingestion_reports_0.1</module>
   </modules>
   <properties>
     <talend.project.name>BAH</talend.project.name>
