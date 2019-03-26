@@ -54,6 +54,7 @@
     <module>jobs/process/MAIN/MAIN_400_SOURCE_INGESTION/mjob400_source_ingestion1_0.1</module>
     <module>jobs/process/MAIN/MAIN_200_INGESTION_SQL/mjob220_generate_hive_source_table_select_query_0.1</module>
     <module>jobs/process/MAIN/MAIN_900_INGESTION_REPORTS/mjob900_ingestion_reports_0.1</module>
+    <module>jobs/process_mr/nlp_0.1</module>
   </modules>
   <properties>
     <talend.project.name>BAH</talend.project.name>
